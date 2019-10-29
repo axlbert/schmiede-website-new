@@ -2,11 +2,11 @@ import React from 'react';
 
 import Nav from '../../components/nav';
 
-export default function Work() {
+export default function Contact() {
   return (
     <div>
       <Nav />
-      <div>Work</div>
+      <div>Contact</div>
     </div>
   );
 }

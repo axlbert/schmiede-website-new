@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { Container } from '@material-ui/core';
 
 import './nav.css';
 
@@ -24,7 +23,7 @@ export default function Nav() {
           <div>
             <a href="/about">about</a>
             <a href="/work">work</a>
-            <a href="/">contact</a>
+            <a href="/contact">contact</a>
           </div>
         </div>
       
