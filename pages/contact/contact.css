@@ -1,11 +1,17 @@
-.Contact {
-  /*padding-top: 4.5rem;*/
-}
+/*.Contact {
+  padding-top: 4.5rem;
+}*/
 
 .Contact-Image {
   width: 100%;
+  margin-bottom: 3rem;
 }
 
+.Contact-TitleBlock {
+  margin-top: 1rem;
+  margin-left: 0rem;
+  margin-bottom: 3rem;
+}
 .Contact-Title {
   display: inline-block;
   padding: 0 .5rem .25rem;
@@ -22,19 +28,54 @@
   font-weight: 500;
 }
 
+.Contact-DataBlocks {
+  /*display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;*/
+  margin-bottom: 3rem;
+  padding-left: .5rem;
+}
+
+.Contact-DataBlock {
+  width: 100%;
+}
+
 .Contact-Heading {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0 .5rem;
   color: #393f42;
   font-size: 1.25rem;
   font-weight: 500;
 }
 
 .Contact-Paragraph {
-  line-height: 1.6;
+  color: #393f42;
+  line-height: 1.75;
+}
+
+.Contact-SocialBlock {
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .Contact-SocialImage {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .Contact-TitleBlock {
+    width: 50%;
+    float: left;
+  }
+  .Contact-DataBlocks {
+    width: 50%;
+    float: right;
+  }
+  /*.Contact-DataBlock {
+    width: 25%;
+  }*/
+  .Contact-SocialBlock {
+    float: left;
+    width: 50%;
+  }
 }
