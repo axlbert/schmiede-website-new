@@ -4,6 +4,7 @@ import Link from 'next/link'
 import './nav.css';
 
 const links = [
+  { href: '/about', label: 'About' },
   { href: 'https://zeit.co/now', label: 'ZEIT' },
   { href: 'https://github.com/zeit/next.js', label: 'GitHub' }
 ].map(link => {
@@ -25,10 +26,6 @@ const Nav = () => (
         </li>
       ))}
     </ul>
-
-    <style jsx>{`
-      
-    `}</style>
   </nav>
 )
 
