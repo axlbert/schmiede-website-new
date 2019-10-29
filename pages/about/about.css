@@ -1,3 +1,18 @@
-.About-HeaderImage {
-  width: 100%;
+.About-Header {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  color: white;
+}
+
+.About-HeaderTitle {
+  background-color: #df1720;
+  font-size: 1.75rem;
+  line-height: 1.17;
+  letter-spacing: normal;
+  box-decoration-break: clone;
+}
+
+.About-HeaderSubtitle {
+  font-size: 1.25rem;
 }
