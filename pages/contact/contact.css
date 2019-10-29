@@ -5,3 +5,36 @@
 .Contact-Image {
   width: 100%;
 }
+
+.Contact-Title {
+  display: inline-block;
+  padding: 0 .5rem .25rem;
+  background-color: #df1720;
+  color: white;
+  font-size: 1.75rem;
+  box-decoration-break: clone;
+}
+
+.Contact-Subtitle {
+  margin-top: .5rem;
+  margin-left: .5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.Contact-Heading {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #393f42;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.Contact-Paragraph {
+  line-height: 1.6;
+}
+
+.Contact-SocialImage {
+  width: 1.5rem;
+  height: 1.5rem;
+}
