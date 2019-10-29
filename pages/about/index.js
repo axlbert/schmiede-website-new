@@ -1,7 +1,7 @@
 import React from 'react';
 
-import '../assets/about.css';
-import Nav from '../components/nav'
+import './about.css';
+import Nav from '../../components/nav'
 
 export default function About() {
   return (
