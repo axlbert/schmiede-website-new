@@ -1,5 +1,5 @@
 .Nav {
-  position: fixed;
+  /*position: fixed;*/
   width: 100%;
   padding: 1.5rem 0;
   background-color: white;
@@ -13,4 +13,22 @@
 
 .Nav-Logo {
   height: 1.5rem;
+}
+
+.Nav-Links {
+  display: none;
+}
+
+.Nav-ExpandButton {
+  border: none;
+  background: none;
+}
+
+@media (min-width: 576px) {
+  .Nav-ExpandButton {
+    display: none;
+  }
+  .Nav-Links {
+    display: block;
+  }
 }

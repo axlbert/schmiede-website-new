@@ -12,12 +12,14 @@ export default function Nav() {
           <a><img className="Nav-Logo" src="/logo.svg" /></a>
         </Link>
         <div>
-          <ActiveLink href="/about">about</ActiveLink>
-          <ActiveLink href="/work">work</ActiveLink>
-          <ActiveLink href="/contact">contact</ActiveLink>
-        </div>
-        <div>
-          <i className="material-icons">menu</i>
+          <div className="Nav-Links">
+            <ActiveLink href="/about">about</ActiveLink>
+            <ActiveLink href="/work">work</ActiveLink>
+            <ActiveLink href="/contact">contact</ActiveLink>
+          </div>
+          <button className="Nav-ExpandButton">
+            <i className="material-icons">menu</i>
+          </button>
         </div>
       </div>
     </nav>
