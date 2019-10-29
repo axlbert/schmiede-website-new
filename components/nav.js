@@ -23,7 +23,7 @@ export default function Nav() {
           </div>
           <div>
             <a href="/about">about</a>
-            <a href="/">work</a>
+            <a href="/work">work</a>
             <a href="/">contact</a>
           </div>
         </div>
