@@ -16,8 +16,8 @@ const links = [
 export default function Nav() {
   return (
     <nav className="Nav">
-      <Container>
-        <div className="Nav-Inner">
+      
+        <div className="Nav-Inner container">
           <div>
             <img className="Nav-Logo" src="/logo.svg" />
           </div>
@@ -27,7 +27,7 @@ export default function Nav() {
             <a href="/">contact</a>
           </div>
         </div>
-      </Container>
+      
     </nav>
   );
 }
