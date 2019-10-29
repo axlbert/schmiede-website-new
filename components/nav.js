@@ -1,5 +1,6 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
+import { Container } from '@material-ui/core';
 
 import './nav.css';
 
@@ -12,7 +13,26 @@ const links = [
   return link
 })
 
-const Nav = () => (
+export default function Nav() {
+  return (
+    <nav className="Nav">
+      <Container>
+        <div className="Nav-Inner">
+          <div>
+            <img className="Nav-Logo" src="/logo.svg" />
+          </div>
+          <div>
+            <a href="/about">about</a>
+            <a href="/">work</a>
+            <a href="/">contact</a>
+          </div>
+        </div>
+      </Container>
+    </nav>
+  );
+}
+
+/*const Nav = () => (
   <nav>
     <ul>
       <li>
@@ -27,6 +47,6 @@ const Nav = () => (
       ))}
     </ul>
   </nav>
-)
+)*/
 
-export default Nav
+//export default Nav

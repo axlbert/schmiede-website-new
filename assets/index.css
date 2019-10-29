@@ -1,5 +1,7 @@
+/* Barlow font */
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-    Helvetica, sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
