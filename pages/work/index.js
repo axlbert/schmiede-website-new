@@ -10,6 +10,19 @@ export default function Work() {
       <div className="container mb-5">
         <header>
           <img className="Work-HeaderImage" src="/work/work.jpg" />
+          <div style={{ marginTop: '1rem', textAlign: 'right' }}>
+            <div className="DotControls">
+              <button className="DotControl">
+                <div className="DotControl-Fill"></div>
+              </button>
+              <button className="DotControl">
+                <div className="DotControl-Fill DotControl-Fill_active"></div>
+              </button>
+              <button className="DotControl">
+                <div className="DotControl-Fill"></div>
+              </button>
+            </div>
+          </div>
         </header>
 
         <div className="Pills">
