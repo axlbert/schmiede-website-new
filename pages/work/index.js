@@ -12,11 +12,11 @@ export default function Work() {
           <img className="Work-HeaderImage" src="/work/work.jpg" />
         </header>
 
-        <div style={{ display: 'flex' }}>
-          <div>All</div>
-          <div>Robotics</div>
-          <div>Development</div>
-          <div>Farming</div>
+        <div className="ProjectPills">
+          <div className="ProjectPills-Item ProjectPills-Item_active">All</div>
+          <div className="ProjectPills-Item">Robotics</div>
+          <div className="ProjectPills-Item">Development</div>
+          <div className="ProjectPills-Item">Farming</div>
         </div>
 
         <div className="ProjectGrid">
@@ -35,7 +35,7 @@ export default function Work() {
             <div className="ProjectGrid-ItemTitle">Indoor Farming</div>
             <div className="ProjectGrid-ItemSubtitle">Farming</div>
           </div>
-          
+
           <div>
             <img className="ProjectGrid-ItemImage" src="/work/project-1.jpg" />
             <div className="ProjectGrid-ItemTitle">Harvey.one</div>
