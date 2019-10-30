@@ -45,7 +45,16 @@ export default function About() {
       >
         <div className="Grid">
           <div className="Card">
-            <img className="Card-Image" src="/about/member-2.jpg" />
+            <div className="Card-ImageWrapper">
+              <img className="Card-Image" src="/about/member-2.jpg" />
+              <div className="Card-ImageOverlay Card-ImageOverlay_gray">
+                <div>Team member since 2017</div>
+                <div>
+                  “Make it simple but significant.”
+                </div>
+                <div>Description</div>
+              </div>
+            </div>
             <div
               className="Card-Footer"
               style={{ display: 'flex', justifyContent: 'space-between' }}
