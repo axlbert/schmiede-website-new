@@ -70,13 +70,22 @@
 }
 
 .Work-Footer {
-  padding: 8rem 0;
-  background-color: lightslategray;
+  padding: 8rem 1rem;
+  background-size: cover;
+  background-position-x: 10%;
+  background-position-y: center;
   color: white;
   text-align: center;
 }
 .Work-FooterTitle {
-  display: inline-block;
-  font-size: 1.5rem;
+  padding: 0 .5rem;
   background-color: #df1720;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.Work-FooterSubtitle {
+  margin-top: .5rem;
+  font-size: 1.1rem;
 }

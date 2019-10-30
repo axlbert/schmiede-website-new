@@ -54,9 +54,14 @@ export default function Work() {
         </div>
       </div>
 
-      <footer className="Work-Footer">
-        <div className="Work-FooterTitle">
-          Do you have a cool idea to share with us?
+      <footer
+        className="Work-Footer"
+        style={{ backgroundImage: 'url("/work/footer.jpg")' }}
+      >
+        <div style={{ maxWidth: '16rem', margin: 'auto' }}>
+          <span className="Work-FooterTitle">
+            Do you have a cool idea to share with us?
+          </span>
         </div>
         <div className="Work-FooterSubtitle">
           We would love to hear from you. Let’s talk about it.
