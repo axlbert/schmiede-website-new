@@ -66,7 +66,7 @@ export default function Work() {
         <div className="Work-FooterSubtitle">
           We would love to hear from you. Let’s talk about it.
         </div>
-        <img src="/mail.svg" alt="Contact" />
+        <img className="Work-FooterButtonImage" src="/mail.svg" alt="Envelope" />
       </footer>
     </div>
   );
