@@ -103,8 +103,13 @@ export default function About() {
       </div>
 
       <div
-        className="Banner mt-5"
-        style={{ backgroundImage: 'url("/about/banner.jpg")' }}
+        className="Banner"
+        style={{
+          marginTop: '3rem',
+          paddingTop: '7rem',
+          paddingBottom: '4rem',
+          backgroundImage: 'url("/about/banner.jpg")',
+        }}
       >
         <div>
           <span className="Banner-Title">
@@ -112,10 +117,12 @@ export default function About() {
             of this cool team?
           </span>
         </div>
-        <div className="Banner-Subtitle">
-          Send us an email with your cv and<br />
-          tell us why you would be a great fit.<br />
-          We would love to hear from you!
+        <div style={{ marginTop: '0.5rem' }}>
+          <span className="Banner-Subtitle">
+            Send us an email with your cv and<br />
+            tell us why you would be a great fit.<br />
+            We would love to hear from you!
+          </span>
         </div>
         <div style={{ marginTop: '2.5rem' }}>
           <a href="#">

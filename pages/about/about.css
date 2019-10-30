@@ -53,9 +53,10 @@
   BANNER
 */
 .Banner {
-  padding: 7rem 1rem 4rem;
+  padding: 1rem;
   background-size: cover;
-  background-position: center;
+  background-position-x: center;
+  background-position-y: center;
   text-align: center;
 }
 .Banner-Title {
@@ -69,7 +70,7 @@
   box-decoration-break: clone;
 }
 .Banner-Subtitle {
-  margin-top: .5rem;
+  display: inline;
   color: white;
   font-size: 1.1rem;
   line-height: 1.4;
