@@ -7,7 +7,7 @@ export default function Work() {
   return (
     <div>
       <Nav />
-      <div className="container">
+      <div className="container mb-5">
         <header>
           <img className="Work-HeaderImage" src="/work/work.jpg" />
         </header>
@@ -52,13 +52,17 @@ export default function Work() {
             <div className="ProjectCard-Subtitle">Farming</div>
           </div>
         </div>
-
-
-        <br />
-        <br />
-
-
       </div>
+
+      <footer className="Work-Footer">
+        <div className="Work-FooterTitle">
+          Do you have a cool idea to share with us?
+        </div>
+        <div className="Work-FooterSubtitle">
+          We would love to hear from you. Let’s talk about it.
+        </div>
+        <img src="/mail.svg" alt="Contact" />
+      </footer>
     </div>
   );
 }

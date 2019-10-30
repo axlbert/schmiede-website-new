@@ -68,3 +68,15 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+.Work-Footer {
+  padding: 8rem 0;
+  background-color: lightslategray;
+  color: white;
+  text-align: center;
+}
+.Work-FooterTitle {
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: #df1720;
+}
