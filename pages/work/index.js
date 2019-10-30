@@ -12,11 +12,11 @@ export default function Work() {
           <img className="Work-HeaderImage" src="/work/work.jpg" />
         </header>
 
-        <div className="ProjectPills">
-          <span className="ProjectPills-Item ProjectPills-Item_active">All</span>
-          <span className="ProjectPills-Item">Robotics</span>
-          <span className="ProjectPills-Item">Development</span>
-          <span className="ProjectPills-Item">Farming</span>
+        <div className="Pills">
+          <span className="Pills-Item Pills-Item_active">All</span>
+          <span className="Pills-Item">Robotics</span>
+          <span className="Pills-Item">Development</span>
+          <span className="Pills-Item">Farming</span>
         </div>
 
         <div className="ProjectGrid">

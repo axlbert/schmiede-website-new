@@ -2,18 +2,18 @@
   width: 100%;
 }
 
-.ProjectPills {
+.Pills {
   margin: 4rem auto 1.5rem;
   text-align: center;
 }
-.ProjectPills-Item {
+.Pills-Item {
   display: inline-block;
   margin-right: 1.5rem;
   margin-bottom: 1rem;
   padding: .5rem;
   color: #393f42;
 }
-.ProjectPills-Item_active {
+.Pills-Item_active {
   background-color: #df1720;
   color: white;
   font-weight: 600;
@@ -46,7 +46,7 @@
 }
 
 @media (min-width: 576px) {
-  .ProjectPills {
+  .Pills {
     text-align: left;
   }
   .ProjectGrid {
