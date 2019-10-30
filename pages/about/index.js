@@ -162,7 +162,17 @@ export default function About() {
             be a good fit, just send as an email!
           </span>
         </div>
-        <div style={{ marginTop: '2rem' }}>
+        <div style={{
+          display: 'inline-flex',
+          marginTop: '2rem',
+        }}>
+          <a
+            href="#"
+            className="Banner-Button"
+            style={{ marginRight: '1rem' }}
+          >
+            Job Offers
+          </a>
           <a href="#">
             <img
               className="Banner-RoundImage"

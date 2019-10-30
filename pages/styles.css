@@ -7,7 +7,6 @@
 body {
   margin: 0;
   font-family: 'Barlow', sans-serif;
-  font-size: 1rem;
 }
 
 /**
@@ -65,4 +64,18 @@ body {
 .Banner-RoundImage {
   width: 2.5rem;
   height: 2.5rem;
+}
+.Banner-Button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2.5rem;
+  padding: 0 1rem;
+  background-color: #df1720;
+  color: white;
+  font-size: .8rem;
+  text-decoration: none;
 }
