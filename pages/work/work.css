@@ -1,3 +1,37 @@
 .Work-HeaderImage {
   width: 100%;
 }
+
+.ProjectGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2.5rem;
+}
+
+.ProjectGrid-ItemImage {
+  width: 100%;
+}
+.ProjectGrid-ItemTitle {
+  margin-top: 1rem;
+  color: #393f42;
+  font-size: 1.25rem;
+}
+.ProjectGrid-ItemSubtitle {
+  color: #393f42;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+@media (min-width: 576px) {
+  .ProjectGrid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .ProjectGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.25rem;
+  }
+}
