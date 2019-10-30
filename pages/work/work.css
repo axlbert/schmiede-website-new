@@ -26,6 +26,12 @@
   row-gap: 2.5rem;
 }
 
+.ProjectCard {
+  max-width: 22rem;
+  margin: auto;
+  text-align: center;
+}
+
 .ProjectGrid-ItemImage {
   width: 100%;
 }
@@ -44,6 +50,10 @@
   .ProjectGrid {
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
+  }
+  .ProjectCard {
+    max-width: 100%;
+    text-align: left;
   }
 }
 @media (min-width: 768px) {

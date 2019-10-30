@@ -20,33 +20,33 @@ export default function Work() {
         </div>
 
         <div className="ProjectGrid">
-          <div>
+          <div className="ProjectCard">
             <img className="ProjectGrid-ItemImage" src="/work/project-1.jpg" />
             <div className="ProjectGrid-ItemTitle">Harvey.one</div>
             <div className="ProjectGrid-ItemSubtitle">Robotics</div>
           </div>
-          <div>
+          <div className="ProjectCard">
             <img className="ProjectGrid-ItemImage" src="/work/project-2.jpg" />
             <div className="ProjectGrid-ItemTitle">CNHI Konfigurator</div>
             <div className="ProjectGrid-ItemSubtitle">Development</div>
           </div>
-          <div>
+          <div className="ProjectCard">
             <img className="ProjectGrid-ItemImage" src="/work/project-3.jpg" />
             <div className="ProjectGrid-ItemTitle">Indoor Farming</div>
             <div className="ProjectGrid-ItemSubtitle">Farming</div>
           </div>
 
-          <div>
+          <div className="ProjectCard">
             <img className="ProjectGrid-ItemImage" src="/work/project-1.jpg" />
             <div className="ProjectGrid-ItemTitle">Harvey.one</div>
             <div className="ProjectGrid-ItemSubtitle">Robotics</div>
           </div>
-          <div>
+          <div className="ProjectCard">
             <img className="ProjectGrid-ItemImage" src="/work/project-2.jpg" />
             <div className="ProjectGrid-ItemTitle">CNHI Konfigurator</div>
             <div className="ProjectGrid-ItemSubtitle">Development</div>
           </div>
-          <div>
+          <div className="ProjectCard">
             <img className="ProjectGrid-ItemImage" src="/work/project-3.jpg" />
             <div className="ProjectGrid-ItemTitle">Indoor Farming</div>
             <div className="ProjectGrid-ItemSubtitle">Farming</div>
