@@ -100,13 +100,32 @@ export default function About() {
             </div>
           </div>
         </div>
-
-
-        <br />
-        <br />
-
-
       </div>
+
+      <div
+        className="Banner mt-5"
+        style={{ backgroundImage: 'url("/about/banner.jpg")' }}
+      >
+        <div>
+          <span className="Banner-Title">
+            Do you want to be part<br />
+            of this cool team?
+          </span>
+        </div>
+        <div className="Banner-Subtitle">
+          Send us an email with your cv and<br />
+          tell us why you would be a great fit.<br />
+          We would love to hear from you!
+        </div>
+        <div style={{ marginTop: '2.5rem' }}>
+          <a href="#">
+            <img className="Banner-RoundImage" src="/mail.svg" />
+          </a>
+        </div>
+      </div>
+
+      <br />
+      <br />
     </div>
   );
 }
