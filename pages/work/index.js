@@ -32,7 +32,8 @@ export default function Work() {
           <span className="Pills-Item">Farming</span>
         </div>
 
-        <div className="ProjectGrid">
+        <div style={{ textAlign: 'center' }}>
+        <div className="Grid">
           <div className="ProjectCard">
             <img className="ProjectCard-Image" src="/work/project-1.jpg" />
             <div className="ProjectCard-Title">Harvey.one</div>
@@ -65,6 +66,7 @@ export default function Work() {
             <div className="ProjectCard-Subtitle">Farming</div>
           </div>
         </div>
+      </div>
       </div>
 
       <footer

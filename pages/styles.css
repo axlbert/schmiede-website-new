@@ -9,3 +9,28 @@ body {
   font-family: 'Barlow', sans-serif;
   font-size: 1rem;
 }
+
+/**
+ *  GRID
+ */
+.Grid {
+  display: inline-grid;
+  grid-template-columns: minmax(0, 22rem);
+  row-gap: 2.5rem;
+}
+@media (min-width: 576px) {
+  .Grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .Grid {
+    column-gap: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .Grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
