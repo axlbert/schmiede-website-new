@@ -46,10 +46,13 @@
     column-gap: 1rem;
   }
 }
-
+@media (min-width: 768px) {
+  .ProjectGrid {
+    column-gap: 1.25rem;
+  }
+}
 @media (min-width: 992px) {
   .ProjectGrid {
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1.25rem;
   }
 }
