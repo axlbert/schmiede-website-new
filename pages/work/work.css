@@ -53,20 +53,11 @@
 }
 
 /*
-  GRID
+  CARD
 */
-/*.ProjectGrid {
-  display: inline-grid;
-  grid-template-columns: minmax(0, 22rem);
-  row-gap: 2.5rem;
-}*/
-
 .ProjectCard {
-  /*max-width: 22rem;*/
-  /*margin: auto;*/
   text-align: center;
 }
-
 .ProjectCard-Image {
   width: 100%;
 }
@@ -85,24 +76,10 @@
   .Pills {
     text-align: left;
   }
-  /*.ProjectGrid {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
-  }*/
   .ProjectCard {
     text-align: left;
   }
 }
-/*@media (min-width: 768px) {
-  .ProjectGrid {
-    column-gap: 1.25rem;
-  }
-}
-@media (min-width: 992px) {
-  .ProjectGrid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}*/
 
 .Work-Footer {
   padding: 8rem 1rem 6rem;

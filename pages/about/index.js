@@ -36,8 +36,8 @@ export default function About() {
         </div>
       </header>
 
-      <div className="container mt-5">
-        <div className="TeamGrid">
+      <div className="container mt-5" style={{ textAlign: 'center' }}>
+        <div className="Grid">
           <div className="MemberCard">
             <img className="MemberCard-Image" src="/about/member-1.jpg" />
             <div className="MemberCard-Footer">
