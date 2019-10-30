@@ -35,6 +35,78 @@ export default function About() {
           </div>
         </div>
       </header>
+
+      <div className="container mt-5">
+        <div className="TeamGrid">
+          <div className="MemberCard">
+            <img className="MemberCard-Image" src="/about/member-1.jpg" />
+            <div className="MemberCard-Footer">
+              <div className="MemberCard-Info">
+                <div className="MemberCard-Name">Ollie</div>
+                <div className="MemberCard-Role">Designer</div>
+              </div>
+              <div className="MemberCard-Controls">. . .</div>
+            </div>
+          </div>
+          <div className="MemberCard">
+            <img className="MemberCard-Image" src="/about/member-2.jpg" />
+            <div className="MemberCard-Footer">
+              <div className="MemberCard-Info">
+                <div className="MemberCard-Name">Analisa</div>
+                <div className="MemberCard-Role">Developer</div>
+              </div>
+              <div className="MemberCard-Controls">. . .</div>
+            </div>
+          </div>
+          <div className="MemberCard">
+            <img className="MemberCard-Image" src="/about/member-3.jpg" />
+            <div className="MemberCard-Footer">
+              <div className="MemberCard-Info">
+                <div className="MemberCard-Name">Leonarda</div>
+                <div className="MemberCard-Role">Project Manager</div>
+              </div>
+              <div className="MemberCard-Controls">. . .</div>
+            </div>
+          </div>
+
+          <div className="MemberCard">
+            <img className="MemberCard-Image" src="/about/member-1.jpg" />
+            <div className="MemberCard-Footer">
+              <div className="MemberCard-Info">
+                <div className="MemberCard-Name">Ollie</div>
+                <div className="MemberCard-Role">Designer</div>
+              </div>
+              <div className="MemberCard-Controls">. . .</div>
+            </div>
+          </div>
+          <div className="MemberCard">
+            <img className="MemberCard-Image" src="/about/member-2.jpg" />
+            <div className="MemberCard-Footer">
+              <div className="MemberCard-Info">
+                <div className="MemberCard-Name">Analisa</div>
+                <div className="MemberCard-Role">Developer</div>
+              </div>
+              <div className="MemberCard-Controls">. . .</div>
+            </div>
+          </div>
+          <div className="MemberCard">
+            <img className="MemberCard-Image" src="/about/member-3.jpg" />
+            <div className="MemberCard-Footer">
+              <div className="MemberCard-Info">
+                <div className="MemberCard-Name">Leonarda</div>
+                <div className="MemberCard-Role">Project Manager</div>
+              </div>
+              <div className="MemberCard-Controls">. . .</div>
+            </div>
+          </div>
+        </div>
+
+
+        <br />
+        <br />
+
+
+      </div>
     </div>
   );
 }

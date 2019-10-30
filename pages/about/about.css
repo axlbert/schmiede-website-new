@@ -25,3 +25,52 @@
   color: white;
   font-size: 1.1rem;
 }
+
+.TeamGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2.5rem;
+}
+
+.MemberCard {
+  max-width: 22rem;
+  margin: auto;
+}
+
+.MemberCard-Image {
+  width: 100%;
+}
+.MemberCard-Footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.MemberCard-Name {
+  color: #393f42;
+  font-size: 1.25rem;
+}
+.MemberCard-Role {
+  color: #393f42;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+@media (min-width: 576px) {
+  .TeamGrid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+  .MemberCard {
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .TeamGrid {
+    column-gap: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .TeamGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
