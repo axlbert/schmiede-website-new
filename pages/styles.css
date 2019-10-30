@@ -40,10 +40,29 @@ body {
 .Card {
   display: block;
 }
+.Card-ImageWrapper {
+  position: relative;
+}
 .Card-Image {
   display: block;
   width: 100%;
   margin-bottom: 1rem;
+}
+.Card-ImageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.Card-ImageOverlay_red {
+  background-color: #df1720;
+}
+.Card-ImageOverlay_gray {
+  background-color: #393f42;
+}
+.Card:hover .Card-ImageOverlay_hover {
+  background-color: rgba(223, 23, 32, .65);
 }
 .Card-Footer {
   color: #393f42;
@@ -56,6 +75,7 @@ body {
   font-size: .9rem;
   font-weight: 600;
 }
+
 
 /**
  * BANNER

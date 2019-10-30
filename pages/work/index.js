@@ -35,7 +35,10 @@ export default function Work() {
         <div style={{ textAlign: 'center' }}>
           <div className="Grid">
             <div className="Card">
-              <img className="Card-Image" src="/work/project-1.jpg" />
+              <div className="Card-ImageWrapper">
+                <img className="Card-Image" src="/work/project-2.jpg" />
+                <div className="Card-ImageOverlay Card-ImageOverlay_hover"></div>
+              </div>
               <div className="Card-Footer">
                 <div className="Card-Title">Harvey.one</div>
                 <div className="Card-Subtitle">Robotics</div>
