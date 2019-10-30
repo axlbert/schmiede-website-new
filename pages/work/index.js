@@ -89,7 +89,7 @@ export default function Work() {
             We would love to hear from you. Let’s talk about it.
           </span>
         </div>
-        <div style={{ marginTop: '2.95rem' }}>
+        <div style={{ marginTop: '3rem' }}>
           <a href="#">
             <img
               className="Banner-RoundImage"

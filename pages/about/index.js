@@ -137,6 +137,41 @@ export default function About() {
 
       <br />
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <footer
+        className="Banner"
+        style={{
+          paddingTop: '7rem',
+          paddingBottom: '4.5rem',
+          backgroundImage: 'url("/about/footer.jpg")',
+        }}
+      >
+        <div>
+          <span className="Banner-Title">
+            Find out if we have a job<br />
+            opportunity for you!
+          </span>
+        </div>
+        <div style={{ marginTop: '0.5rem' }}>
+          <span className="Banner-Subtitle">
+            If we don’t and you think you can<br />
+            be a good fit, just send as an email!
+          </span>
+        </div>
+        <div style={{ marginTop: '2rem' }}>
+          <a href="#">
+            <img
+              className="Banner-RoundImage"
+              src="/mail.svg"
+              alt="Email"
+            />
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }

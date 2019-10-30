@@ -40,6 +40,7 @@ body {
 */
 .Banner {
   padding: 1rem;
+  background-color: #393f42;
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
