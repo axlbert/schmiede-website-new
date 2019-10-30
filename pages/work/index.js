@@ -13,10 +13,10 @@ export default function Work() {
         </header>
 
         <div className="ProjectPills">
-          <div className="ProjectPills-Item ProjectPills-Item_active">All</div>
-          <div className="ProjectPills-Item">Robotics</div>
-          <div className="ProjectPills-Item">Development</div>
-          <div className="ProjectPills-Item">Farming</div>
+          <span className="ProjectPills-Item ProjectPills-Item_active">All</span>
+          <span className="ProjectPills-Item">Robotics</span>
+          <span className="ProjectPills-Item">Development</span>
+          <span className="ProjectPills-Item">Farming</span>
         </div>
 
         <div className="ProjectGrid">
