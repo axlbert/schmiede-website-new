@@ -80,30 +80,3 @@
     text-align: left;
   }
 }
-
-.Work-Footer {
-  padding: 8rem 1rem 6rem;
-  background-size: cover;
-  background-position-x: 10%;
-  background-position-y: center;
-  text-align: center;
-}
-.Work-FooterTitle {
-  padding: 0 .5rem;
-  background-color: #df1720;
-  color: white;
-  font-size: 1.5rem;
-  line-height: 1.4;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
-.Work-FooterSubtitle {
-  margin-top: .5rem;
-  color: white;
-  font-size: 1.1rem;
-}
-.Work-FooterButtonImage {
-  width: 2.5rem;
-  height: 2.5rem;
-  margin-top: 3rem;
-}

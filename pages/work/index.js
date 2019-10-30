@@ -70,6 +70,42 @@ export default function Work() {
       </div>
 
       <footer
+        className="Banner"
+        style={{
+          paddingTop: '8rem',
+          paddingBottom: '6rem',
+          backgroundImage: 'url("/work/footer.jpg")',
+          backgroundPositionX: '10%',
+        }}
+      >
+        <div>
+          <span className="Banner-Title">
+            Do you have a cool idea<br />
+            to share with us?
+          </span>
+        </div>
+        <div style={{ marginTop: '0.5rem' }}>
+          <span className="Banner-Subtitle">
+            We would love to hear from you. Let’s talk about it.
+          </span>
+        </div>
+        <div style={{ marginTop: '2.95rem' }}>
+          <a href="#">
+            <img
+              className="Banner-RoundImage"
+              src="/mail.svg"
+              alt="Email"
+            />
+          </a>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+/*
+
+<footer
         className="Work-Footer"
         style={{ backgroundImage: 'url("/work/footer.jpg")' }}
       >
@@ -83,6 +119,5 @@ export default function Work() {
         </div>
         <img className="Work-FooterButtonImage" src="/mail.svg" alt="Envelope" />
       </footer>
-    </div>
-  );
-}
+
+*/

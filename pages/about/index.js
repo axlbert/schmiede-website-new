@@ -126,7 +126,11 @@ export default function About() {
         </div>
         <div style={{ marginTop: '2.5rem' }}>
           <a href="#">
-            <img className="Banner-RoundImage" src="/mail.svg" />
+            <img
+              className="Banner-RoundImage"
+              src="/mail.svg"
+              alt="Email"
+            />
           </a>
         </div>
       </div>
