@@ -10,7 +10,7 @@ body {
 }
 
 /**
- *  GRID
+ * GRID
  */
 .Grid {
   display: inline-grid;
@@ -34,9 +34,32 @@ body {
   }
 }
 
-/*
-  BANNER
-*/
+/**
+ * CARD
+ */
+.Card {
+  display: block;
+}
+.Card-Image {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.Card-Footer {
+  color: #393f42;
+  text-align: left;
+}
+.Card-Title {
+  font-size: 1.25rem;
+}
+.Card-Subtitle {
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+/**
+ * BANNER
+ */
 .Banner {
   padding: 1rem;
   background-color: #393f42;

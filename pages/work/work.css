@@ -53,10 +53,10 @@
 }
 
 /*
-  CARD
+  DEPRECATED CARD STYLES
 */
 .ProjectCard {
-  text-align: center;
+  text-align: left;
 }
 .ProjectCard-Image {
   width: 100%;

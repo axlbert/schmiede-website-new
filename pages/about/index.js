@@ -36,8 +36,28 @@ export default function About() {
         </div>
       </header>
 
-      <div className="container mt-5" style={{ textAlign: 'center' }}>
+      <div
+        className="container"
+        style={{
+          marginTop: '3rem',
+          textAlign: 'center',
+        }}
+      >
         <div className="Grid">
+          <div className="Card">
+            <img className="Card-Image" src="/about/member-2.jpg" />
+            <div
+              className="Card-Footer"
+              style={{ display: 'flex', justifyContent: 'space-between' }}
+            >
+              <div className="Card-Info">
+                <div className="Card-Title">Analisa</div>
+                <div className="Card-Subtitle">Developer</div>
+              </div>
+              <div>. . .</div>
+            </div>
+          </div>
+
           <div className="MemberCard">
             <img className="MemberCard-Image" src="/about/member-1.jpg" />
             <div className="MemberCard-Footer">
@@ -135,12 +155,16 @@ export default function About() {
         </div>
       </div>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+
+      <div className="container my-5">
+        <div>
+        We work in a 
+cool coworking place 
+called super 7000.
+Our cozy -full of plants- office will blow your mind, be ready for kikker 
+games and some unexpected gun fights.
+        </div>
+      </div>
 
       <footer
         className="Banner"

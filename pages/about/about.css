@@ -28,7 +28,7 @@
 }
 
 /*
-  CARD
+  DEPRECATED CARD STYLES
 */
 .MemberCard-Image {
   width: 100%;
@@ -37,6 +37,9 @@
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
+}
+.MemberCard-Info {
+  text-align: left;
 }
 .MemberCard-Name {
   color: #393f42;

@@ -33,40 +33,47 @@ export default function Work() {
         </div>
 
         <div style={{ textAlign: 'center' }}>
-        <div className="Grid">
-          <div className="ProjectCard">
-            <img className="ProjectCard-Image" src="/work/project-1.jpg" />
-            <div className="ProjectCard-Title">Harvey.one</div>
-            <div className="ProjectCard-Subtitle">Robotics</div>
-          </div>
-          <div className="ProjectCard">
-            <img className="ProjectCard-Image" src="/work/project-2.jpg" />
-            <div className="ProjectCard-Title">CNHI Konfigurator</div>
-            <div className="ProjectCard-Subtitle">Development</div>
-          </div>
-          <div className="ProjectCard">
-            <img className="ProjectCard-Image" src="/work/project-3.jpg" />
-            <div className="ProjectCard-Title">Indoor Farming</div>
-            <div className="ProjectCard-Subtitle">Farming</div>
-          </div>
+          <div className="Grid">
+            <div className="Card">
+              <img className="Card-Image" src="/work/project-1.jpg" />
+              <div className="Card-Footer">
+                <div className="Card-Title">Harvey.one</div>
+                <div className="Card-Subtitle">Robotics</div>
+              </div>
+            </div>
+            <div className="ProjectCard">
+              <img className="ProjectCard-Image" src="/work/project-1.jpg" />
+              <div className="ProjectCard-Title">Harvey.one</div>
+              <div className="ProjectCard-Subtitle">Robotics</div>
+            </div>
+            <div className="ProjectCard">
+              <img className="ProjectCard-Image" src="/work/project-2.jpg" />
+              <div className="ProjectCard-Title">CNHI Konfigurator</div>
+              <div className="ProjectCard-Subtitle">Development</div>
+            </div>
+            <div className="ProjectCard">
+              <img className="ProjectCard-Image" src="/work/project-3.jpg" />
+              <div className="ProjectCard-Title">Indoor Farming</div>
+              <div className="ProjectCard-Subtitle">Farming</div>
+            </div>
 
-          <div className="ProjectCard">
-            <img className="ProjectCard-Image" src="/work/project-1.jpg" />
-            <div className="ProjectCard-Title">Harvey.one</div>
-            <div className="ProjectCard-Subtitle">Robotics</div>
-          </div>
-          <div className="ProjectCard">
-            <img className="ProjectCard-Image" src="/work/project-2.jpg" />
-            <div className="ProjectCard-Title">CNHI Konfigurator</div>
-            <div className="ProjectCard-Subtitle">Development</div>
-          </div>
-          <div className="ProjectCard">
-            <img className="ProjectCard-Image" src="/work/project-3.jpg" />
-            <div className="ProjectCard-Title">Indoor Farming</div>
-            <div className="ProjectCard-Subtitle">Farming</div>
+            <div className="ProjectCard">
+              <img className="ProjectCard-Image" src="/work/project-1.jpg" />
+              <div className="ProjectCard-Title">Harvey.one</div>
+              <div className="ProjectCard-Subtitle">Robotics</div>
+            </div>
+            <div className="ProjectCard">
+              <img className="ProjectCard-Image" src="/work/project-2.jpg" />
+              <div className="ProjectCard-Title">CNHI Konfigurator</div>
+              <div className="ProjectCard-Subtitle">Development</div>
+            </div>
+            <div className="ProjectCard">
+              <img className="ProjectCard-Image" src="/work/project-3.jpg" />
+              <div className="ProjectCard-Title">Indoor Farming</div>
+              <div className="ProjectCard-Subtitle">Farming</div>
+            </div>
           </div>
         </div>
-      </div>
       </div>
 
       <footer
