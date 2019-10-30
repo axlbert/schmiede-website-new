@@ -32,15 +32,15 @@
   text-align: center;
 }
 
-.ProjectGrid-ItemImage {
+.ProjectCard-Image {
   width: 100%;
 }
-.ProjectGrid-ItemTitle {
+.ProjectCard-Title {
   margin-top: 1rem;
   color: #393f42;
   font-size: 1.25rem;
 }
-.ProjectGrid-ItemSubtitle {
+.ProjectCard-Subtitle {
   color: #393f42;
   font-size: .9rem;
   font-weight: 600;

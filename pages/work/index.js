@@ -21,35 +21,35 @@ export default function Work() {
 
         <div className="ProjectGrid">
           <div className="ProjectCard">
-            <img className="ProjectGrid-ItemImage" src="/work/project-1.jpg" />
-            <div className="ProjectGrid-ItemTitle">Harvey.one</div>
-            <div className="ProjectGrid-ItemSubtitle">Robotics</div>
+            <img className="ProjectCard-Image" src="/work/project-1.jpg" />
+            <div className="ProjectCard-Title">Harvey.one</div>
+            <div className="ProjectCard-Subtitle">Robotics</div>
           </div>
           <div className="ProjectCard">
-            <img className="ProjectGrid-ItemImage" src="/work/project-2.jpg" />
-            <div className="ProjectGrid-ItemTitle">CNHI Konfigurator</div>
-            <div className="ProjectGrid-ItemSubtitle">Development</div>
+            <img className="ProjectCard-Image" src="/work/project-2.jpg" />
+            <div className="ProjectCard-Title">CNHI Konfigurator</div>
+            <div className="ProjectCard-Subtitle">Development</div>
           </div>
           <div className="ProjectCard">
-            <img className="ProjectGrid-ItemImage" src="/work/project-3.jpg" />
-            <div className="ProjectGrid-ItemTitle">Indoor Farming</div>
-            <div className="ProjectGrid-ItemSubtitle">Farming</div>
+            <img className="ProjectCard-Image" src="/work/project-3.jpg" />
+            <div className="ProjectCard-Title">Indoor Farming</div>
+            <div className="ProjectCard-Subtitle">Farming</div>
           </div>
 
           <div className="ProjectCard">
-            <img className="ProjectGrid-ItemImage" src="/work/project-1.jpg" />
-            <div className="ProjectGrid-ItemTitle">Harvey.one</div>
-            <div className="ProjectGrid-ItemSubtitle">Robotics</div>
+            <img className="ProjectCard-Image" src="/work/project-1.jpg" />
+            <div className="ProjectCard-Title">Harvey.one</div>
+            <div className="ProjectCard-Subtitle">Robotics</div>
           </div>
           <div className="ProjectCard">
-            <img className="ProjectGrid-ItemImage" src="/work/project-2.jpg" />
-            <div className="ProjectGrid-ItemTitle">CNHI Konfigurator</div>
-            <div className="ProjectGrid-ItemSubtitle">Development</div>
+            <img className="ProjectCard-Image" src="/work/project-2.jpg" />
+            <div className="ProjectCard-Title">CNHI Konfigurator</div>
+            <div className="ProjectCard-Subtitle">Development</div>
           </div>
           <div className="ProjectCard">
-            <img className="ProjectGrid-ItemImage" src="/work/project-3.jpg" />
-            <div className="ProjectGrid-ItemTitle">Indoor Farming</div>
-            <div className="ProjectGrid-ItemSubtitle">Farming</div>
+            <img className="ProjectCard-Image" src="/work/project-3.jpg" />
+            <div className="ProjectCard-Title">Indoor Farming</div>
+            <div className="ProjectCard-Subtitle">Farming</div>
           </div>
         </div>
 
