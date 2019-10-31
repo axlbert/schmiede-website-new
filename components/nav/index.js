@@ -9,7 +9,9 @@ export default function Nav() {
     <nav className="Nav">
       <div className="Nav-Inner container">
         <Link href="/">
-          <a><img className="Nav-Logo" src="/logo.svg" /></a>
+          <a className="Nav-LogoLink">
+            <img className="Nav-Logo" src="/logo.svg" />
+          </a>
         </Link>
         <div>
           <div className="Nav-Links">
