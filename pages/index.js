@@ -21,9 +21,13 @@ export default function Homepage() {
         </section>
 
         <section className="container">
-          <div className="Homepage-Title">We move heavy metal</div>
-          <div className="Homepage-Subtitle">
-            Hi there, would you like to know about:
+          <div style={{ marginBottom: '0.5rem' }}>
+            <span className="Homepage-Title">We move heavy metal</span>
+          </div>
+          <div>
+            <span className="Homepage-Subtitle">
+              Hi there, would you like to know about:
+            </span>
           </div>
 
           <ul className="Homepage-Menu" style={{ display: 'none', marginTop: '3rem' }}>
@@ -57,4 +61,6 @@ export default function Homepage() {
   );
 }
 
+// Hi there, would you like to know about:
+// Choose between out projects' subjects:
 // Choose whatever you want to know about us:
