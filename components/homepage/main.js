@@ -56,7 +56,7 @@ export default function Main({ screen, onScreenChange }) {
   });
 
   return (
-    <main className="Homepage-Main">
+    <div>
       <div style={{ marginBottom: '0.5rem' }}>
         <span className="Homepage-Title">{ contents.title }</span>
       </div>
@@ -67,6 +67,6 @@ export default function Main({ screen, onScreenChange }) {
       <ul className="Homepage-Menu">
         { renderLinks() }
       </ul>
-    </main>
+    </div>
   );
 }

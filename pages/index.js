@@ -40,9 +40,9 @@ export default function Homepage() {
           </div>
         </section>
 
-        <div className="container">
+        <main className="Homepage-Main container">
           <Main screen={mainScreen} onScreenChange={setMainScreen} />
-        </div>
+        </main>
 
         <section className="Homepage-MoreLinkWrapper container">
           <Link href="/about">
