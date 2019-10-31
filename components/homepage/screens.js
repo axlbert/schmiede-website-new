@@ -1,11 +1,11 @@
-import HomepageState from './homepage-state.enum';
+import HomepageScreen from './homepage-screen.enum';
 
 export const initialScreen = {
   title: 'We move heavy metal',
   subtitle: 'Hi there, would you like to know about:',
   links: [
-    { label: 'us', href: '/about', state: HomepageState.US },
-    { label: 'projects', href: '/work', state: HomepageState.PROJECTS },
+    { label: 'us', href: '/about', state: HomepageScreen.US },
+    { label: 'projects', href: '/work', state: HomepageScreen.PROJECTS },
   ],
 };
 
