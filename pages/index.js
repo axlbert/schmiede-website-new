@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 
 import './homepage.css';
 import Main from '../components/homepage/main';
+import HomepageScreen from '../components/homepage/homepage-screen.enum';
 
 /**
  * Homepage component.
  */
 export default function Homepage() {
+  const [mainScreen, setMainScreen] = useState(HomepageScreen.INITIAL);
+
+  const handleLogoClick = e => {
+    e.preventDefault();
+    setMainScreen(HomepageScreen.INITIAL);
+  };
+
   return (
     <div>
       <Head>
@@ -21,14 +29,18 @@ export default function Homepage() {
       >
         <section className="container">
           <div className="Homepage-NavStub">
-            <a href="#" className="Homepage-LogoLink">
+            <a
+              className="Homepage-LogoLink"
+              href="/"
+              onClick={handleLogoClick}
+            >
               <img className="Homepage-Logo" src="/logo-white.png" alt="Logo" />
             </a>
           </div>
         </section>
 
         <div className="container">
-          <Main />
+          <Main screen={mainScreen} onScreenChange={setMainScreen} />
         </div>
 
         <section className="Homepage-MoreLinkWrapper container">
@@ -53,33 +65,3 @@ export default function Homepage() {
     </div>
   );
 }
-
-// Want to go deeper?
-
-// Hi there, would you like to know about:
-// Choose between out projects' subjects:
-// Choose whatever you want to know about us:
-
-/*
-
-<li className="Homepage-MenuItem">Us</li>
-            <li className="Homepage-MenuItem">Projects</li>
-
-*/
-
-/*
-
-<li className="Homepage-MenuItem">Culture</li>
-            <li className="Homepage-MenuItem">Team</li>
-            <li className="Homepage-MenuItem">Office</li>
-            <li className="Homepage-MenuItem">Join Us</li>
-
-*/
-
-/*
-
-<li className="Homepage-MenuItem">Robotics</li>
-            <li className="Homepage-MenuItem">Development</li>
-            <li className="Homepage-MenuItem">Farming</li>
-
-*/

@@ -6,8 +6,8 @@ import { initialScreen, usScreen, projectsScreen } from './screens';
 /**
  * Homepage main (tag) component.
  */
-export default function Main() {
-  const [homepageState, setHomepageState] = useState(HomepageScreen.INITIAL);
+export default function Main({ screen, onScreenChange }) {
+  const [homepageState, setHomepageState] = useState(screen);
   const [contents, setContents] = useState(initialScreen);
 
   useEffect(() => {
@@ -22,7 +22,12 @@ export default function Main() {
       }
       default: setContents(initialScreen);
     }
+    onScreenChange(homepageState);
   }, [homepageState]);
+
+  useEffect(() => {
+    setHomepageState(screen);
+  }, [screen]);
 
   const renderLinks = () => contents.links.map((x, i) => {
     const handleClick = e => {
