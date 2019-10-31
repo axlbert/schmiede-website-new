@@ -26,7 +26,7 @@ export default function Homepage() {
             Hi there, would you like to know about:
           </div>
 
-          <ul className="Homepage-Menu" style={{ marginTop: '3rem' }}>
+          <ul className="Homepage-Menu" style={{ display: 'none', marginTop: '3rem' }}>
             <li className="Homepage-MenuItem">Culture</li>
             <li className="Homepage-MenuItem">Team</li>
             <li className="Homepage-MenuItem">Office</li>
@@ -34,10 +34,23 @@ export default function Homepage() {
           </ul>
         </section>
 
-        <section className="container" style={{ paddingBottom: '1.5rem' }}>
-          <div>
-            Don’t know yet? You can browse around our website at any time.
-          </div>
+        <section className="Homepage-MoreLinkWrapper container">
+          <a href="#" className="Homepage-MoreLink">
+            <span>
+              <span style={{ whiteSpace: 'nowrap' }}>
+                Don’t know yet? You can browse
+              </span>
+              {' '}
+              <span style={{ whiteSpace: 'nowrap' }}>
+                around our website at any time.
+              </span>
+            </span>
+            <img
+              className="Homepage-MoreLinkImage"
+              src="/arrow-right.svg"
+              alt="Visit website"
+            />
+          </a>
         </section>
       </article>
     </div>
