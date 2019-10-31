@@ -1,26 +1,30 @@
 import React, { useEffect, useState } from 'react';
 
 import HomepageScreen from './homepage-screen.enum';
-import { initialScreen, usScreen, projectsScreen } from './screens';
+import {
+  initialContents,
+  usContents,
+  projectsContents,
+} from './screens-contents';
 
 /**
  * Homepage main (tag) component.
  */
 export default function Main({ screen, onScreenChange }) {
   const [homepageState, setHomepageState] = useState(screen);
-  const [contents, setContents] = useState(initialScreen);
+  const [contents, setContents] = useState(initialContents);
 
   useEffect(() => {
     switch (homepageState) {
       case HomepageScreen.US: {
-        setContents(usScreen);
+        setContents(usContents);
         break;
       }
       case HomepageScreen.PROJECTS: {
-        setContents(projectsScreen);
+        setContents(projectsContents);
         break;
       }
-      default: setContents(initialScreen);
+      default: setContents(initialContents);
     }
     onScreenChange(homepageState);
   }, [homepageState]);

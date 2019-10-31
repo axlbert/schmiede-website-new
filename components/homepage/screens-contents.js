@@ -1,6 +1,6 @@
 import HomepageScreen from './homepage-screen.enum';
 
-export const initialScreen = {
+export const initialContents = {
   title: 'We move heavy metal',
   subtitle: 'Hi there, would you like to know about:',
   links: [
@@ -9,7 +9,7 @@ export const initialScreen = {
   ],
 };
 
-export const usScreen = {
+export const usContents = {
   title: 'Want to go deeper?',
   subtitle: 'Choose whatever you want to know about us:',
   links: [
@@ -20,7 +20,7 @@ export const usScreen = {
   ],
 };
 
-export const projectsScreen = {
+export const projectsContents = {
   title: 'Want to go deeper?',
   subtitle: 'Choose between out projects\' subjects:',
   links: [
