@@ -7,6 +7,17 @@
 .Contact-Image {
   width: 100%;
 }
+.Contact-HeaderLarge {
+  display: none;
+}
+@media (min-width: 400px) {
+  .Contact-HeaderSmall {
+    display: none;
+  }
+  .Contact-HeaderLarge {
+    display: block;
+  }
+}
 
 /* Title & Subtitle */
 .Contact-TitleBlock {

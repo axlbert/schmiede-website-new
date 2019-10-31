@@ -8,22 +8,33 @@ export default function Contact() {
     <div>
       <Nav />
       <article className="Contact">
-        <div>
+        <header className="Contact-HeaderSmall">
           <img
             className="Contact-Image"
             src="/contact/contact-small.jpg"
             alt="Contact"
           />
-        </div>
+        </header>
+        <header className="Contact-HeaderLarge">
+          <div className="container">
+            <img
+              className="Contact-Image"
+              src="/contact/contact.jpg"
+              alt="Contact"
+            />
+          </div>
+        </header>
 
         <div className="container">
           <section className="Contact-TitleBlock">
-            <span className="Contact-Title">
-              We are here for you
-            </span>
-            <div className="Contact-Subtitle">
-              Drop us a line, call us, or even visit us.
+            <div>
+              <span className="Contact-Title">
+                We are here for you
+              </span>
             </div>
+            <span className="Contact-Subtitle">
+              Drop us a line, call us, or even visit us.
+            </span>
           </section>
           
 
