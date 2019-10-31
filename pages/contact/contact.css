@@ -1,32 +1,87 @@
-/*.Contact {
+.Contact {
   padding-top: 4.5rem;
-}*/
-
-.Contact-Image {
-  width: 100%;
-  margin-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
+/* Header */
+.Contact-Image {
+  width: 100%;
+}
+
+/* Title & Subtitle */
 .Contact-TitleBlock {
+  margin-top: 2rem;
+}
+.Contact-Title {
+  display: inline;
+  padding: 0 .5rem .25rem;
+  background-color: #df1720;
+  color: white;
+  font-size: 1.5rem;
+  box-decoration-break: clone;
+}
+.Contact-Subtitle {
+  display: inline-block;
+  margin-top: .75rem;
+  margin-left: .5rem;
+  font-size: 1rem;
+}
+
+/* Info */
+.Contact-InfoBlock {
+  padding-left: .5rem;
+}
+.Contact-MailLink {
+  color: #df1720;
+}
+.Contact-Heading {
+  display: block;
+  margin-top: 2.5rem;
+  margin-bottom: .5rem;
+  color: #393f42;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.Contact-Paragraph {
+  display: block;
+  color: #393f42;
+  line-height: 1.75;
+}
+
+/* Social */
+.Contact-SocialBlock {
+  margin-top: 2rem;
+  padding-left: .5rem;
+}
+.Contact-SocialLink {
+  margin-right: 1.5rem;
+}
+
+
+
+
+
+/*.Contact-TitleBlock {
   margin-top: 1rem;
   margin-left: 0rem;
   margin-bottom: 3rem;
-}
-.Contact-Title {
+}*/
+/*.Contact-Title {
   display: inline-block;
   padding: 0 .5rem .25rem;
   background-color: #df1720;
   color: white;
   font-size: 1.75rem;
   box-decoration-break: clone;
-}
+}*/
 
-.Contact-Subtitle {
+/*.Contact-Subtitle {
   margin-top: .5rem;
   margin-left: .5rem;
   font-size: 1.25rem;
   font-weight: 500;
-}
+}*/
 
 .Contact-DataBlocks {
   /*display: grid;
@@ -40,22 +95,22 @@
   width: 100%;
 }
 
-.Contact-Heading {
+/*.Contact-Heading {
   margin: 1.5rem 0 .5rem;
   color: #393f42;
   font-size: 1.25rem;
   font-weight: 500;
-}
+}*/
 
-.Contact-Paragraph {
+/*.Contact-Paragraph {
   color: #393f42;
   line-height: 1.75;
-}
+}*/
 
-.Contact-SocialBlock {
+/*.Contact-SocialBlock {
   margin-bottom: 2rem;
   text-align: center;
-}
+}*/
 
 .Contact-SocialImage {
   width: 1.5rem;
@@ -74,8 +129,8 @@
   /*.Contact-DataBlock {
     width: 25%;
   }*/
-  .Contact-SocialBlock {
+  /*.Contact-SocialBlock {
     float: left;
     width: 50%;
-  }
+  }*/
 }

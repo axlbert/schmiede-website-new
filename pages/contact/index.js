@@ -7,62 +7,61 @@ export default function Contact() {
   return (
     <div>
       <Nav />
-      <div className="Contact">
-        <div className="container">
-          <img className="Contact-Image" src="/contact.jpg" />
+      <article className="Contact">
+        <div>
+          <img
+            className="Contact-Image"
+            src="/contact/contact-small.jpg"
+            alt="Contact"
+          />
         </div>
 
         <div className="container">
-          <div>
-            <div className="Contact-TitleBlock">
-              <div className="Contact-Title">We are here for you</div>
-              <div className="Contact-Subtitle">
-                Drop us a line, call us, or even visit us.
-              </div>
+          <section className="Contact-TitleBlock">
+            <span className="Contact-Title">
+              We are here for you
+            </span>
+            <div className="Contact-Subtitle">
+              Drop us a line, call us, or even visit us.
+            </div>
+          </section>
+          
+
+          <section className="Contact-InfoBlock">
+            <div>
+              <span className="Contact-Heading">Mail</span>
+              <span className="Contact-Paragraph">
+                <a className="Contact-MailLink" href="#">hello@schmiede.one</a>
+              </span>
             </div>
 
-            <div className="Contact-DataBlocks">
-              <div className="Contact-DataBlock">
-                <div className="Contact-Heading">Mail</div>
-                <div className="Contact-Paragraph">hello@schmiede.one</div>
-                <div className="Contact-Heading">Phone</div>
-                <div className="Contact-Paragraph">+49 (0) 211 97 63 49 26</div>
-              </div>
-              <div className="Contact-DataBlock">
-                <div className="Contact-Heading">Office</div>
-                <div className="Contact-Paragraph">Schmiede.ONE GmbH &amp; Co. KG</div>
-                <div className="Contact-Paragraph">Rather Straße 25</div>
-                <div className="Contact-Paragraph">40476, Düsseldorf </div>
-                <div className="Contact-Paragraph">Germany</div>
-              </div>
+            <div>
+              <span className="Contact-Heading">Phone</span>
+              <span className="Contact-Paragraph">+49 (0) 211 97 63 49 26</span>
             </div>
 
-            <div className="Contact-SocialBlock">
-              <a className="mr-4" href="#">
-                <img
-                  className="Contact-SocialImage"
-                  src="/instagram.svg"
-                  alt="Instagram"
-                />
-              </a>
-              <a className="mr-4" href="#">
-                <img
-                  className="Contact-SocialImage"
-                  src="/facebook.svg"
-                  alt="Facebook"
-                />
-              </a>
-              <a href="#">
-                <img
-                  className="Contact-SocialImage"
-                  src="/linkedin.svg"
-                  alt="LinkedIn"
-                />
-              </a>
+            <div>
+              <span className="Contact-Heading">Office</span>
+              <span className="Contact-Paragraph">Schmiede.ONE GmbH &amp; Co. KG</span>
+              <span className="Contact-Paragraph">Rather Straße 25 </span>
+              <span className="Contact-Paragraph">40476, Düsseldorf </span>
+              <span className="Contact-Paragraph">Germany</span>
             </div>
-          </div>
+          </section>
+
+          <section className="Contact-SocialBlock">
+            <a className="Contact-SocialLink" href="#" title="Instagram">
+              <img src="/contact/instagram.svg" alt="Instagram" />
+            </a>
+            <a className="Contact-SocialLink" href="#" title="Facebook">
+              <img src="/contact/facebook.svg" alt="Facebook" />
+            </a>
+            <a className="Contact-SocialLink" href="#" title="LinkedIn">
+              <img src="/contact/linkedin.svg" alt="LinkedIn" />
+            </a>
+          </section>
         </div>
-      </div>
+      </article>
     </div>
   );
 }
