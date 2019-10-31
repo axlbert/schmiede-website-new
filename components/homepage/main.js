@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 
 import HomepageScreen from './homepage-screen.enum';
 import {
@@ -13,6 +14,7 @@ import {
 export default function Main({ screen, onScreenChange }) {
   const [homepageState, setHomepageState] = useState(screen);
   const [contents, setContents] = useState(initialContents);
+  const router = useRouter();
 
   useEffect(() => {
     switch (homepageState) {
@@ -35,9 +37,11 @@ export default function Main({ screen, onScreenChange }) {
 
   const renderLinks = () => contents.links.map((x, i) => {
     const handleClick = e => {
+      e.preventDefault();
       if (x.screen) {
-        e.preventDefault();
         setHomepageState(x.screen);
+      } else {
+        router.push(x.href);
       }
     };
     return (<li key={i} className="Homepage-MenuItem">
