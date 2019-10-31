@@ -35,7 +35,7 @@
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 /* Title & Subtitle */
@@ -67,26 +67,11 @@
 /* Menu */
 .Homepage-Menu {
   display: block;
-  height: 10rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 0;
   list-style: none;
-  overflow-y: hidden;
 }
-/* PROPORTIONS BACKUP */
-/*.Homepage-MenuItem {
-  display: inline-block;
-  margin-right: .75rem;
-  margin-bottom: .75rem;
-  padding: 0 .75rem .75rem;
-  background-color: #df1720;
-  color: white;
-  font-size: 3.5rem;
-  font-weight: 300;
-  line-height: 1.2;
-  text-transform: lowercase;
-}*/
 .Homepage-MenuItem {
   display: inline-block;
   margin-right: .75rem;
