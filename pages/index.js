@@ -19,10 +19,28 @@ export default function Homepage() {
             </a>
           </div>
         </section>
+
         <section className="container">
-          homepage
+          <div className="Homepage-Title">We move heavy metal</div>
+          <div className="Homepage-Subtitle">
+            Hi there, would you like to know about:
+          </div>
+          <ul>
+            <li>Culture</li>
+            <li>Team</li>
+            <li>Office</li>
+            <li>Join Us</li>
+          </ul>
+        </section>
+
+        <section className="container" style={{ paddingBottom: '1.5rem' }}>
+          <div>
+            Don’t know yet? You can browse around our website at any time.
+          </div>
         </section>
       </article>
     </div>
   );
 }
+
+// Choose whatever you want to know about us:

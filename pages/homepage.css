@@ -1,4 +1,7 @@
 .Homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   height: 100vh;
   background-color: #393f42;
@@ -14,4 +17,18 @@
 }
 .Homepage-Logo {
   height: 100%;
+}
+
+.Homepage-Title {
+  color: white;
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+.Homepage-Subtitle {
+  display: inline-block;
+  padding: 0 .35rem .2rem;
+  background-color: #df1720;
+  color: white;
+  font-size: 1rem;
 }
