@@ -34,9 +34,15 @@ export default function Homepage() {
           </div>
 
           <ul className="Homepage-Menu">
-            <li className="Homepage-MenuItem">Robotics</li>
-            <li className="Homepage-MenuItem">Development</li>
-            <li className="Homepage-MenuItem">Farming</li>
+            <li className="Homepage-MenuItem">
+              <a href="#" className="Homepage-MenuLink">Robotics</a>
+            </li>
+            <li className="Homepage-MenuItem">
+              <a href="#" className="Homepage-MenuLink">Development</a>
+            </li>
+            <li className="Homepage-MenuItem">
+              <a href="#" className="Homepage-MenuLink">Farming</a>
+            </li>
           </ul>
         </main>
 

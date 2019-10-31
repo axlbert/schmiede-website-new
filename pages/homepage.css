@@ -32,10 +32,13 @@
  * MAIN
  */
 .Homepage-Main {
-  display: flex;
   flex-grow: 1;
-  flex-direction: column;
-  justify-content: flex-start;
+  padding-top: 20vh;
+}
+@media (min-width: 576px) {
+  .Homepage-Main {
+    padding-top: 40vh;
+  }
 }
 
 /* Title & Subtitle */
@@ -68,7 +71,6 @@
 .Homepage-Menu {
   display: block;
   margin-top: 2rem;
-  margin-bottom: 2rem;
   padding: 0;
   list-style: none;
 }
@@ -76,6 +78,8 @@
   display: inline-block;
   margin-right: .75rem;
   margin-bottom: .75rem;
+}
+.Homepage-MenuLink {
   padding: 0 .2em .1em;
   background-color: #df1720;
   color: white;
@@ -83,17 +87,18 @@
   font-weight: 300;
   line-height: 1.2;
   text-transform: lowercase;
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   .Homepage-Menu {
     margin-top: 3rem;
   }
-  .Homepage-MenuItem {
+  .Homepage-MenuLink {
     font-size: 2.75rem;
   }
 }
 @media (min-width: 992px) {
-  .Homepage-MenuItem {
+  .Homepage-MenuLink {
     font-size: 3.5rem;
   }
 }
