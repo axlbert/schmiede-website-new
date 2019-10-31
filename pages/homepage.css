@@ -1,0 +1,17 @@
+.Homepage {
+  width: 100%;
+  height: 100vh;
+  background-color: #393f42;
+}
+
+.Homepage-NavStub {
+  padding: 1.5rem 0;
+}
+
+.Homepage-LogoLink {
+  display: inline-block;
+  height: 1.5rem;
+}
+.Homepage-Logo {
+  height: 100%;
+}
