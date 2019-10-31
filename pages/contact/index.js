@@ -25,8 +25,8 @@ export default function Contact() {
           </div>
         </header>
 
-        <div className="container">
-          <section className="Contact-TitleBlock">
+        <main className="container">
+          <section className="Contact-TitleSection">
             <div>
               <span className="Contact-Title">
                 We are here for you
@@ -38,20 +38,17 @@ export default function Contact() {
           </section>
           
 
-          <section className="Contact-InfoBlock">
-            <div>
+          <section className="Contact-InfoSection">
+            <div className="Contact-InfoBlock">
               <span className="Contact-Heading">Mail</span>
               <span className="Contact-Paragraph">
                 <a className="Contact-MailLink" href="#">hello@schmiede.one</a>
               </span>
-            </div>
-
-            <div>
               <span className="Contact-Heading">Phone</span>
               <span className="Contact-Paragraph">+49 (0) 211 97 63 49 26</span>
             </div>
 
-            <div>
+            <div className="Contact-InfoBlock">
               <span className="Contact-Heading">Office</span>
               <span className="Contact-Paragraph">Schmiede.ONE GmbH &amp; Co. KG</span>
               <span className="Contact-Paragraph">Rather Straße 25 </span>
@@ -60,7 +57,7 @@ export default function Contact() {
             </div>
           </section>
 
-          <section className="Contact-SocialBlock">
+          <section className="Contact-SocialSection">
             <a className="Contact-SocialLink" href="#" title="Instagram">
               <img src="/contact/instagram.svg" alt="Instagram" />
             </a>
@@ -71,7 +68,7 @@ export default function Contact() {
               <img src="/contact/linkedin.svg" alt="LinkedIn" />
             </a>
           </section>
-        </div>
+        </main>
       </article>
     </div>
   );
