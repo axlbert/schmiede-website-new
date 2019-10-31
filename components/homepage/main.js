@@ -35,9 +35,9 @@ export default function Main({ screen, onScreenChange }) {
 
   const renderLinks = () => contents.links.map((x, i) => {
     const handleClick = e => {
-      if (x.state) {
+      if (x.screen) {
         e.preventDefault();
-        setHomepageState(x.state);
+        setHomepageState(x.screen);
       }
     };
     return (<li key={i} className="Homepage-MenuItem">

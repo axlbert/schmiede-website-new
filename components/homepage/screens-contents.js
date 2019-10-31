@@ -4,8 +4,8 @@ export const initialContents = {
   title: 'We move heavy metal',
   subtitle: 'Hi there, would you like to know about:',
   links: [
-    { label: 'us', href: '/about', state: HomepageScreen.US },
-    { label: 'projects', href: '/work', state: HomepageScreen.PROJECTS },
+    { label: 'us', href: '/about', screen: HomepageScreen.US },
+    { label: 'projects', href: '/work', screen: HomepageScreen.PROJECTS },
   ],
 };
 
