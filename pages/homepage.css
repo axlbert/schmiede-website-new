@@ -52,11 +52,12 @@
   display: inline-block;
   margin-right: .75rem;
   margin-bottom: .75rem;
-  padding: 0 .25rem .5rem;
+  padding: 0 .75rem .75rem;
   background-color: #df1720;
   color: white;
   font-size: 3.5rem;
   font-weight: 300;
+  line-height: 1.2;
   text-transform: lowercase;
 }
 

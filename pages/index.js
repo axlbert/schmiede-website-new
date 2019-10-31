@@ -30,11 +30,13 @@ export default function Homepage() {
             </span>
           </div>
 
-          <ul className="Homepage-Menu" style={{ display: 'none', marginTop: '3rem' }}>
+          <ul className="Homepage-Menu" style={{ marginTop: '3rem' }}>
+            <li className="Homepage-MenuItem">Us</li>
             <li className="Homepage-MenuItem">Culture</li>
             <li className="Homepage-MenuItem">Team</li>
             <li className="Homepage-MenuItem">Office</li>
             <li className="Homepage-MenuItem">Join Us</li>
+            <li className="Homepage-MenuItem">Projects</li>
           </ul>
         </section>
 
@@ -64,3 +66,19 @@ export default function Homepage() {
 // Hi there, would you like to know about:
 // Choose between out projects' subjects:
 // Choose whatever you want to know about us:
+
+/*
+
+<li className="Homepage-MenuItem">Us</li>
+            <li className="Homepage-MenuItem">Projects</li>
+
+*/
+
+/*
+
+<li className="Homepage-MenuItem">Culture</li>
+            <li className="Homepage-MenuItem">Team</li>
+            <li className="Homepage-MenuItem">Office</li>
+            <li className="Homepage-MenuItem">Join Us</li>
+
+*/
