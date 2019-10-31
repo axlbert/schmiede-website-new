@@ -56,7 +56,7 @@ export default function Main({ screen, onScreenChange }) {
   });
 
   return (
-    <main className="Homepage-Main container">
+    <main className="Homepage-Main">
       <div style={{ marginBottom: '0.5rem' }}>
         <span className="Homepage-Title">{ contents.title }</span>
       </div>
