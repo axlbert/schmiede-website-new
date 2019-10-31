@@ -20,7 +20,7 @@ export default function Homepage() {
           </div>
         </section>
 
-        <section className="container">
+        <main className="Homepage-Main container">
           <div style={{ marginBottom: '0.5rem' }}>
             <span className="Homepage-Title">We move heavy metal</span>
           </div>
@@ -30,12 +30,12 @@ export default function Homepage() {
             </span>
           </div>
 
-          <ul className="Homepage-Menu" style={{ marginTop: '3rem' }}>
+          <ul className="Homepage-Menu">
             <li className="Homepage-MenuItem">Robotics</li>
             <li className="Homepage-MenuItem">Development</li>
             <li className="Homepage-MenuItem">Farming</li>
           </ul>
-        </section>
+        </main>
 
         <section className="Homepage-MoreLinkWrapper container">
           <a href="#" className="Homepage-MoreLink">
@@ -59,6 +59,8 @@ export default function Homepage() {
     </div>
   );
 }
+
+// Want to go deeper?
 
 // Hi there, would you like to know about:
 // Choose between out projects' subjects:

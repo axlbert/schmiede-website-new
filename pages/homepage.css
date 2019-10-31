@@ -18,6 +18,16 @@
   height: 100%;
 }
 
+/**
+ * MAIN
+ */
+.Homepage-Main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .Homepage-Title {
   display: inline;
   color: white;
@@ -45,8 +55,12 @@
 
 .Homepage-Menu {
   display: block;
+  height: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   padding: 0;
   list-style: none;
+  overflow-y: hidden;
 }
 /* PROPORTIONS BACKUP */
 /*.Homepage-MenuItem {
@@ -68,7 +82,7 @@
   padding: 0 .2em .1em;
   background-color: #df1720;
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.05rem;
   font-weight: 300;
   line-height: 1.2;
   text-transform: lowercase;
