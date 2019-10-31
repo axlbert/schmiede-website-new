@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 
 import './homepage.css';
@@ -15,13 +15,21 @@ const initialState = {
   links: [
     {
       label: 'us',
-      href: '/',
-      onClick: e => {},
+      href: '/about',
+      makeOnClick: setter => e => {
+        e.preventDefault();
+        setter(HomepageState.US);
+      },
+      state: HomepageState.US,
     },
     {
       label: 'projects',
-      href: '/',
-      onClick: e => {},
+      href: '/work',
+      makeOnClick: setter => e => {
+        e.preventDefault();
+        setter(HomepageState.PROJECTS);
+      },
+      state: HomepageState.PROJECTS,
     },
   ],
 };
@@ -31,13 +39,19 @@ const usState = {
   links: [
     {
       label: 'culture',
-      href: '/',
-      onClick: e => {},
+      href: '/about',
     },
     {
       label: 'team',
-      href: '/',
-      onClick: e => {},
+      href: '/about',
+    },
+    {
+      label: 'office',
+      href: '/about',
+    },
+    {
+      label: 'join us',
+      href: '/about',
     },
   ],
 };
@@ -47,31 +61,65 @@ const projectsState = {
   links: [
     {
       label: 'robotics',
-      href: '/',
-      onClick: e => {},
+      href: '/work',
     },
     {
       label: 'development',
-      href: '/',
-      onClick: e => {},
+      href: '/work',
+    },
+    {
+      label: 'farming',
+      href: '/work',
     },
   ],
 };
 
-function Main({ title, subtitle, links }) {
-  const renderLinks = () => links.map((x, i) => (
-    <li key={i} className="Homepage-MenuItem">
-      <a href={x.href} className="Homepage-MenuLink">{ x.label }</a>
-    </li>
-  ));
+/**
+ * Homepage main (tag) component.
+ */
+function Main() {
+  const [homepageState, setHomepageState] = useState(initialState);
+  const [contents, setContents] = useState(initialState);
+
+  useEffect(() => {
+    switch (homepageState) {
+      case HomepageState.US: {
+        setContents(usState);
+        break;
+      }
+      case HomepageState.PROJECTS: {
+        setContents(projectsState);
+        break;
+      }
+      default: setContents(initialState);
+    }
+  }, [homepageState]);
+
+  const renderLinks = () => contents.links.map((x, i) => {
+    const handleClick = e => {
+      if (x.state) {
+        e.preventDefault();
+        setHomepageState(x.state);
+      }
+    };
+    return (<li key={i} className="Homepage-MenuItem">
+      <a
+        className="Homepage-MenuLink"
+        href={x.href}
+        onClick={handleClick}
+      >
+        { x.label }
+      </a>
+    </li>);
+  });
 
   return (
     <main className="Homepage-Main container">
       <div style={{ marginBottom: '0.5rem' }}>
-        <span className="Homepage-Title">{ title }</span>
+        <span className="Homepage-Title">{ contents.title }</span>
       </div>
       <div>
-        <span className="Homepage-Subtitle">{ subtitle }</span>
+        <span className="Homepage-Subtitle">{ contents.subtitle }</span>
       </div>
 
       <ul className="Homepage-Menu">
@@ -81,6 +129,9 @@ function Main({ title, subtitle, links }) {
   );
 }
 
+/**
+ * Homepage component.
+ */
 export default function Homepage() {
   return (
     <div>
@@ -102,7 +153,7 @@ export default function Homepage() {
         </section>
 
         <div className="container">
-          <Main {...projectsState} />
+          <Main />
         </div>
 
         <section className="Homepage-MoreLinkWrapper container">
