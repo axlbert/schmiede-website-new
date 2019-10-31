@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 import './homepage.css';
 import Main from '../components/homepage/main';
@@ -44,22 +45,24 @@ export default function Homepage() {
         </div>
 
         <section className="Homepage-MoreLinkWrapper container">
-          <a href="#" className="Homepage-MoreLink">
-            <span>
-              <span style={{ whiteSpace: 'nowrap' }}>
-                Don’t know yet? You can browse
+          <Link href="/about">
+            <a className="Homepage-MoreLink">
+              <span>
+                <span style={{ whiteSpace: 'nowrap' }}>
+                  Don’t know yet? You can browse
+                </span>
+                {' '}
+                <span style={{ whiteSpace: 'nowrap' }}>
+                  around our website at any time.
+                </span>
               </span>
-              {' '}
-              <span style={{ whiteSpace: 'nowrap' }}>
-                around our website at any time.
-              </span>
-            </span>
-            <img
-              className="Homepage-MoreLinkImage"
-              src="/arrow-right.svg"
-              alt="Visit website"
-            />
-          </a>
+              <img
+                className="Homepage-MoreLinkImage"
+                src="/arrow-right.svg"
+                alt="Visit website"
+              />
+            </a>
+          </Link>
         </section>
       </article>
     </div>
