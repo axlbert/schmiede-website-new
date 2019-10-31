@@ -3,6 +3,84 @@ import Head from 'next/head';
 
 import './homepage.css';
 
+const HomepageState = {
+  INITIAL: 0,
+  US: 1,
+  PROJECTS: 2,
+};
+
+const initialState = {
+  title: 'We move heavy metal',
+  subtitle: 'Hi there, would you like to know about:',
+  links: [
+    {
+      label: 'us',
+      href: '/',
+      onClick: e => {},
+    },
+    {
+      label: 'projects',
+      href: '/',
+      onClick: e => {},
+    },
+  ],
+};
+const usState = {
+  title: 'Want to go deeper?',
+  subtitle: 'Choose whatever you want to know about us:',
+  links: [
+    {
+      label: 'culture',
+      href: '/',
+      onClick: e => {},
+    },
+    {
+      label: 'team',
+      href: '/',
+      onClick: e => {},
+    },
+  ],
+};
+const projectsState = {
+  title: 'Want to go deeper?',
+  subtitle: 'Choose between out projects\' subjects:',
+  links: [
+    {
+      label: 'robotics',
+      href: '/',
+      onClick: e => {},
+    },
+    {
+      label: 'development',
+      href: '/',
+      onClick: e => {},
+    },
+  ],
+};
+
+function Main({ title, subtitle, links }) {
+  const renderLinks = () => links.map((x, i) => (
+    <li key={i} className="Homepage-MenuItem">
+      <a href={x.href} className="Homepage-MenuLink">{ x.label }</a>
+    </li>
+  ));
+
+  return (
+    <main className="Homepage-Main container">
+      <div style={{ marginBottom: '0.5rem' }}>
+        <span className="Homepage-Title">{ title }</span>
+      </div>
+      <div>
+        <span className="Homepage-Subtitle">{ subtitle }</span>
+      </div>
+
+      <ul className="Homepage-Menu">
+        { renderLinks() }
+      </ul>
+    </main>
+  );
+}
+
 export default function Homepage() {
   return (
     <div>
@@ -23,28 +101,9 @@ export default function Homepage() {
           </div>
         </section>
 
-        <main className="Homepage-Main container">
-          <div style={{ marginBottom: '0.5rem' }}>
-            <span className="Homepage-Title">We move heavy metal</span>
-          </div>
-          <div>
-            <span className="Homepage-Subtitle">
-              Hi there, would you like to know about:
-            </span>
-          </div>
-
-          <ul className="Homepage-Menu">
-            <li className="Homepage-MenuItem">
-              <a href="#" className="Homepage-MenuLink">Robotics</a>
-            </li>
-            <li className="Homepage-MenuItem">
-              <a href="#" className="Homepage-MenuLink">Development</a>
-            </li>
-            <li className="Homepage-MenuItem">
-              <a href="#" className="Homepage-MenuLink">Farming</a>
-            </li>
-          </ul>
-        </main>
+        <div className="container">
+          <Main {...projectsState} />
+        </div>
 
         <section className="Homepage-MoreLinkWrapper container">
           <a href="#" className="Homepage-MoreLink">
