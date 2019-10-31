@@ -25,11 +25,12 @@ export default function Homepage() {
           <div className="Homepage-Subtitle">
             Hi there, would you like to know about:
           </div>
-          <ul>
-            <li>Culture</li>
-            <li>Team</li>
-            <li>Office</li>
-            <li>Join Us</li>
+
+          <ul className="Homepage-Menu" style={{ marginTop: '3rem' }}>
+            <li className="Homepage-MenuItem">Culture</li>
+            <li className="Homepage-MenuItem">Team</li>
+            <li className="Homepage-MenuItem">Office</li>
+            <li className="Homepage-MenuItem">Join Us</li>
           </ul>
         </section>
 

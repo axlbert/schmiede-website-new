@@ -10,7 +10,6 @@
 .Homepage-NavStub {
   padding: 1.5rem 0;
 }
-
 .Homepage-LogoLink {
   display: inline-block;
   height: 1.5rem;
@@ -31,4 +30,19 @@
   background-color: #df1720;
   color: white;
   font-size: 1rem;
+}
+
+.Homepage-Menu {
+  padding: 0;
+  list-style: none;
+}
+.Homepage-MenuItem {
+  display: inline;
+  margin-right: .75rem;
+  padding: 0 .25rem .5rem;
+  background-color: #df1720;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 300;
+  text-transform: lowercase;
 }
