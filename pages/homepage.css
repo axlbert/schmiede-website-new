@@ -1,12 +1,21 @@
+/**
+ * ARTICLE (Tag)
+ */
 .Homepage {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #393f42;
+  background-size: cover;
+  background-position: center;
 }
 
+
+/**
+ * HEADER
+ */
 .Homepage-NavStub {
   padding: 1.5rem 0;
 }

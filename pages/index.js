@@ -11,7 +11,10 @@ export default function Homepage() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <article className="Homepage">
+      <article
+        className="Homepage"
+        style={{ backgroundImage: 'url("/homepage.jpg")' }}
+      >
         <section className="container">
           <div className="Homepage-NavStub">
             <a href="#" className="Homepage-LogoLink">
