@@ -31,12 +31,10 @@ export default function Homepage() {
           </div>
 
           <ul className="Homepage-Menu" style={{ marginTop: '3rem' }}>
-            <li className="Homepage-MenuItem">Us</li>
             <li className="Homepage-MenuItem">Culture</li>
             <li className="Homepage-MenuItem">Team</li>
             <li className="Homepage-MenuItem">Office</li>
             <li className="Homepage-MenuItem">Join Us</li>
-            <li className="Homepage-MenuItem">Projects</li>
           </ul>
         </section>
 
