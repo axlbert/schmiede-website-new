@@ -33,12 +33,14 @@
 }
 
 .Homepage-Menu {
+  display: block;
   padding: 0;
   list-style: none;
 }
 .Homepage-MenuItem {
-  display: inline;
+  display: inline-block;
   margin-right: .75rem;
+  margin-bottom: .75rem;
   padding: 0 .25rem .5rem;
   background-color: #df1720;
   color: white;
