@@ -1,0 +1,17 @@
+.Drawer-Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1.5rem 1.5rem 2.5rem 0;
+}
+
+.DrawerMenu {
+  list-style: none;
+  margin: 0 1.5rem;
+  padding: 0;
+}
+
+.DrawerMenu-Item {
+  margin: .75rem 0;
+}

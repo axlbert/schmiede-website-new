@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Drawer } from '@material-ui/core';
 
 import './nav.css';
+import './drawer.css';
 import ActiveLink from './active-link/active-link';
 import DrawerLink from './drawer-link';
 
@@ -38,17 +39,24 @@ export default function Nav() {
         open={isDrawerOpen}
         onClose={toggleDrawer}
       >
-        <ul className="DrawerMenu">
-          <li className="DrawerMenu-Item">
-            <DrawerLink href="/about">About</DrawerLink>
-          </li>
-          <li>
-            <DrawerLink href="/work">Work</DrawerLink>
-          </li>
-          <li>
-            <DrawerLink href="/contact">Contact</DrawerLink>
-          </li>
-        </ul>
+        <div className="Drawer-Content">
+          <div style={{ textAlign: 'right' }}>
+            <button>
+              X
+            </button>
+          </div>
+          <ul className="DrawerMenu">
+            <li className="DrawerMenu-Item">
+              <DrawerLink href="/about">About</DrawerLink>
+            </li>
+            <li className="DrawerMenu-Item">
+              <DrawerLink href="/work">Work</DrawerLink>
+            </li>
+            <li className="DrawerMenu-Item">
+              <DrawerLink href="/contact">Contact</DrawerLink>
+            </li>
+          </ul>
+        </div>
       </Drawer>
     </nav>
   );
