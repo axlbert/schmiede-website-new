@@ -65,7 +65,7 @@ export default function Contact() {
           <section className="Contact-SocialSection">
             <a className="Contact-SocialLink" href="#" title="Instagram">
               <img
-              className="Contact-SocialImage"
+                className="Contact-SocialImage"
                 src="/contact/instagram.svg"
                 alt="Instagram"
               />
@@ -79,7 +79,7 @@ export default function Contact() {
             </a>
             <a className="Contact-SocialLink" href="#" title="LinkedIn">
               <img
-              className="Contact-SocialImage"
+                className="Contact-SocialImage"
                 src="/contact/linkedin.svg"
                 alt="LinkedIn"
               />

@@ -46,6 +46,8 @@
   .Contact-TitleSection {
     float: left;
     width: 50%;
+    margin-top: 3rem;
+    padding-left: 3rem;
   }
 }
 
@@ -83,6 +85,12 @@
   .Contact-InfoSection {
     float: right;
     width: 50%;
+    padding-top: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .Contact-InfoSection {
+    width: 45%;
   }
 }
 
@@ -110,7 +118,8 @@
     clear: none;
     float: left;
     width: 50%;
-    padding-top: 0rem;
+    padding-top: 0;
+    padding-left: 3rem;
   }
   .Contact-SocialLink {
     width: 1.5rem;
