@@ -36,12 +36,23 @@ export default function Work() {
         </div>
       </header>
 
-      <main className="container mb-5">
-        <div className="Pills">
-          <span className="Pills-Item Pills-Item_active">All</span>
-          <span className="Pills-Item">Robotics</span>
-          <span className="Pills-Item">Development</span>
-          <span className="Pills-Item">Farming</span>
+      <main className="container" style={{ overflowX: 'hidden' }}>
+        <div className="Work-Select">
+          <select className="Banner-Button">
+            <option>All</option>
+            <option>Robotics</option>
+            <option>Development</option>
+            <option>Farming</option>
+          </select>
+        </div>
+
+        <div className="Work-Pills">
+          <div className="Pills">
+            <span className="Pills-Item">All</span>
+            <span className="Pills-Item">Robotics</span>
+            <span className="Pills-Item">Development</span>
+            <span className="Pills-Item Pills-Item_active">Farming</span>
+          </div>
         </div>
 
         <div style={{ textAlign: 'center' }}>
