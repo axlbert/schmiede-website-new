@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './member-card.css';
 import DotControls from '../dot-controls';
 
+/**
+ * Member Card Professional Overlay component.
+ */
 function ProfessionalOverlay() {
   return (
     <div className="MemberCard-Professional Card-ImageOverlay Card-ImageOverlay_gray">
@@ -24,6 +27,9 @@ function ProfessionalOverlay() {
   );
 }
 
+/**
+ * Member Card Personal Overlay component.
+ */
 function PersonalOverlay() {
   return (
     <div className="MemberCard-Professional Card-ImageOverlay Card-ImageOverlay_red">
@@ -73,12 +79,18 @@ function PersonalOverlay() {
   );
 }
 
+/**
+ * Member Card component.
+ */
 export default function MemberCard() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <div className="Card">
       <div className="Card-ImageWrapper">
         <img className="Card-Image" src="/about/member-2.jpg" />
-        <ProfessionalOverlay />
+        { activeIndex === 1 && <PersonalOverlay /> }
+        { activeIndex === 2 && <ProfessionalOverlay /> }
       </div>
       <div
         className="Card-Footer"
@@ -89,7 +101,11 @@ export default function MemberCard() {
           <div className="Card-Subtitle">Developer</div>
         </div>
         <div style={{ paddingTop: '0.15rem' }}>
-          <DotControls length={3} />
+          <DotControls
+            length={3}
+            activeIndex={activeIndex}
+            onClick={ (e, i) => setActiveIndex(i) }
+          />
         </div>
       </div>
     </div>
