@@ -41,3 +41,13 @@
     display: block;
   }
 }
+
+/* TODO: integrate with .Nav-ExpandButton */
+.Nav-Button {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  padding: 0;
+  background: none;
+}

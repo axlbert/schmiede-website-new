@@ -41,8 +41,8 @@ export default function Nav() {
       >
         <div className="Drawer-Content">
           <div style={{ textAlign: 'right' }}>
-            <button>
-              X
+            <button className="Nav-Button" onClick={toggleDrawer}>
+              <i className="material-icons">close</i>
             </button>
           </div>
           <ul className="DrawerMenu">
