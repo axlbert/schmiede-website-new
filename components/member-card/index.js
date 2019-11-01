@@ -24,55 +24,61 @@ function ProfessionalOverlay() {
   );
 }
 
+function PersonalOverlay() {
+  return (
+    <div className="MemberCard-Professional Card-ImageOverlay Card-ImageOverlay_red">
+      <header>
+        <div className="MemberCard-HeaderText">Lima, Peru</div>
+      </header>
+      <div className="MemberCard-Quote">
+        “Give me a book and chocolates, i'll be in paradise.”
+      </div>
+      <table className="MemberCard-Table">
+        <tbody>
+          <tr className="MemberCard-TableTr">
+            <th className="MemberCard-TableTh MemberCard_borderBottom">
+              Book:
+            </th>
+            <td className="MemberCard-TableTd MemberCard_borderBottom">
+              El Extranjero
+            </td>
+          </tr>
+          <tr className="MemberCard-TableTr">
+            <th className="MemberCard-TableTh MemberCard_borderBottom">
+              Color:
+            </th>
+            <td className="MemberCard-TableTd MemberCard_borderBottom">
+              Black
+            </td>
+          </tr>
+          <tr className="MemberCard-TableTr">
+            <th className="MemberCard-TableTh MemberCard_borderBottom">
+              Food:
+            </th>
+            <td className="MemberCard-TableTd MemberCard_borderBottom">
+              Ceviche
+            </td>
+          </tr>
+          <tr className="MemberCard-TableTr">
+            <th className="MemberCard-TableTh">
+              Vacation Spot:
+            </th>
+            <td className="MemberCard-TableTd">
+              Italy
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 export default function MemberCard() {
   return (
     <div className="Card">
       <div className="Card-ImageWrapper">
         <img className="Card-Image" src="/about/member-2.jpg" />
-        <div className="MemberCard-Professional Card-ImageOverlay Card-ImageOverlay_red">
-          <header>
-            <div className="MemberCard-HeaderText">Lima, Peru</div>
-          </header>
-          <div className="MemberCard-Quote">
-            “Give me a book and chocolates, i'll be in paradise.”
-          </div>
-          <table className="MemberCard-Table">
-            <tbody>
-              <tr className="MemberCard-TableTr">
-                <th className="MemberCard-TableTh MemberCard_borderBottom">
-                  Book:
-                </th>
-                <td className="MemberCard-TableTd MemberCard_borderBottom">
-                  El Extranjero
-                </td>
-              </tr>
-              <tr className="MemberCard-TableTr">
-                <th className="MemberCard-TableTh MemberCard_borderBottom">
-                  Color:
-                </th>
-                <td className="MemberCard-TableTd MemberCard_borderBottom">
-                  Black
-                </td>
-              </tr>
-              <tr className="MemberCard-TableTr">
-                <th className="MemberCard-TableTh MemberCard_borderBottom">
-                  Food:
-                </th>
-                <td className="MemberCard-TableTd MemberCard_borderBottom">
-                  Ceviche
-                </td>
-              </tr>
-              <tr className="MemberCard-TableTr">
-                <th className="MemberCard-TableTh">
-                  Vacation Spot:
-                </th>
-                <td className="MemberCard-TableTd">
-                  Italy
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <ProfessionalOverlay />
       </div>
       <div
         className="Card-Footer"
