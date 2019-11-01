@@ -49,7 +49,7 @@ export default function About() {
               </span>
             </div>
             <div className="CultureCarousel-Paragraph">
-              We don’t manage people, we expect<br />
+              We don’t manage people, we expect 
               people to manage themselves.
             </div>
           </div>

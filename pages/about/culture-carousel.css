@@ -1,8 +1,13 @@
+.CultureCarousel {
+  position: relative;
+}
+
 .CultureCarousel-Image {
   width: 100%;
 }
 
 .CultureCarousel-TextBlock {
+  display: inline-block;
   margin-bottom: 1.75rem;
   padding-left: .5rem;
 }
@@ -27,4 +32,24 @@
   margin-left: .5rem;
   color: #393f42;
   line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .CultureCarousel-Image {
+    width: 75%;
+  }
+  .CultureCarousel-TextBlock {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    width: 17rem;
+  }
+  .CultureCarousel-Subtitle {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .CultureCarousel-Image {
+    width: 78%;
+  }
 }
