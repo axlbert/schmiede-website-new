@@ -37,6 +37,14 @@
 }
 
 /**
+ * MAIN
+ */
+.Work-Main {
+  overflow-x: hidden;
+  margin-bottom: 3rem;
+}
+
+/**
  * FILTERS
  */
 .Work-Select {

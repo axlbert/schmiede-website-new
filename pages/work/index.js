@@ -21,7 +21,7 @@ export default function Work() {
         </div>
       </header>
 
-      <main className="container" style={{ overflowX: 'hidden' }}>
+      <main className="Work-Main container">
         <div className="Work-Select">
           <select className="Banner-Button">
             <option>All</option>
