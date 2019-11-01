@@ -2,22 +2,7 @@ import React from 'react';
 
 import './work.css';
 import Nav from '../../components/nav';
-
-function DotControls() {
-  return (
-    <div className="DotControls">
-      <button className="DotControl">
-        <div className="DotControl-Fill"></div>
-      </button>
-      <button className="DotControl">
-        <div className="DotControl-Fill DotControl-Fill_active"></div>
-      </button>
-      <button className="DotControl">
-        <div className="DotControl-Fill"></div>
-      </button>
-    </div>
-  );
-}
+import DotControls from '../../components/dot-controls';
 
 export default function Work() {
   return (<div>

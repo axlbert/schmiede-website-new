@@ -37,42 +37,6 @@
 }
 
 /**
- * DOT CONTROLS
- */
-.DotControls {
-  display: inline-flex;
-}
-.DotControl {
-  width: 1rem;
-  height: 1rem;
-  border: .25rem solid transparent;
-  padding: 0;
-  background: none;
-  cursor: pointer;
-}
-.DotControl:first-child {
-  margin-left: -.25rem;
-}
-.DotControl:not(:first-child) {
-  margin-left: .5rem;
-}
-.DotControl:last-child {
-  margin-right: -.25rem;
-}
-.DotControl:not(:last-child) {
-  margin-right: .5rem;
-}
-.DotControl-Fill {
-  width: .5rem;
-  height: .5rem;
-  border-radius: 50%;
-  background-color: #393f42;
-}
-.DotControl-Fill_active {
-  background-color: #df1720 !important;
-}
-
-/**
  * FILTERS
  */
 .Work-Select {
