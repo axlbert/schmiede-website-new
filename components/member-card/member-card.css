@@ -8,6 +8,9 @@
   line-height: 1.7;
 }
 
+/**
+ * HEADER
+ */
 .MemberCard-HeaderText {
   font-size: .75rem;
   font-weight: 600;
@@ -16,4 +19,28 @@
   margin-bottom: .25rem;
   font-size: .6rem;
   font-weight: 400;
+}
+
+/**
+ * TABLE
+ */
+.MemberCard-TableTr {
+  box-sizing: content-box;
+  padding: .5rem 0;
+  
+}
+.MemberCard-TableTh {
+  text-align: left;
+  font-size: .6rem;
+  font-weight: 700;
+  line-height: 2.2;
+}
+.MemberCard-TableTd {
+  text-align: right;
+  font-size: .6rem;
+  font-weight: 500;
+  line-height: 2.2;
+}
+.MemberCard_borderBottom {
+  border-bottom: 1px solid rgba(127, 14, 19, .25) !important;
 }
