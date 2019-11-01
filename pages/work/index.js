@@ -11,13 +11,13 @@ export default function Work() {
       <header className="Work-HeaderCarouselSmall">
         <img className="Work-HeaderImage" src="/work/work.jpg" />
         <div className="Work-HeaderControls">
-          <DotControls />
+          <DotControls length={3} activeIndex={0} />
         </div>
       </header>
       <header className="Work-HeaderCarouselLarge container">
         <img className="Work-HeaderImage" src="/work/work.jpg" />
         <div className="Work-HeaderControls">
-          <DotControls />
+          <DotControls length={3} activeIndex={2} />
         </div>
       </header>
 

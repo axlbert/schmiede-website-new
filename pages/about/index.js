@@ -60,7 +60,7 @@ export default function About() {
             alt="Culture"
           />
           <div className="CultureCarousel-Controls">
-            <DotControls />
+            <DotControls length={5} activeIndex={1} />
           </div>
         </div>
       </section>
