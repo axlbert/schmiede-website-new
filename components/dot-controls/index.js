@@ -12,7 +12,7 @@ export default function DotControls({ length, activeIndex, onClick }) {
         <button
           key={i}
           className="DotControl"
-          onClick={ e => onClick(e, i) }
+          onClick={ e => onClick && onClick(e, i) }
         >
           <div className={dotClassName}></div>
         </button>

@@ -42,6 +42,7 @@ body {
 }
 .Card-ImageWrapper {
   position: relative;
+  display: block;
 }
 .Card-Image {
   display: block;

@@ -85,9 +85,18 @@ function PersonalOverlay() {
 export default function MemberCard() {
   const [activeIndex, setActiveIndex] = useState(0);
 
+  const nextOverlay = e => {
+    e.preventDefault();
+    setActiveIndex(i => (i === 2) ? 0 : (i + 1));
+  };
+
   return (
     <div className="Card">
-      <div className="Card-ImageWrapper">
+      <div
+        className="Card-ImageWrapper"
+        style={{ cursor: 'pointer' }}
+        onClick={nextOverlay}
+      >
         <img className="Card-Image" src="/about/member-2.jpg" />
         { activeIndex === 1 && <PersonalOverlay /> }
         { activeIndex === 2 && <ProfessionalOverlay /> }
