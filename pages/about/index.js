@@ -4,6 +4,7 @@ import './about.css';
 import './culture-carousel.css';
 import Nav from '../../components/nav';
 import DotControls from '../../components/dot-controls';
+import MemberCard from '../../components/member-card';
 
 const headerStyle = {
   backgroundImage: 'url("/about.jpg")',
@@ -73,6 +74,7 @@ export default function About() {
         }}
       >
         <div className="Grid">
+          <MemberCard />
           <div className="Card">
             <div className="Card-ImageWrapper">
               <img className="Card-Image" src="/about/member-2.jpg" />

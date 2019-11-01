@@ -1,0 +1,19 @@
+.MemberCard-Quote {
+  font-size: 1.25rem;
+}
+
+.MemberCard-Description {
+  font-size: .6rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.MemberCard-HeaderText {
+  font-size: .75rem;
+  font-weight: 600;
+}
+.MemberCard-HeaderTextSmall {
+  margin-bottom: .25rem;
+  font-size: .6rem;
+  font-weight: 400;
+}
