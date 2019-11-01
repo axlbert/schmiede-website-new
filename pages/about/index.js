@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './about.css';
+import './culture-carousel.css';
 import Nav from '../../components/nav';
 
 const headerStyle = {
@@ -10,9 +11,7 @@ const headerStyle = {
 export default function About() {
   return (
     <div className="About">
-      <div style={{ position: 'fixed', width: '100%' }}>
-        <Nav />
-      </div>
+      <Nav />
       <header className="About-Header" style={headerStyle}>
         <div className="container">
           <div className="row">
@@ -35,6 +34,32 @@ export default function About() {
           </div>
         </div>
       </header>
+
+      <section className="container" style={{ marginTop: '4rem' }}>
+        <div className="CultureCarousel">
+          <div className="CultureCarousel-TextBlock">
+            <div>
+              <span className="CultureCarousel-Title">
+                Initiative
+              </span>
+            </div>
+            <div>
+              <span className="CultureCarousel-Subtitle">
+                is essential
+              </span>
+            </div>
+            <div className="CultureCarousel-Paragraph">
+              We don’t manage people, we expect<br />
+              people to manage themselves.
+            </div>
+          </div>
+          <img
+            className="CultureCarousel-Image"
+            src="/about/culture.jpg"
+            alt="Culture"
+          />
+        </div>
+      </section>
 
       <div
         className="container"
