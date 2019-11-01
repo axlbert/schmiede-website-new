@@ -34,6 +34,11 @@
   line-height: 1.4;
 }
 
+.CultureCarousel-Controls {
+  margin-top: 1rem;
+  text-align: right;
+}
+
 @media (min-width: 768px) {
   .CultureCarousel-Image {
     width: 75%;

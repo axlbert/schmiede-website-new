@@ -3,6 +3,7 @@ import React from 'react';
 import './about.css';
 import './culture-carousel.css';
 import Nav from '../../components/nav';
+import DotControls from '../../components/dot-controls';
 
 const headerStyle = {
   backgroundImage: 'url("/about.jpg")',
@@ -58,6 +59,9 @@ export default function About() {
             src="/about/culture.jpg"
             alt="Culture"
           />
+          <div className="CultureCarousel-Controls">
+            <DotControls />
+          </div>
         </div>
       </section>
 
