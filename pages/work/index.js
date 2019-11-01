@@ -3,28 +3,40 @@ import React from 'react';
 import './work.css';
 import Nav from '../../components/nav';
 
-export default function Work() {
+function DotControls() {
   return (
-    <div>
-      <Nav />
-      <div className="container mb-5">
-        <header>
-          <img className="Work-HeaderImage" src="/work/work.jpg" />
-          <div style={{ marginTop: '1rem', textAlign: 'right' }}>
-            <div className="DotControls">
-              <button className="DotControl">
-                <div className="DotControl-Fill"></div>
-              </button>
-              <button className="DotControl">
-                <div className="DotControl-Fill DotControl-Fill_active"></div>
-              </button>
-              <button className="DotControl">
-                <div className="DotControl-Fill"></div>
-              </button>
-            </div>
-          </div>
-        </header>
+    <div className="DotControls">
+      <button className="DotControl">
+        <div className="DotControl-Fill"></div>
+      </button>
+      <button className="DotControl">
+        <div className="DotControl-Fill DotControl-Fill_active"></div>
+      </button>
+      <button className="DotControl">
+        <div className="DotControl-Fill"></div>
+      </button>
+    </div>
+  );
+}
 
+export default function Work() {
+  return (<div>
+    <Nav />
+    <article className="Work">
+      <header className="Work-HeaderCarouselSmall">
+        <img className="Work-HeaderImage" src="/work/work.jpg" />
+        <div className="Work-HeaderControls">
+          <DotControls />
+        </div>
+      </header>
+      <header className="Work-HeaderCarouselLarge container">
+        <img className="Work-HeaderImage" src="/work/work.jpg" />
+        <div className="Work-HeaderControls">
+          <DotControls />
+        </div>
+      </header>
+
+      <main className="container mb-5">
         <div className="Pills">
           <span className="Pills-Item Pills-Item_active">All</span>
           <span className="Pills-Item">Robotics</span>
@@ -77,7 +89,7 @@ export default function Work() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
 
       <footer
         className="Banner"
@@ -109,25 +121,6 @@ export default function Work() {
           </a>
         </div>
       </footer>
-    </div>
-  );
+    </article>
+  </div>);
 }
-
-/*
-
-<footer
-        className="Work-Footer"
-        style={{ backgroundImage: 'url("/work/footer.jpg")' }}
-      >
-        <div style={{ maxWidth: '16rem', margin: 'auto' }}>
-          <span className="Work-FooterTitle">
-            Do you have a cool idea to share with us?
-          </span>
-        </div>
-        <div className="Work-FooterSubtitle">
-          We would love to hear from you. Let’s talk about it.
-        </div>
-        <img className="Work-FooterButtonImage" src="/mail.svg" alt="Envelope" />
-      </footer>
-
-*/

@@ -1,7 +1,44 @@
-.Work-HeaderImage {
-  width: 100%;
+.Work {
+  padding-top: 4.5rem;
 }
 
+/**
+ * HEADER CAROUSEL
+ */
+.Work-HeaderCarouselLarge {
+  display: none;
+}
+.Work-HeaderImage {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+  object-position: center;
+}
+.Work-HeaderControls {
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+  text-align: right;
+}
+@media (min-width: 576px) {
+  .Work-HeaderCarouselSmall {
+    display: none;
+  }
+  .Work-HeaderCarouselLarge {
+    display: block;
+  }
+  .Work-HeaderControls {
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .Work-HeaderImage {
+    height: 36%;
+  }
+}
+
+/**
+ * DOT CONTROLS
+ */
 .DotControls {
   display: inline-flex;
 }
@@ -35,6 +72,9 @@
   background-color: #df1720 !important;
 }
 
+/**
+ * PILLS
+ */
 .Pills {
   margin: 4rem auto 1.5rem;
   text-align: center;
