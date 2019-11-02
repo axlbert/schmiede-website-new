@@ -16,6 +16,10 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  opacity: 0;
+}
+.PostCarousel-Image_active {
+  opacity: 1 !important;
 }
 
 .PostCarousel-Controls {
