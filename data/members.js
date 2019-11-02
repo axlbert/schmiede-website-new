@@ -2,10 +2,10 @@ const ollie = {
   name: 'Ollie',
   role: 'Developer',
   imageSrc: '/about/member-1.jpg',
-  /*personal: {
-    location: 'Lima, Peru',
-    quote: `Give me a book and chocolates, i'll be in paradise.`,
-  },*/
+  personal: {
+    location: 'Kyiv, Ukraine',
+    quote: `Give me wine and cards, i'll be in purgatory.`,
+  },
   professional: {
     sinceYear: 2019,
     quote: `Keep it simple, stupid.`,
@@ -23,10 +23,10 @@ const analisa = {
   name: 'Analisa',
   role: 'Designer',
   imageSrc: '/about/member-2.jpg',
-  /*personal: {
+  personal: {
     location: 'Lima, Peru',
     quote: `Give me a book and chocolates, i'll be in paradise.`,
-  },*/
+  },
   professional: {
     sinceYear: 2018,
     quote: `Make it simple but significant.`,
@@ -44,10 +44,10 @@ const leonarda = {
   name: 'Leonarda',
   role: 'Project Manager',
   imageSrc: '/about/member-3.jpg',
-  /*personal: {
-    location: 'Lima, Peru',
+  personal: {
+    location: 'Düsseldorf, Germany',
     quote: `Give me a book and chocolates, i'll be in paradise.`,
-  },*/
+  },
   professional: {
     sinceYear: 2017,
     quote: `Divide and rule.`,

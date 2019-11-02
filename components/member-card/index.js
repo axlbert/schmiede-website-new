@@ -26,14 +26,14 @@ function ProfessionalOverlay({ sinceYear, quote, description }) {
 /**
  * Member Card Personal Overlay component.
  */
-function PersonalOverlay() {
+function PersonalOverlay({ location, quote }) {
   return (
     <div className="MemberCard-Professional Card-ImageOverlay Card-ImageOverlay_red">
       <header>
-        <div className="MemberCard-HeaderText">Lima, Peru</div>
+        <div className="MemberCard-HeaderText">{ location }</div>
       </header>
       <div className="MemberCard-Quote">
-        “Give me a book and chocolates, i'll be in paradise.”
+        “{ quote }”
       </div>
       <table className="MemberCard-Table">
         <tbody>
@@ -78,7 +78,9 @@ function PersonalOverlay() {
 /**
  * Member Card component.
  */
-export default function MemberCard({ name, role, imageSrc, professional }) {
+export default function MemberCard({
+  name, role, imageSrc, personal, professional,
+}) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const nextOverlay = e => {
@@ -94,7 +96,7 @@ export default function MemberCard({ name, role, imageSrc, professional }) {
         onClick={nextOverlay}
       >
         <img className="Card-Image" src={imageSrc} />
-        { activeIndex === 1 && <PersonalOverlay /> }
+        { activeIndex === 1 && <PersonalOverlay {...personal} /> }
         { activeIndex === 2 && <ProfessionalOverlay {...professional} /> }
       </div>
       <div
