@@ -26,27 +26,3 @@
   color: white;
   font-size: 1.1rem;
 }
-
-/*
-  DEPRECATED CARD STYLES
-*/
-.MemberCard-Image {
-  width: 100%;
-}
-.MemberCard-Footer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
-}
-.MemberCard-Info {
-  text-align: left;
-}
-.MemberCard-Name {
-  color: #393f42;
-  font-size: 1.25rem;
-}
-.MemberCard-Role {
-  color: #393f42;
-  font-size: .9rem;
-  font-weight: 600;
-}
