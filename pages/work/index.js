@@ -2,23 +2,17 @@ import React from 'react';
 
 import './work.css';
 import Nav from '../../components/nav';
-import DotControls from '../../components/dot-controls';
+import PostCarousel from '../../components/post-carousel';
 
 export default function Work() {
   return (<div>
     <Nav />
     <article className="Work">
       <header className="Work-HeaderCarouselSmall">
-        <img className="Work-HeaderImage" src="/work/work.jpg" />
-        <div className="Work-HeaderControls">
-          <DotControls length={3} activeIndex={0} />
-        </div>
+        <PostCarousel />
       </header>
       <header className="Work-HeaderCarouselLarge container">
-        <img className="Work-HeaderImage" src="/work/work.jpg" />
-        <div className="Work-HeaderControls">
-          <DotControls length={3} activeIndex={2} />
-        </div>
+        <PostCarousel />
       </header>
 
       <main className="Work-Main container">
