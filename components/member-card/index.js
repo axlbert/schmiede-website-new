@@ -35,42 +35,41 @@ function PersonalOverlay({ location, quote }) {
       <div className="MemberCard-Quote">
         “{ quote }”
       </div>
-      <table className="MemberCard-Table">
-        <tbody>
-          <tr className="MemberCard-TableTr">
-            <th className="MemberCard-TableTh MemberCard_borderBottom">
-              Book:
-            </th>
-            <td className="MemberCard-TableTd MemberCard_borderBottom">
-              El Extranjero
-            </td>
-          </tr>
-          <tr className="MemberCard-TableTr">
-            <th className="MemberCard-TableTh MemberCard_borderBottom">
-              Color:
-            </th>
-            <td className="MemberCard-TableTd MemberCard_borderBottom">
-              Black
-            </td>
-          </tr>
-          <tr className="MemberCard-TableTr">
-            <th className="MemberCard-TableTh MemberCard_borderBottom">
-              Food:
-            </th>
-            <td className="MemberCard-TableTd MemberCard_borderBottom">
-              Ceviche
-            </td>
-          </tr>
-          <tr className="MemberCard-TableTr">
-            <th className="MemberCard-TableTh">
-              Vacation Spot:
-            </th>
-            <td className="MemberCard-TableTd">
-              Italy
-            </td>
-          </tr>
-        </tbody>
-      </table>
+
+      <div className="MemberCard-Table">
+        <div className="MemberCard-TableRow">
+          <div className="MemberCard-TableCell MemberCard-TableCell_bolder">
+            Book:
+          </div>
+          <div className="MemberCard-TableCell">
+            El Extranjero
+          </div>
+        </div>
+        <div className="MemberCard-TableRow">
+          <div className="MemberCard-TableCell MemberCard-TableCell_bolder">
+            Color:
+          </div>
+          <div className="MemberCard-TableCell">
+            Black
+          </div>
+        </div>
+        <div className="MemberCard-TableRow">
+          <div className="MemberCard-TableCell MemberCard-TableCell_bolder">
+            Food:
+          </div>
+          <div className="MemberCard-TableCell">
+            Ceviche
+          </div>
+        </div>
+        <div className="MemberCard-TableRow">
+          <div className="MemberCard-TableCell MemberCard-TableCell_bolder">
+            Vacation Spot:
+          </div>
+          <div className="MemberCard-TableCell">
+            Italy
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

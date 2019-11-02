@@ -1,3 +1,7 @@
+/**
+ * TEAM MEMBERS DATA.
+ */
+
 const ollie = {
   name: 'Ollie',
   role: 'Developer',
@@ -5,6 +9,7 @@ const ollie = {
   personal: {
     location: 'Kyiv, Ukraine',
     quote: `Give me wine and cards, i'll be in purgatory.`,
+    favorites: '',
   },
   professional: {
     sinceYear: 2019,
@@ -61,7 +66,7 @@ const leonarda = {
   },
 };
 
-//const members = [ollie];
+const members = [ollie];
 //const members = [leonarda];
-const members = [ollie, analisa, leonarda];
+//const members = [ollie, analisa, leonarda];
 export default members;
