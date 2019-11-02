@@ -6,22 +6,18 @@ import DotControls from '../dot-controls';
 /**
  * Member Card Professional Overlay component.
  */
-function ProfessionalOverlay() {
+function ProfessionalOverlay({ sinceYear, quote, description }) {
   return (
     <div className="MemberCard-Professional Card-ImageOverlay Card-ImageOverlay_gray">
       <header>
         <div className="MemberCard-HeaderTextSmall">Team member since</div>
-        <div className="MemberCard-HeaderText">2017</div>
+        <div className="MemberCard-HeaderText">{ sinceYear }</div>
       </header>
       <div className="MemberCard-Quote">
-        “Make it simple but significant.”
+        “{ quote }”
       </div>
       <div className="MemberCard-Description">
-        Coming from the fashion industry, I am working at Schmiede.one 
-        on things that display my true passions which are: food, 
-        agriculture, and innovative business models.
-        My project range is, from our test field to pure software projects 
-        to Indoor farming, which makes working at Schmiede.one very diverse.
+        { description }
       </div>
     </div>
   );
@@ -82,7 +78,7 @@ function PersonalOverlay() {
 /**
  * Member Card component.
  */
-export default function MemberCard({ name, role, imageSrc }) {
+export default function MemberCard({ name, role, imageSrc, professional }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const nextOverlay = e => {
@@ -99,7 +95,7 @@ export default function MemberCard({ name, role, imageSrc }) {
       >
         <img className="Card-Image" src={imageSrc} />
         { activeIndex === 1 && <PersonalOverlay /> }
-        { activeIndex === 2 && <ProfessionalOverlay /> }
+        { activeIndex === 2 && <ProfessionalOverlay {...professional} /> }
       </div>
       <div
         className="Card-Footer"
