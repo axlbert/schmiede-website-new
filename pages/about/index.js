@@ -6,9 +6,17 @@ import Nav from '../../components/nav';
 import DotControls from '../../components/dot-controls';
 import MemberCard from '../../components/member-card';
 
+import members from '../../data/members';
+
 const headerStyle = {
   backgroundImage: 'url("/about.jpg")',
 };
+
+function renderMembers() {
+  return members.map((x, i) => {
+    return <MemberCard key={i} {...x} />;
+  });
+}
 
 export default function About() {
   return (
@@ -74,7 +82,8 @@ export default function About() {
         }}
       >
         <div className="Grid">
-          <MemberCard />
+          { renderMembers() }
+          
           <div className="Card">
             <div className="Card-ImageWrapper">
               <img className="Card-Image" src="/about/member-2.jpg" />

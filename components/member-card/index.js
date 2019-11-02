@@ -82,7 +82,7 @@ function PersonalOverlay() {
 /**
  * Member Card component.
  */
-export default function MemberCard() {
+export default function MemberCard({ name, role, imageSrc }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const nextOverlay = e => {
@@ -97,7 +97,7 @@ export default function MemberCard() {
         style={{ cursor: 'pointer' }}
         onClick={nextOverlay}
       >
-        <img className="Card-Image" src="/about/member-2.jpg" />
+        <img className="Card-Image" src={imageSrc} />
         { activeIndex === 1 && <PersonalOverlay /> }
         { activeIndex === 2 && <ProfessionalOverlay /> }
       </div>
@@ -106,8 +106,8 @@ export default function MemberCard() {
         style={{ display: 'flex', justifyContent: 'space-between' }}
       >
         <div className="Card-Info">
-          <div className="Card-Title">Analisa</div>
-          <div className="Card-Subtitle">Developer</div>
+          <div className="Card-Title">{ name }</div>
+          <div className="Card-Subtitle">{ role }</div>
         </div>
         <div style={{ paddingTop: '0.15rem' }}>
           <DotControls
