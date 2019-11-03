@@ -7,7 +7,7 @@ import Nav from '../../components/nav';
 import PostCarousel from '../../components/post-carousel';
 import Post from '../../components/post';
 
-const CssDialog = withStyles({
+const PostDialog = withStyles({
   paper: {
     '&': {
       borderRadius: 0,
@@ -124,9 +124,16 @@ export default function Work() {
         </div>
       </footer>
 
-      <CssDialog maxWidth={'md'} scroll="body" open={true}>
+      <PostDialog maxWidth={'md'} scroll="body" open={true}>
+        <button className="PostDialog-CloseButton">
+          <img
+            className="PostDialog-CloseButtonImage"
+            src="/close-button.svg"
+            alt="Close"
+          />
+        </button>
         <Post />
-      </CssDialog>
+      </PostDialog>
     </article>
   </div>);
 }

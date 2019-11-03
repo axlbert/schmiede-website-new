@@ -5,13 +5,6 @@ import './post.css';
 export default function Post() {
   return (
     <article className="Post">
-      <button className="Post-CloseButton">
-        <img
-          className="Post-CloseButtonImage"
-          src="/close-button.svg"
-          alt="Close"
-        />
-      </button>
       <header className="Post-Header">
         <img
           className="Post-Image"
