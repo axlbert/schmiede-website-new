@@ -8,10 +8,6 @@ import OfficeCarousel from '../../components/office-carousel';
 
 import members from '../../data/members';
 
-const headerStyle = {
-  backgroundImage: 'url("/about.jpg")',
-};
-
 function renderMembers() {
   return members.map((x, i) => {
     return <MemberCard key={i} {...x} />;
@@ -25,7 +21,10 @@ export default function About() {
   return (
     <div className="About">
       <Nav />
-      <header className="About-Header" style={headerStyle}>
+      <header
+        className="About-Header"
+        style={{ backgroundImage: 'url("/about/header.jpg")' }}
+      >
         <div className="container">
           <div className="About-HeaderContent">
             <div>
