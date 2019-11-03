@@ -18,6 +18,9 @@ function renderMembers() {
   });
 }
 
+/**
+ * About page component.
+ */
 export default function About() {
   return (
     <div className="About">
@@ -122,11 +125,22 @@ export default function About() {
 
       <div className="container my-5">
         <div>
-        We work in a 
-cool coworking place 
-called super 7000.
-Our cozy -full of plants- office will blow your mind, be ready for kikker 
-games and some unexpected gun fights.
+          <div className="Carousel-Description">
+            <div>
+              <span className="Carousel-Subtitle">We work in a</span>
+            </div>
+            <div>
+              <span className="Carousel-Title">cool coworking place</span>
+            </div>
+            <div>
+              <span className="Carousel-Subtitle">called super 7000.</span>
+            </div>
+            <div className="Carousel-Paragraph">
+              Our cozy -full of plants- office will blow your mind, 
+              be ready for kikker games and some unexpected gun fights.
+            </div>
+          </div>
+
         </div>
       </div>
 
