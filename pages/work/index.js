@@ -5,7 +5,16 @@ import { withStyles } from '@material-ui/core/styles';
 import './work.css';
 import Nav from '../../components/nav';
 import PostCarousel from '../../components/post-carousel';
+import PostCard from '../../components/post-card';
 import Post from '../../components/post';
+
+function renderPosts() {
+  const cards = [];
+  for (let i = 0; i < 5; i++) {
+    cards.push(<PostCard key={i} />);
+  }
+  return cards;
+}
 
 const PostDialog = withStyles({
   paper: {
@@ -50,6 +59,7 @@ export default function Work() {
 
         <div style={{ textAlign: 'center' }}>
           <div className="Grid">
+            { renderPosts() }
             <div className="Card">
               <div className="Card-ImageWrapper">
                 <img className="Card-Image" src="/work/project-2.jpg" />
@@ -59,37 +69,6 @@ export default function Work() {
                 <div className="Card-Title">Harvey.one</div>
                 <div className="Card-Subtitle">Robotics</div>
               </div>
-            </div>
-            <div className="ProjectCard">
-              <img className="ProjectCard-Image" src="/work/project-1.jpg" />
-              <div className="ProjectCard-Title">Harvey.one</div>
-              <div className="ProjectCard-Subtitle">Robotics</div>
-            </div>
-            <div className="ProjectCard">
-              <img className="ProjectCard-Image" src="/work/project-2.jpg" />
-              <div className="ProjectCard-Title">CNHI Konfigurator</div>
-              <div className="ProjectCard-Subtitle">Development</div>
-            </div>
-            <div className="ProjectCard">
-              <img className="ProjectCard-Image" src="/work/project-3.jpg" />
-              <div className="ProjectCard-Title">Indoor Farming</div>
-              <div className="ProjectCard-Subtitle">Farming</div>
-            </div>
-
-            <div className="ProjectCard">
-              <img className="ProjectCard-Image" src="/work/project-1.jpg" />
-              <div className="ProjectCard-Title">Harvey.one</div>
-              <div className="ProjectCard-Subtitle">Robotics</div>
-            </div>
-            <div className="ProjectCard">
-              <img className="ProjectCard-Image" src="/work/project-2.jpg" />
-              <div className="ProjectCard-Title">CNHI Konfigurator</div>
-              <div className="ProjectCard-Subtitle">Development</div>
-            </div>
-            <div className="ProjectCard">
-              <img className="ProjectCard-Image" src="/work/project-3.jpg" />
-              <div className="ProjectCard-Title">Indoor Farming</div>
-              <div className="ProjectCard-Subtitle">Farming</div>
             </div>
           </div>
         </div>
@@ -147,3 +126,23 @@ export default function Work() {
     </article>
   </div>);
 }
+
+/*
+
+<div className="ProjectCard">
+              <img className="ProjectCard-Image" src="/work/project-1.jpg" />
+              <div className="ProjectCard-Title">Harvey.one</div>
+              <div className="ProjectCard-Subtitle">Robotics</div>
+            </div>
+            <div className="ProjectCard">
+              <img className="ProjectCard-Image" src="/work/project-2.jpg" />
+              <div className="ProjectCard-Title">CNHI Konfigurator</div>
+              <div className="ProjectCard-Subtitle">Development</div>
+            </div>
+            <div className="ProjectCard">
+              <img className="ProjectCard-Image" src="/work/project-3.jpg" />
+              <div className="ProjectCard-Title">Indoor Farming</div>
+              <div className="ProjectCard-Subtitle">Farming</div>
+            </div>
+
+*/

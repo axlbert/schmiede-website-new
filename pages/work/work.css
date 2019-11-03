@@ -96,7 +96,7 @@
 /*
   DEPRECATED CARD STYLES
 */
-.ProjectCard {
+/*.ProjectCard {
   text-align: left;
 }
 .ProjectCard-Image {
@@ -116,7 +116,7 @@
   .ProjectCard {
     text-align: left;
   }
-}
+}*/
 
 /* dialog close button */
 .PostDialog-CloseButton {

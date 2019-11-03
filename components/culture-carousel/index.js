@@ -49,7 +49,7 @@ export default function CultureCarousel() {
       </div>
       <div className="CultureCarousel-Controls">
         <DotControls
-          length={5}
+          length={cultureSlides.length}
           activeIndex={activeIndex}
           onClick={ (e, i) => setActiveIndex(i) }
         />
