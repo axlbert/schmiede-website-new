@@ -49,8 +49,32 @@ export default function Post() {
             Go to farmlab.one and find out more about this project!
           </div>
         </section>
-
       </main>
+
+      <footer className="Post-Footer">
+        <a className="Post-FooterLink" href="#">
+          <img
+            className="Post-FooterLinkArrow"
+            src="/arrow-left.svg"
+            alt="Previous"
+          />
+          <div className="Post-FooterLinkLabel Post-FooterLinkLabel_left">
+            <span className="Post-FooterLinkTitle">CNHI Konfigurator</span>
+            <span className="Post-FooterLinkSubtitle">Previous</span>
+          </div>
+        </a>
+        <a className="Post-FooterLink" href="#">
+          <div className="Post-FooterLinkLabel Post-FooterLinkLabel_right">
+            <span className="Post-FooterLinkTitle">Indoor Farming</span>
+            <span className="Post-FooterLinkSubtitle">Next</span>
+          </div>
+          <img
+            className="Post-FooterLinkArrow"
+            src="/arrow-right.svg"
+            alt="Next"
+          />
+        </a>
+      </footer>
     </article>
   );
 }

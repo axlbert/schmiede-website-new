@@ -85,3 +85,60 @@
   margin-top: .5rem;
   font-size: .9rem;
 }
+
+
+/**
+ * FOOTER
+ */
+.Post-Footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #979797;
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+.Post-FooterLink {
+  display: flex;
+  align-items: baseline;
+  text-decoration: none;
+}
+.Post-FooterLinkArrow {
+  width: 1.25rem;
+}
+.Post-FooterLinkLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.Post-FooterLinkLabel_left {
+  align-items: flex-start;
+  margin-left: .5rem;
+}
+.Post-FooterLinkLabel_right {
+  align-items: flex-end;
+  margin-right: .5rem;
+}
+.Post-FooterLinkTitle {
+  display: none;
+  padding: .1rem .25rem .15rem;
+  background-color: #df1720;
+  color: white;
+  text-transform: none;
+}
+.Post-FooterLinkSubtitle {
+  color: #df1720;
+  font-size: .9rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+@media (min-width: 768px) {
+  .Post-FooterLinkTitle {
+    display: inline-block;
+    
+  }
+  .Post-FooterLinkSubtitle {
+    padding: .25rem;
+    color: #393f42;
+    text-decoration: none;
+  }
+}
