@@ -125,7 +125,7 @@ export default function About() {
 
       <div className="container my-5">
         <div>
-          <div className="Carousel-Description">
+          <div className="OfficeCarousel-Description">
             <div>
               <span className="Carousel-Subtitle">We work in a</span>
             </div>
@@ -140,7 +140,13 @@ export default function About() {
               be ready for kikker games and some unexpected gun fights.
             </div>
           </div>
-
+          <div className="OfficeCarousel-ImageWrapper">
+            <img
+              className="OfficeCarousel-Image"
+              src="/about/office/office-1.jpg"
+              alt="Office Image 1"
+            />
+          </div>
         </div>
       </div>
 

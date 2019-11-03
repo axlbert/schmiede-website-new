@@ -32,9 +32,6 @@
  */
 .Carousel-Subtitle {
   display: inline-block;
-}
-.Carousel-Subtitle {
-  display: inline-block;
   margin-left: .5rem;
   color: #df1720;
   font-size: 1.75rem;
@@ -54,4 +51,27 @@
   margin-left: .5rem;
   color: #393f42;
   line-height: 1.4;
+}
+
+.OfficeCarousel-Description {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.OfficeCarousel-ImageWrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: 67%;
+  background-color: #393f42;
+}
+.OfficeCarousel-Image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
