@@ -3,23 +3,8 @@
   display: block;
 }
 
-.CultureCarousel-ImageWrapper {
-  position: relative;
-  display: block;
-  width: 100%;
-  padding-top: 67%;
-  background-color: white;
-}
 .CultureCarousel-Image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 .CultureCarousel-Label {
@@ -33,35 +18,43 @@
 
 @media (min-width: 768px) {
   .CultureCarousel {
-    display: grid;
-    grid-template-columns: 75% 25%;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .CultureCarousel-Image {
+    width: 75%;
   }
   .CultureCarousel-Label {
     position: absolute;
     top: 2rem;
     right: 0;
-    z-index: 1;
     width: 17rem;
   }
   .CultureCarousel-Title {
     display: block;
   }
+
   .CultureCarousel-Controls {
     margin-left: 3rem;
   }
 }
-
 @media (min-width: 992px) {
+  .CultureCarousel-Image {
+    width: 78%;
+  }
   .CultureCarousel-Label {
     top: 4rem;
     right: 2rem;
   }
 }
-
 @media (min-width: 1200px) {
+  .CultureCarousel-Image {
+    width: 72%;
+  }
   .CultureCarousel-Label {
     top: 5rem;
-    right: 3rem;
+    right: 5rem;
     width: 21rem;
   }
 }

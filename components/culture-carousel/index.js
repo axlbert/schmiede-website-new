@@ -22,11 +22,13 @@ export default function CultureCarousel() {
           people to manage themselves.
         </div>
       </div>
-      <img
-        className="CultureCarousel-Image"
-        src="/about/culture.jpg"
-        alt="Culture"
-      />
+      <div className="CultureCarousel-ImageWrapper">
+        <img
+          className="CultureCarousel-Image"
+          src="/about/culture.jpg"
+          alt="Culture"
+        />
+      </div>
       <div className="CultureCarousel-Controls">
         <DotControls length={5} activeIndex={1} />
       </div>
