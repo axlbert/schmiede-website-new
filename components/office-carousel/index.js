@@ -1,28 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './office-carousel.css';
 
 import officeSlides from '../../data/office-slides';
 
-function renderThumbnails() {
-  return officeSlides.map((x, i) => {
-    return (
-      <div key={i} className="OfficeCarousel-Thumbnail">
-        <img
-          className="OfficeCarousel-ThumbnailImage"
-          src={x.imageSrc}
-          alt={x.alt}
-        />
-        <div className="OfficeCarousel-ThumbnailOverlay OfficeCarousel-ThumbnailOverlay_visible"></div>
-      </div>
-    );
-  });
+/**
+ * Office carousel thumbnails component.
+ */
+function Thumbnails({ slides, activeIndex, onClick }) {
+  const renderThumbnails = () => {
+    return slides.map((x, i) => {
+      const overlayClassName = 'OfficeCarousel-ThumbnailOverlay' +
+        (i === activeIndex && ' OfficeCarousel-ThumbnailOverlay_visible');
+      return (
+        <div
+          className="OfficeCarousel-Thumbnail"
+          key={i}
+          onClick={ e => onClick && onClick(e, i) }
+        >
+          <img
+            className="OfficeCarousel-ThumbnailImage"
+            src={x.imageSrc}
+            alt={x.alt}
+          />
+          <div className={overlayClassName}></div>
+        </div>
+      );
+    });
+  }
+  return (
+    <div className="OfficeCarousel-Thumbnails">
+      { renderThumbnails() }
+    </div>
+  );
 }
 
 /**
  * Office carousel component.
  */
 export default function OfficeCarousel() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <div>
       <div className="OfficeCarousel-Description">
@@ -47,8 +65,12 @@ export default function OfficeCarousel() {
           alt="Office Image 1"
         />
       </div>
-      <div className="OfficeCarousel-Thumbnails">
-        { renderThumbnails() }
+      <div>
+        <Thumbnails
+          slides={officeSlides}
+          activeIndex={activeIndex}
+          onClick={ (e, i) => setActiveIndex(i) }
+        />
       </div>
     </div>
   );
