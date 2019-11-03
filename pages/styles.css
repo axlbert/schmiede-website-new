@@ -164,6 +164,7 @@ body {
   margin-top: .75rem;
   margin-left: .5rem;
   color: #393f42;
+  font-size: 1em;
   line-height: 1.4;
 }
 @media (min-width: 1200px) {

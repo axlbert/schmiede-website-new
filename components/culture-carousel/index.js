@@ -13,7 +13,7 @@ export default function CultureCarousel() {
           </span>
         </div>
         <div>
-          <span className="Carousel-Title">
+          <span className="Carousel-Title CultureCarousel-Title">
             is essential
           </span>
         </div>
