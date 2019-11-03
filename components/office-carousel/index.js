@@ -11,7 +11,7 @@ function Thumbnails({ slides, activeIndex, onClick }) {
   const renderThumbnails = () => {
     return slides.map((x, i) => {
       const overlayClassName = 'OfficeCarousel-ThumbnailOverlay' +
-        (i === activeIndex && ' OfficeCarousel-ThumbnailOverlay_visible');
+        (i === activeIndex && '\x20 OfficeCarousel-ThumbnailOverlay_visible');
       return (
         <div
           className="OfficeCarousel-Thumbnail"
@@ -38,8 +38,24 @@ function Thumbnails({ slides, activeIndex, onClick }) {
 /**
  * Office carousel component.
  */
-export default function OfficeCarousel() {
+export default function OfficeCarousel({ slides = officeSlides }) {
   const [activeIndex, setActiveIndex] = useState(0);
+
+  const renderSlides = () => {
+    return slides.map((x, i) => {
+      const imageClassName = `OfficeCarousel-Image ${
+        (i === activeIndex ? 'OfficeCarousel-Image_active' : '')
+      }`;
+      return (
+        <img
+          key={i}
+          className={imageClassName}
+          src={x.imageSrc}
+          alt={x.alt}
+        />
+      );
+    });
+  }
 
   return (
     <div>
@@ -59,15 +75,11 @@ export default function OfficeCarousel() {
         </div>
       </div>
       <div className="OfficeCarousel-ImageWrapper">
-        <img
-          className="OfficeCarousel-Image"
-          src="/about/office/office-1.jpg"
-          alt="Office Image 1"
-        />
+        { renderSlides() }
       </div>
       <div>
         <Thumbnails
-          slides={officeSlides}
+          slides={slides}
           activeIndex={activeIndex}
           onClick={ (e, i) => setActiveIndex(i) }
         />
