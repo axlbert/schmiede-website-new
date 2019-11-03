@@ -76,7 +76,7 @@ export default function MemberCard({
   return (
     <div className="Card">
       <div
-        className="Card-ImageWrapper"
+        className="Card-ImageWrapper MemberCard-ImageWrapper"
         style={{ cursor: 'pointer' }}
         onClick={nextOverlay}
       >

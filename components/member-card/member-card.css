@@ -1,7 +1,17 @@
+/**
+ * IMAGE
+ */
+.MemberCard-ImageWrapper {
+  padding-top: 150%;
+}
+
+
+/**
+ * OVERLAY
+ */
 .MemberCard-Quote {
   font-size: 1.25rem;
 }
-
 .MemberCard-Description {
   font-size: .6rem;
   font-weight: 500;
@@ -9,7 +19,7 @@
 }
 
 /**
- * HEADER
+ * Header
  */
 .MemberCard-HeaderText {
   font-size: .75rem;
@@ -22,7 +32,7 @@
 }
 
 /**
- * TABLE
+ * Table
  */
 .MemberCard-Table {
   display: block;
