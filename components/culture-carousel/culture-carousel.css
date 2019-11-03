@@ -52,6 +52,8 @@
     display: block;
   }
   .CultureCarousel-Controls {
+    display: flex;
+    align-items: flex-end;
     margin-left: 3rem;
   }
 }
