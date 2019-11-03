@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Dialog } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 
@@ -11,12 +11,14 @@ const PostDialog = withStyles({
   paper: {
     '&': {
       borderRadius: 0,
-      overlow: 'visible',
+      overflow: 'visible',
     },
   },
 })(Dialog);
 
 export default function Work() {
+  const [isDialogOpen, setDialogOpen] = useState(true);
+
   return (<div>
     <Nav />
     <article className="Work">
@@ -124,8 +126,16 @@ export default function Work() {
         </div>
       </footer>
 
-      <PostDialog maxWidth={'md'} scroll="body" open={true}>
-        <button className="PostDialog-CloseButton">
+      <PostDialog
+        maxWidth={'md'}
+        scroll="body"
+        open={isDialogOpen}
+        onClose={ () => setDialogOpen(false) }
+      >
+        <button
+          className="PostDialog-CloseButton"
+          onClick={ () => setDialogOpen(false) }
+        >
           <img
             className="PostDialog-CloseButtonImage"
             src="/close-button.svg"

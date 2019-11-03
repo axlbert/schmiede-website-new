@@ -14,7 +14,11 @@ export default function Post() {
       </header>
       <main className="Post-Main">
         <h1 className="Post-Heading">Harvey.one</h1>
-        <div style={{ marginBottom: '2rem' }}>
+        <div style={{
+          marginTop: '0.25rem',
+          marginLeft: '0.2rem',
+          marginBottom: '2rem',
+        }}>
           <span className="Post-Tag">Robotics</span>
         </div>
         
