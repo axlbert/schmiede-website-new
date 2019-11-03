@@ -60,7 +60,7 @@ export default function OfficeCarousel({ slides = officeSlides }) {
   return (
     <div>
       <div className="OfficeCarousel-Layout">
-        <div className="OfficeCarousel-Description">
+        <div className="Carousel-Label OfficeCarousel-Label">
           <div>
             <span className="Carousel-Subtitle">We work in a</span>
           </div>

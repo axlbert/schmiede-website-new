@@ -6,18 +6,18 @@ import DotControls from '../dot-controls';
 export default function CultureCarousel() {
   return (
     <div className="CultureCarousel">
-      <div className="CultureCarousel-Label">
+      <div className="Carousel-Label CultureCarousel-Label">
         <div>
-          <span className="CultureCarousel-Title">
+          <span className="Carousel-Subtitle">
             Initiative
           </span>
         </div>
         <div>
-          <span className="CultureCarousel-Subtitle">
+          <span className="Carousel-Title">
             is essential
           </span>
         </div>
-        <div className="CultureCarousel-Paragraph">
+        <div className="Carousel-Paragraph">
           We don’t manage people, we expect 
           people to manage themselves.
         </div>

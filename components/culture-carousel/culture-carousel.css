@@ -8,10 +8,7 @@
 }
 
 .CultureCarousel-Label {
-  display: inline-block;
   margin-bottom: 1.75rem;
-  padding-left: .5rem;
-  font-size: 1rem;
 }
 .CultureCarousel-Title {
   display: inline-block;
@@ -82,6 +79,5 @@
     top: 5rem;
     right: 5rem;
     width: 21rem;
-    font-size: 1.1rem;
   }
 }

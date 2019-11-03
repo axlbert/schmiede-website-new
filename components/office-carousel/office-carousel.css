@@ -1,7 +1,7 @@
 /**
  * CAROUSEL
  */
- .Carousel-Subtitle {
+ /*.Carousel-Subtitle {
   display: inline-block;
   margin-left: .5rem;
   color: #df1720;
@@ -22,12 +22,12 @@
   margin-left: .5rem;
   color: #393f42;
   line-height: 1.4;
-}
+}*/
 
 /**
  * OFFICE CAROUSEL
  */
-.OfficeCarousel-Description {
+.OfficeCarousel-Label {
   display: block;
   margin-bottom: 1.5rem;
 }
@@ -92,7 +92,7 @@
 }
 
 @media (min-width: 768px) {
-  .OfficeCarousel-Description {
+  .OfficeCarousel-Label {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,7 +120,7 @@
   }
 }
 @media (min-width: 1200px) {
-  .OfficeCarousel-Description {
+  .OfficeCarousel-Label {
     padding-right: 3.5rem;
   }
 }
