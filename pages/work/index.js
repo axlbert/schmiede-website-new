@@ -26,7 +26,7 @@ const PostDialog = withStyles({
 })(Dialog);
 
 export default function Work() {
-  const [isDialogOpen, setDialogOpen] = useState(true);
+  const [isDialogOpen, setDialogOpen] = useState(false);
 
   return (<div>
     <Nav />
