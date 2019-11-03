@@ -1,12 +1,13 @@
 .CultureCarousel {
   position: relative;
+  display: block;
 }
 
 .CultureCarousel-Image {
   width: 100%;
 }
 
-.CultureCarousel-TextBlock {
+.CultureCarousel-Label {
   display: inline-block;
   margin-bottom: 1.75rem;
   padding-left: .5rem;
@@ -40,10 +41,15 @@
 }
 
 @media (min-width: 768px) {
+  .CultureCarousel {
+    display: flex;
+    align-items: flex-end;
+  }
+
   .CultureCarousel-Image {
     width: 75%;
   }
-  .CultureCarousel-TextBlock {
+  .CultureCarousel-Label {
     position: absolute;
     top: 2rem;
     right: 0;
@@ -52,9 +58,23 @@
   .CultureCarousel-Subtitle {
     display: block;
   }
+
+  .CultureCarousel-Controls {
+    margin-left: 3rem;
+  }
 }
 @media (min-width: 992px) {
   .CultureCarousel-Image {
     width: 78%;
+  }
+  .CultureCarousel-Label {
+    top: 4rem;
+    right: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .CultureCarousel-Label {
+    top: 5rem;
+    right: 4rem;
   }
 }

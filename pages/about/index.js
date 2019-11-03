@@ -51,7 +51,7 @@ export default function About() {
 
       <section className="container" style={{ marginTop: '4rem' }}>
         <div className="CultureCarousel">
-          <div className="CultureCarousel-TextBlock">
+          <div className="CultureCarousel-Label">
             <div>
               <span className="CultureCarousel-Title">
                 Initiative
