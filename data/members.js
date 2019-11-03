@@ -9,7 +9,12 @@ const ollie = {
   personal: {
     location: 'Kyiv, Ukraine',
     quote: `Give me wine and cards, i'll be in purgatory.`,
-    favorites: '',
+    favorites: new Map([
+      ['Book', 'Harry Potter'],
+      ['Color', 'Black'],
+      ['Food', 'Pizza'],
+      ['Vacation Spot', 'Italy'],
+    ]),
   },
   professional: {
     sinceYear: 2019,
@@ -31,6 +36,12 @@ const analisa = {
   personal: {
     location: 'Lima, Peru',
     quote: `Give me a book and chocolates, i'll be in paradise.`,
+    favorites: new Map([
+      ['Book', 'El Extranjero'],
+      ['Color', 'Black'],
+      ['Food', 'Ceviche'],
+      ['Vacation Spot', 'Italy'],
+    ]),
   },
   professional: {
     sinceYear: 2018,
@@ -52,6 +63,12 @@ const leonarda = {
   personal: {
     location: 'Düsseldorf, Germany',
     quote: `Give me a book and chocolates, i'll be in paradise.`,
+    favorites: new Map([
+      ['Book', 'El Extranjero'],
+      ['Color', 'Black'],
+      ['Food', 'Ceviche'],
+      ['Vacation Spot', 'Italy'],
+    ]),
   },
   professional: {
     sinceYear: 2017,
@@ -66,7 +83,7 @@ const leonarda = {
   },
 };
 
-const members = [ollie];
+//const members = [ollie];
 //const members = [leonarda];
-//const members = [ollie, analisa, leonarda];
+const members = [ollie, analisa, leonarda];
 export default members;

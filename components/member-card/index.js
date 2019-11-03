@@ -26,7 +26,24 @@ function ProfessionalOverlay({ sinceYear, quote, description }) {
 /**
  * Member Card Personal Overlay component.
  */
-function PersonalOverlay({ location, quote }) {
+function PersonalOverlay({ location, quote, favorites }) {
+  const renderFavorites = () => {
+    const rendered = [];
+    favorites.forEach((v, k) => {
+      rendered.push(
+        <div key={k} className="MemberCard-TableRow">
+          <div className="MemberCard-TableCell MemberCard-TableCell_bolder">
+            { k }:
+          </div>
+          <div className="MemberCard-TableCell">
+            { v }
+          </div>
+        </div>
+      );
+    });
+    return rendered;
+  };
+
   return (
     <div className="MemberCard-Professional Card-ImageOverlay Card-ImageOverlay_red">
       <header>
@@ -37,38 +54,7 @@ function PersonalOverlay({ location, quote }) {
       </div>
 
       <div className="MemberCard-Table">
-        <div className="MemberCard-TableRow">
-          <div className="MemberCard-TableCell MemberCard-TableCell_bolder">
-            Book:
-          </div>
-          <div className="MemberCard-TableCell">
-            El Extranjero
-          </div>
-        </div>
-        <div className="MemberCard-TableRow">
-          <div className="MemberCard-TableCell MemberCard-TableCell_bolder">
-            Color:
-          </div>
-          <div className="MemberCard-TableCell">
-            Black
-          </div>
-        </div>
-        <div className="MemberCard-TableRow">
-          <div className="MemberCard-TableCell MemberCard-TableCell_bolder">
-            Food:
-          </div>
-          <div className="MemberCard-TableCell">
-            Ceviche
-          </div>
-        </div>
-        <div className="MemberCard-TableRow">
-          <div className="MemberCard-TableCell MemberCard-TableCell_bolder">
-            Vacation Spot:
-          </div>
-          <div className="MemberCard-TableCell">
-            Italy
-          </div>
-        </div>
+        { renderFavorites() }
       </div>
     </div>
   );
