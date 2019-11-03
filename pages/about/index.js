@@ -26,24 +26,29 @@ export default function About() {
     <div className="About">
       <Nav />
       <header className="About-Header" style={headerStyle}>
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <div>
-                <span className="About-HeaderTitle">
-                  We are a gang of creatives, developers, engeneers and managers 
-                  from around the world working in Düsseldorf, Germany. 
-                </span>
-              </div>
-              <div className="About-HeaderSubtitle">
-                We are an innovation lab from GRIMME group. We give our 
-                best everyday to make a difference in the AgTech world.
-              </div>
-              <div >
-                <img src="/arrow-right.svg" alt="Arrow Down" />
-                <span>Keep going! Find out more about us!</span>
-              </div>
-            </div>
+        <div className="About-HeaderContent container">
+          <div>
+            <span className="Banner-Title">
+              We are a gang of creatives, developers, engeneers and managers 
+              from around the world working in Düsseldorf, Germany. 
+            </span>
+          </div>
+          <div className="Banner-Subtitle About-HeaderSubtitle">
+            We are an innovation lab from GRIMME group. We give our 
+            best everyday to make a difference in the AgTech world.
+          </div>
+
+          <div className="About-HeaderSpacer"></div>
+
+          <div className="About-HeaderLink">
+            <img
+              className="About-HeaderLinkImage"
+              src="/arrow-right-button.svg"
+              alt="More"
+            />
+            <span className="About-HeaderLinkLabel">
+              Keep going! Find out more about us!
+            </span>
           </div>
         </div>
       </header>

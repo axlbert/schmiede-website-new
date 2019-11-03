@@ -58,7 +58,7 @@ export default function Homepage() {
               </span>
               <img
                 className="Homepage-MoreLinkImage"
-                src="/arrow-right.svg"
+                src="/arrow-right-button.svg"
                 alt="Visit website"
               />
             </a>
