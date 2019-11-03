@@ -54,3 +54,9 @@
     width: 50%;
   }
 }
+@media (min-width: 1200px) {
+  .About-HeaderContent {
+    width: 45%;
+    font-size: 1.1rem;
+  }
+}
