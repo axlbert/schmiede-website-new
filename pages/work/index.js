@@ -123,7 +123,7 @@ export default function Work() {
         </div>
       </footer>
 
-      <CssDialog maxWidth={false} scroll="body" open={true}>
+      <CssDialog maxWidth={'md'} scroll="body" open={true}>
         <Post />
       </CssDialog>
     </article>

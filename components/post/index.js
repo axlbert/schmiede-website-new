@@ -13,9 +13,9 @@ export default function Post() {
         />
       </header>
       <main className="Post-Main">
-        <h1>Harvey.one</h1>
-        <div>
-          <span>Robotics</span>
+        <h1 className="Post-Heading">Harvey.one</h1>
+        <div style={{ marginBottom: '2rem' }}>
+          <span className="Post-Tag">Robotics</span>
         </div>
         
         <p>
