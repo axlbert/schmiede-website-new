@@ -9,6 +9,12 @@ body {
   font-family: 'Barlow', sans-serif;
 }
 
+/* common link */
+.Link {
+  color: #df1720;
+  text-decoration: underline;
+}
+
 /**
  * GRID
  */

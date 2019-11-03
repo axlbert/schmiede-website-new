@@ -46,7 +46,8 @@ export default function Post() {
         <section className="Post-MoreSection">
           <div className="Post-MoreHeading">Want to know more?</div>
           <div className="Post-MoreParagraph">
-            Go to farmlab.one and find out more about this project!
+            Go to <a href="#" className="Link">farmlab.one</a> and 
+            find out more about this project!
           </div>
         </section>
       </main>
