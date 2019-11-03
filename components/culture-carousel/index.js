@@ -5,20 +5,27 @@ import DotControls from '../dot-controls';
 
 import cultureSlides from '../../data/culture-slides';
 
-function renderSlides() {
-  return cultureSlides.map((x, i) => {
-    return (
-      <img
-        key={i}
-        className="CultureCarousel-Image"
-        src={x.imageSrc}
-        alt={x.alt}
-      />
-    );
-  });
-}
-
+/**
+ * Culture carousel component.
+ */
 export default function CultureCarousel() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const renderSlides = () => {
+    return cultureSlides.map((x, i) => {
+      const imageClassName = 'CultureCarousel-Image' +
+        (i === activeIndex ? ' CultureCarousel-Image_active' : '')
+      return (
+        <img
+          key={i}
+          className={imageClassName}
+          src={x.imageSrc}
+          alt={x.alt}
+        />
+      );
+    });
+  }
+
   return (
     <div className="CultureCarousel">
       <div className="Carousel-Label CultureCarousel-Label">
@@ -41,7 +48,11 @@ export default function CultureCarousel() {
         { renderSlides() }
       </div>
       <div className="CultureCarousel-Controls">
-        <DotControls length={5} activeIndex={1} />
+        <DotControls
+          length={5}
+          activeIndex={activeIndex}
+          onClick={ (e, i) => setActiveIndex(i) }
+        />
       </div>
     </div>
   );
