@@ -147,6 +147,43 @@ export default function About() {
               alt="Office Image 1"
             />
           </div>
+          <div className="OfficeCarousel-Thumbnails">
+            <div className="OfficeCarousel-Thumbnail">
+              <img
+                className="OfficeCarousel-ThumbnailImage"
+                src="/about/office/office-1.jpg"
+                alt="Office Thumbnail 1"
+              />
+            </div>
+            <div className="OfficeCarousel-Thumbnail">
+              <img
+                className="OfficeCarousel-ThumbnailImage"
+                src="/about/office/office-2.jpg"
+                alt="Office Thumbnail 2"
+              />
+            </div>
+            <div className="OfficeCarousel-Thumbnail">
+              <img
+                className="OfficeCarousel-ThumbnailImage"
+                src="/about/office/office-3.jpg"
+                alt="Office Thumbnail 3"
+              />
+            </div>
+            <div className="OfficeCarousel-Thumbnail">
+              <img
+                className="OfficeCarousel-ThumbnailImage"
+                src="/about/office/office-4.jpg"
+                alt="Office Thumbnail 4"
+              />
+            </div>
+            <div className="OfficeCarousel-Thumbnail">
+              <img
+                className="OfficeCarousel-ThumbnailImage"
+                src="/about/office/office-5.jpg"
+                alt="Office Thumbnail 5"
+              />
+            </div>
+          </div>
         </div>
       </div>
 
