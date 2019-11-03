@@ -73,3 +73,15 @@
   object-fit: cover;
   object-position: center;
 }
+.OfficeCarousel-ThumbnailOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background-color: rgba(223, 23, 32, .65);
+}
+.OfficeCarousel-ThumbnailOverlay_visible {
+  display: block !important;
+}

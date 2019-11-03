@@ -13,11 +13,15 @@ function renderThumbnails() {
           src={x.imageSrc}
           alt={x.alt}
         />
+        <div className="OfficeCarousel-ThumbnailOverlay OfficeCarousel-ThumbnailOverlay_visible"></div>
       </div>
     );
   });
 }
 
+/**
+ * Office carousel component.
+ */
 export default function OfficeCarousel() {
   return (
     <div>
