@@ -19,4 +19,7 @@ const slide5 = {
   alt: 'Office Image 5',
 };
 
-const officeSlides = [slide1, slide2, slide3, slide4, slide5];
+const officeSlides = [
+  slide1, slide2, slide3, slide4, slide5, slide1, slide2, slide3, slide4,
+];
+export default officeSlides;

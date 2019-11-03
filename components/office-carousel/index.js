@@ -2,6 +2,22 @@ import React from 'react';
 
 import './office-carousel.css';
 
+import officeSlides from '../../data/office-slides';
+
+function renderThumbnails() {
+  return officeSlides.map((x, i) => {
+    return (
+      <div key={i} className="OfficeCarousel-Thumbnail">
+        <img
+          className="OfficeCarousel-ThumbnailImage"
+          src={x.imageSrc}
+          alt={x.alt}
+        />
+      </div>
+    );
+  });
+}
+
 export default function OfficeCarousel() {
   return (
     <div>
@@ -28,41 +44,7 @@ export default function OfficeCarousel() {
         />
       </div>
       <div className="OfficeCarousel-Thumbnails">
-        <div className="OfficeCarousel-Thumbnail">
-          <img
-            className="OfficeCarousel-ThumbnailImage"
-            src="/about/office/office-1.jpg"
-            alt="Office Thumbnail 1"
-          />
-        </div>
-        <div className="OfficeCarousel-Thumbnail">
-          <img
-            className="OfficeCarousel-ThumbnailImage"
-            src="/about/office/office-2.jpg"
-            alt="Office Thumbnail 2"
-          />
-        </div>
-        <div className="OfficeCarousel-Thumbnail">
-          <img
-            className="OfficeCarousel-ThumbnailImage"
-            src="/about/office/office-3.jpg"
-            alt="Office Thumbnail 3"
-          />
-        </div>
-        <div className="OfficeCarousel-Thumbnail">
-          <img
-            className="OfficeCarousel-ThumbnailImage"
-            src="/about/office/office-4.jpg"
-            alt="Office Thumbnail 4"
-          />
-        </div>
-        <div className="OfficeCarousel-Thumbnail">
-          <img
-            className="OfficeCarousel-ThumbnailImage"
-            src="/about/office/office-5.jpg"
-            alt="Office Thumbnail 5"
-          />
-        </div>
+        { renderThumbnails() }
       </div>
     </div>
   );
