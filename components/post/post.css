@@ -85,6 +85,22 @@
   margin-top: .5rem;
   font-size: .9rem;
 }
+@media (min-width: 768px) {
+  .Post-Main {
+    padding: 1rem 2rem;
+  }
+  .Post-MoreSection {
+    margin-top: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .Post-Main {
+    padding: 1rem 3rem;
+  }
+  .Post-MoreSection {
+    margin-top: 5rem;
+  }
+}
 
 
 /**
@@ -132,13 +148,21 @@
   text-decoration: underline;
 }
 @media (min-width: 768px) {
+  .Post-Footer {
+    margin: 2rem 2rem 0;
+  }
   .Post-FooterLinkTitle {
     display: inline-block;
-    
   }
   .Post-FooterLinkSubtitle {
     padding: .25rem;
     color: #393f42;
     text-decoration: none;
+  }
+}
+@media (min-width: 992px) {
+  .Post-Footer {
+    margin: 3rem 3rem 0;
+    padding-top: 3rem;
   }
 }
