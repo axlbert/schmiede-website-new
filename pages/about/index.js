@@ -40,7 +40,7 @@ export default function About() {
 
           <div className="About-HeaderSpacer"></div>
 
-          <div className="About-HeaderLink">
+          <a className="About-HeaderLink" href="#">
             <img
               className="About-HeaderLinkImage"
               src="/arrow-right-button.svg"
@@ -49,7 +49,7 @@ export default function About() {
             <span className="About-HeaderLinkLabel">
               Keep going! Find out more about us!
             </span>
-          </div>
+          </a>
         </div>
       </header>
 

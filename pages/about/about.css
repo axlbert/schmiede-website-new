@@ -1,11 +1,11 @@
-/*
-  HEADER
-*/
+/**
+ * HEADER
+ */
 .About-Header {
   display: flex;
   height: 100vh;
   align-items: flex-end;
-  padding: 1.5rem 0;
+  padding-bottom: 1.5rem;
   color: white;
 }
 
@@ -20,11 +20,12 @@
   height: 10vh;
 }
 
-/* "More" link */
+/* Header "more" link */
 .About-HeaderLink {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin-left: .5rem;
+  text-decoration: none;
 }
 .About-HeaderLinkImage {
   width: 2rem;
@@ -33,6 +34,7 @@
   transform: rotate(90deg);
 }
 .About-HeaderLinkLabel {
+  color: white;
   font-size: .9rem;
   font-weight: 600;
 }
