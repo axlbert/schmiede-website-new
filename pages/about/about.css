@@ -3,10 +3,9 @@
  */
 .About-Header {
   display: flex;
-  height: 100vh;
   align-items: flex-end;
+  height: 100vh;
   padding-bottom: 1.5rem;
-  color: white;
 }
 
 .About-HeaderSubtitle {
@@ -37,4 +36,21 @@
   color: white;
   font-size: .9rem;
   font-weight: 600;
+}
+
+@media (min-width: 576px) {
+  .About-HeaderContent {
+    width: 88%;
+  }
+}
+@media (min-width: 768px) {
+  .About-HeaderContent {
+    width: 68%;
+    padding-bottom: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .About-HeaderContent {
+    width: 50%;
+  }
 }
