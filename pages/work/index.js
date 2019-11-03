@@ -11,6 +11,7 @@ const CssDialog = withStyles({
   paper: {
     '&': {
       borderRadius: 0,
+      overlow: 'visible',
     },
   },
 })(Dialog);
