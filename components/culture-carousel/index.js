@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './culture-carousel.css';
 import DotControls from '../dot-controls';
+
+import cultureSlides from '../../data/culture-slides';
+
+function renderSlides() {
+  return cultureSlides.map((x, i) => {
+    return (
+      <img
+        key={i}
+        className="CultureCarousel-Image"
+        src={x.imageSrc}
+        alt={x.alt}
+      />
+    );
+  });
+}
 
 export default function CultureCarousel() {
   return (
@@ -23,11 +38,7 @@ export default function CultureCarousel() {
         </div>
       </div>
       <div className="CultureCarousel-ImageWrapper">
-        <img
-          className="CultureCarousel-Image"
-          src="/about/culture.jpg"
-          alt="Culture"
-        />
+        { renderSlides() }
       </div>
       <div className="CultureCarousel-Controls">
         <DotControls length={5} activeIndex={1} />
