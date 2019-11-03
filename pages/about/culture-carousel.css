@@ -11,12 +11,13 @@
   display: inline-block;
   margin-bottom: 1.75rem;
   padding-left: .5rem;
+  font-size: 1rem;
 }
 .CultureCarousel-Title {
   display: inline-block;
   margin-left: .5rem;
   color: #df1720;
-  font-size: 1.75rem;
+  font-size: 1.75em;
   font-weight: 500;
 }
 .CultureCarousel-Subtitle {
@@ -26,12 +27,13 @@
   margin-bottom: .75rem;
   padding: 0 .5rem .15rem;
   color: white;
-  font-size: 1.75rem;
+  font-size: 1.75em;
   font-weight: 500;
 }
 .CultureCarousel-Paragraph {
   margin-left: .5rem;
   color: #393f42;
+  font-size: 1em;
   line-height: 1.4;
 }
 
@@ -73,8 +75,13 @@
   }
 }
 @media (min-width: 1200px) {
+  .CultureCarousel-Image {
+    width: 72%;
+  }
   .CultureCarousel-Label {
     top: 5rem;
-    right: 4rem;
+    right: 5rem;
+    width: 21rem;
+    font-size: 1.1rem;
   }
 }
