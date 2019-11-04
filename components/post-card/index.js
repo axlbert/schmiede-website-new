@@ -1,8 +1,12 @@
 import React from 'react';
 
-export default function PostCard() {
+export default function PostCard({ onClick }) {
   return (
-    <div className="Card">
+    <div
+      className="Card"
+      style={{ cursor: 'pointer' }}
+      onClick={onClick}
+    >
       <div className="Card-ImageWrapper">
         <img className="Card-Image" src="/work/project-2.jpg" />
         <div className="Card-ImageOverlay Card-ImageOverlay_hover"></div>

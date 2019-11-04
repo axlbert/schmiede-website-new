@@ -28,6 +28,14 @@ const PostDialog = withStyles({
 export default function Work() {
   const [isDialogOpen, setDialogOpen] = useState(false);
 
+  const renderPosts = () => {
+    const cards = [];
+    for (let i = 0; i < 3; i++) {
+      cards.push(<PostCard key={i} onClick={ () => setDialogOpen(true) } />);
+    }
+    return cards;
+  }
+
   return (<div>
     <Nav />
     <article className="Work">
@@ -57,21 +65,11 @@ export default function Work() {
           </div>
         </div>
 
-        <div style={{ textAlign: 'center' }}>
+        <section style={{ textAlign: 'center' }}>
           <div className="Grid">
             { renderPosts() }
-            <div className="Card">
-              <div className="Card-ImageWrapper">
-                <img className="Card-Image" src="/work/project-2.jpg" />
-                <div className="Card-ImageOverlay Card-ImageOverlay_hover"></div>
-              </div>
-              <div className="Card-Footer">
-                <div className="Card-Title">Harvey.one</div>
-                <div className="Card-Subtitle">Robotics</div>
-              </div>
-            </div>
           </div>
-        </div>
+        </section>
       </main>
 
       <footer
