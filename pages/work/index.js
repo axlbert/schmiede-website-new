@@ -9,6 +9,7 @@ import PostCard from '../../components/post-card';
 import Post from '../../components/post';
 
 import posts from '../../data/posts';
+import PostGrid from '../../components/post-grid';
 
 const PostDialog = withStyles({
   paper: {
@@ -22,7 +23,8 @@ const PostDialog = withStyles({
 export default function Work() {
   const [isDialogOpen, setDialogOpen] = useState(false);
 
-  const renderPosts = () => {
+  /* BACKUP */
+  /*const renderPosts = () => {
     return posts.map((x, i) => {
       return (
         <PostCard
@@ -32,7 +34,7 @@ export default function Work() {
         />
       );
     })
-  }
+  }*/
 
   return (<div>
     <Nav />
@@ -64,9 +66,7 @@ export default function Work() {
         </div>
 
         <section style={{ textAlign: 'center' }}>
-          <div className="Grid">
-            { renderPosts() }
-          </div>
+          <PostGrid />
         </section>
       </main>
 
