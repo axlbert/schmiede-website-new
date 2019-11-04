@@ -93,31 +93,6 @@
   font-weight: 600;
 }
 
-/*
-  DEPRECATED CARD STYLES
-*/
-/*.ProjectCard {
-  text-align: left;
-}
-.ProjectCard-Image {
-  width: 100%;
-}
-.ProjectCard-Title {
-  margin-top: 1rem;
-  color: #393f42;
-  font-size: 1.25rem;
-}
-.ProjectCard-Subtitle {
-  color: #393f42;
-  font-size: .9rem;
-  font-weight: 600;
-}
-@media (min-width: 576px) {
-  .ProjectCard {
-    text-align: left;
-  }
-}*/
-
 /* dialog close button */
 .PostDialog-CloseButton {
   position: absolute;

@@ -122,23 +122,3 @@ export default function Work() {
     </article>
   </div>);
 }
-
-/*
-
-<div className="ProjectCard">
-              <img className="ProjectCard-Image" src="/work/project-1.jpg" />
-              <div className="ProjectCard-Title">Harvey.one</div>
-              <div className="ProjectCard-Subtitle">Robotics</div>
-            </div>
-            <div className="ProjectCard">
-              <img className="ProjectCard-Image" src="/work/project-2.jpg" />
-              <div className="ProjectCard-Title">CNHI Konfigurator</div>
-              <div className="ProjectCard-Subtitle">Development</div>
-            </div>
-            <div className="ProjectCard">
-              <img className="ProjectCard-Image" src="/work/project-3.jpg" />
-              <div className="ProjectCard-Title">Indoor Farming</div>
-              <div className="ProjectCard-Subtitle">Farming</div>
-            </div>
-
-*/
