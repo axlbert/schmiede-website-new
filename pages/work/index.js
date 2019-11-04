@@ -8,13 +8,7 @@ import PostCarousel from '../../components/post-carousel';
 import PostCard from '../../components/post-card';
 import Post from '../../components/post';
 
-function renderPosts() {
-  const cards = [];
-  for (let i = 0; i < 5; i++) {
-    cards.push(<PostCard key={i} />);
-  }
-  return cards;
-}
+import posts from '../../data/posts';
 
 const PostDialog = withStyles({
   paper: {
@@ -29,11 +23,15 @@ export default function Work() {
   const [isDialogOpen, setDialogOpen] = useState(false);
 
   const renderPosts = () => {
-    const cards = [];
-    for (let i = 0; i < 3; i++) {
-      cards.push(<PostCard key={i} onClick={ () => setDialogOpen(true) } />);
-    }
-    return cards;
+    return posts.map((x, i) => {
+      return (
+        <PostCard
+          key={i}
+          onClick={ () => setDialogOpen(true) }
+          {...x}
+        />
+      );
+    })
   }
 
   return (<div>
