@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function PostCard({ imageSrc, onClick }) {
+export default function PostCard({ imageSrc, title, subtitle, onClick }) {
   return (
     <div
       className="Card"
@@ -12,8 +12,8 @@ export default function PostCard({ imageSrc, onClick }) {
         <div className="Card-ImageOverlay Card-ImageOverlay_hover"></div>
       </div>
       <div className="Card-Footer">
-        <div className="Card-Title">Harvey.one</div>
-        <div className="Card-Subtitle">Robotics</div>
+        <div className="Card-Title">{ title }</div>
+        <div className="Card-Subtitle">{ subtitle }</div>
       </div>
     </div>
   );
