@@ -19,67 +19,64 @@ import posts0 from '../../data/posts';
 //const baseBackendUrl = 'http://schmiede.one/index.php/wp-json';
 const baseBackendUrl = 'http://localhost/wp-blog-api/index.php/wp-json';
 
+function fetchPostTag(rawPost) {
+  const tagId = rawPost.tags[0];
+  const url = `${baseBackendUrl}/wp/v2/tags/${tagId}`;
+  return new Promise((resolve, reject) => {
+    fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        resolve(data.name);
+      })
+      .catch(reject);
+  });
+}
+
+function fetchPostMedia(rawPost) {
+  const mediaId = rawPost.featured_media;
+  const url = `${baseBackendUrl}/wp/v2/media/${mediaId}`;
+  return new Promise((resolve, reject) => {
+    fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        resolve(data.guid.rendered);
+      })
+      .catch(reject);
+  });
+}
+
+function fetchPostData(rawPost) {
+  const fetchers = [
+    fetchPostMedia(rawPost),
+    fetchPostTag(rawPost),
+  ];
+  return Promise.all(fetchers)
+    .then(([mediaSrc, tag]) => {
+      return {
+        title: rawPost.title.rendered,
+        subtitle: tag,
+        imageSrc: mediaSrc,
+      };
+    });
+}
+
+/**
+ * Post grid component.
+ */
 export default function PostGrid() {
   const [isError, setError] = useState(false);
   const [isLoading, setLoading] = useState(true);
   const [posts, setPosts] = useState();
 
-  function fetchPostMedia(rawPost) {
-    const mediaId = rawPost.featured_media;
-    const url = `${baseBackendUrl}/wp/v2/media/${mediaId}`;
-    return new Promise((resolve, reject) => {
-      fetch(url)
-        .then(res => res.json())
-        .then(data => {
-          const p = {
-            title: rawPost.title.rendered,
-            subtitle: 'Subtitle',
-            imageSrc: data.guid.rendered,
-          };
-          resolve(p);
-        })
-        .catch(reject);
-    });
-  }
-
-  function fetchPostTag(rawPost) {
-    const tagId = rawPost.tags[0];
-    const url = `${baseBackendUrl}/wp/v2/tags/${tagId}`;
-    return new Promise((resolve, reject) => {
-      fetch(url)
-        .then(res => res.json())
-        .then(data => {
-          const p = {
-            title: rawPost.title.rendered,
-            subtitle: data.name,
-            imageSrc: '/work/project-2.jpg',
-          };
-          resolve(p);
-        })
-        .catch(reject);
-    });
-  }
-
   function initPosts(rawPosts) {
     const postPromises = rawPosts.map(x => {
-      return fetchPostMedia(x);
+      return fetchPostData(x);
     });
-    Promise.all(postPromises)
+    return Promise.all(postPromises)
       .then(fetchedPosts => {
         setPosts(fetchedPosts);
         setLoading(false);
-      })
-    /*const convertedPosts = [];
-    rawPosts.map(x => {
-      const p = {
-        title: x.title.rendered,
-        subtitle: 'Subtitle',
-        imageSrc: '/work/project-2.jpg',
-      };
-      convertedPosts.push(p);
-    });
-    setPosts(convertedPosts);
-    setLoading(false);*/
+      });
   }
 
   function renderPosts() {
@@ -96,16 +93,22 @@ export default function PostGrid() {
 
   useEffect(() => {
     const backendUrl = `${baseBackendUrl}/wp/v2/posts`;
-    fetch(backendUrl)
+    const abortController = new AbortController();
+
+    fetch(backendUrl, { signal: abortController.signal})
       .then(res => res.json())
       .then(_posts => initPosts(_posts))
       .catch(err => {
         setError(true);
         console.error(err);
       });
+    
+    return () => {
+      abortController.abort();
+    };
   }, []);
 
-  const renderBody = () => {
+  function renderBody() {
     if (isError) {
       return <div style={{ color: 'red' }}>Error occurred.</div>
     } else if (isLoading) {
