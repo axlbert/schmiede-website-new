@@ -59,6 +59,7 @@ function fetchPostData(rawPost) {
         title: rawPost.title.rendered,
         subtitle: tag,
         imageSrc: mediaSrc,
+        content: rawPost.content.rendered,
       };
     });
 }
