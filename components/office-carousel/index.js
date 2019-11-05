@@ -36,14 +36,34 @@ function Thumbnails({ slides, activeIndex, onClick }) {
 }
 
 /**
+ * Renders office carousel slide label title & subtitle part.
+ */
+function renderLabelTitle(label) {
+  if (!label.titleParts) return;
+  return label.titleParts.map((x, i) => {
+    if (x.type === 'title') {
+      return <div key={i}>
+        <span className="Carousel-Title OfficeCarousel-Title">
+          { x.content }
+        </span>
+      </div>;
+    } else {
+      return <div key={i}>
+        <span className="Carousel-Subtitle">{ x.content }</span>
+      </div>
+    }
+  });
+}
+
+/**
  * Office carousel component.
  */
 export default function OfficeCarousel({ slides = officeSlides }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const renderLabel = () => {
-    const activeSlide = slides[activeIndex];
-    const label = activeSlide.label;
+  /*const renderLabel = (slide, index) => {
+    //const activeSlide = slides[activeIndex];
+    const label = slide.label;
     const title = label.titleParts && 
       label.titleParts.map((x, i) => {
         if (x.type === 'title') {
@@ -59,16 +79,31 @@ export default function OfficeCarousel({ slides = officeSlides }) {
         }
       });
     return (
-      <div className="Carousel-Label OfficeCarousel-Label">
+      <div key={index} className="Carousel-Label OfficeCarousel-Label">
         { title }
         <div className="Carousel-Paragraph">
           { label.paragraph }
         </div>
       </div>
     );
+  }*/
+
+  const renderLabels = () => {
+    return slides.map((x, i) => {
+      const labelClassName = 'Carousel-Label OfficeCarousel-Label' +
+        (i === activeIndex ? ' OfficeCarousel-Label_active' : '');
+      return (
+        <div key={i} className={labelClassName}>
+          { renderLabelTitle(x.label) }
+          <div className="Carousel-Paragraph">
+            { x.label.paragraph }
+          </div>
+        </div>
+      );
+    });
   }
 
-  const renderSlides = () => {
+  const renderSlideImages = () => {
     return slides.map((x, i) => {
       const imageClassName = `OfficeCarousel-Image ${
         (i === activeIndex ? 'OfficeCarousel-Image_active' : '')
@@ -87,9 +122,9 @@ export default function OfficeCarousel({ slides = officeSlides }) {
   return (
     <div>
       <div className="OfficeCarousel-Layout">
-        { renderLabel() }
+        { renderLabels() }
         <div className="OfficeCarousel-ImageWrapper">
-          { renderSlides() }
+          { renderSlideImages() }
         </div>
       </div>
       <div>
