@@ -4,6 +4,7 @@ import PostCard from '../post-card';
 import PostDialog from '../post-dialog';
 import Post from '../post';
 import PostFilters from '../post-filters';
+import PostTag from '../post-tag.enum';
 
 const baseBackendUrl = 'http://schmiede.one/index.php/wp-json';
 //const baseBackendUrl = 'http://localhost/wp-blog-api/index.php/wp-json';
@@ -62,7 +63,8 @@ export default function PostGrid() {
   const [isDialogOpen, setDialogOpen] = useState(false);
   const [selectedPost, setSelectedPost] = useState(null);
   const [previousPost, setPreviousPost] = useState(null);
-  const [nextPost, setNextPost] = useState(null); 
+  const [nextPost, setNextPost] = useState(null);
+  const [filter, setFilter] = useState(PostTag.ALL);
 
   function initPosts(rawPosts) {
     const postPromises = rawPosts.map(x => {
@@ -77,13 +79,15 @@ export default function PostGrid() {
 
   function renderPosts() {
     return posts.map((x, i) => {
-      return (
-        <PostCard
-          key={i}
-          onClick={ e => handleCardClick(e, x, i) }
-          {...x}
-        />
-      );
+      if (filter === PostTag.ALL || x.subtitle === filter) {
+        return (
+          <PostCard
+            key={i}
+            onClick={ e => handleCardClick(e, x, i) }
+            {...x}
+          />
+        );
+      }
     })
   }
 
