@@ -156,7 +156,7 @@ export default function PostGrid() {
 
   return (
     <div>
-      <PostFilters />
+      <PostFilters filter={filter} onChange={setFilter} />
       { renderBody() }
       <PostDialog open={isDialogOpen} onClose={handleDialogClose}>
         {

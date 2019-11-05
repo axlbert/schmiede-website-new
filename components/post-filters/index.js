@@ -1,7 +1,7 @@
 import React from 'react';
 import Pills from './pills';
 
-export default function PostFilters() {
+export default function PostFilters({ filter, onChange }) {
   return (
     <div>
       <div className="Work-Select" style={{ textAlign: 'left' }}>
@@ -14,7 +14,7 @@ export default function PostFilters() {
       </div>
 
       <div className="Work-Pills">
-        <Pills />
+        <Pills filter={filter} onChange={onChange} />
       </div>
     </div>
   );
