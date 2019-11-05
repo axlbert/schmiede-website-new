@@ -43,30 +43,3 @@
   overflow-x: hidden;
   margin-bottom: 3rem;
 }
-
-/**
- * FILTERS
- */
-.Work-Select {
-  max-width: 22rem;
-  margin: 1.5rem auto;
-}
-.Work-Pills {
-  display: none;
-  margin: 3rem auto 1.5rem;
-  text-align: center;
-}
-@media (min-width: 400px) {
-  .Work-Select {
-    display: none;
-  }
-  .Work-Pills {
-    display: block;
-  }
-}
-@media (min-width: 576px) {
-  .Work-Pills {
-    text-align: left;
-  }
-}
-

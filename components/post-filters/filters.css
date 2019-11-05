@@ -1,0 +1,23 @@
+.Filters-Select {
+  max-width: 22rem;
+  margin: 1.5rem auto;
+  text-align: left;
+}
+.Filters-Pills {
+  display: none;
+  margin: 3rem auto 1.5rem;
+  text-align: center;
+}
+@media (min-width: 400px) {
+  .Filters-Select {
+    display: none;
+  }
+  .Filters-Pills {
+    display: block;
+  }
+}
+@media (min-width: 576px) {
+  .Filters-Pills {
+    text-align: left;
+  }
+}
