@@ -129,15 +129,16 @@ export default function PostGrid() {
     }
   };
 
+  function handleDialogClose() {
+    setDialogOpen(false);
+    setSelectedPost(null);
+  }
+
   return (
     <div>
       { renderBody() }
-
-      <PostDialog
-        open={isDialogOpen}
-        onClose={ () => setDialogOpen(false) }
-      >
-        { selectedPost && <Post /> }
+      <PostDialog open={isDialogOpen} onClose={handleDialogClose}>
+        { selectedPost && <Post {...selectedPost} /> }
       </PostDialog>
     </div>
   );

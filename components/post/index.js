@@ -2,24 +2,24 @@ import React from 'react';
 
 import './post.css';
 
-export default function Post() {
+export default function Post({ title, subtitle, imageSrc }) {
   return (
     <article className="Post">
       <header className="Post-Header">
         <img
           className="Post-Image"
-          src="/work/work.jpg"
-          alt="Post Image"
+          src={imageSrc}
+          alt={title}
         />
       </header>
       <main className="Post-Main">
-        <h1 className="Post-Heading">Harvey.one</h1>
+        <h1 className="Post-Heading">{ title }</h1>
         <div style={{
           marginTop: '0.25rem',
           marginLeft: '0.2rem',
           marginBottom: '2rem',
         }}>
-          <span className="Post-Tag">Robotics</span>
+          <span className="Post-Tag">{ subtitle }</span>
         </div>
         
         <section>
