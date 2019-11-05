@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Dialog } from '@material-ui/core';
-import { withStyles } from '@material-ui/core/styles';
 
 import PostCard from '../post-card';
-
+import PostDialog from '../post-dialog';
 import Post from '../post';
 
 import posts0 from '../../data/posts';
@@ -20,14 +18,6 @@ import posts0 from '../../data/posts';
   })
 }*/
 
-const PostDialog = withStyles({
-  paper: {
-    '&': {
-      borderRadius: 0,
-      overflow: 'visible',
-    },
-  },
-})(Dialog);
 
 //const baseBackendUrl = 'http://schmiede.one/index.php/wp-json';
 const baseBackendUrl = 'http://localhost/wp-blog-api/index.php/wp-json';
@@ -144,6 +134,18 @@ export default function PostGrid() {
       { renderBody() }
 
       <PostDialog
+        open={isDialogOpen}
+        onClose={ () => setDialogOpen(false) }
+      >
+        { selectedPost && <Post /> }
+      </PostDialog>
+    </div>
+  );
+}
+
+/*
+
+<PostDialog
         maxWidth={'md'}
         scroll="body"
         open={isDialogOpen}
@@ -161,6 +163,6 @@ export default function PostGrid() {
         </button>
         { selectedPost && <Post /> }
       </PostDialog>
-    </div>
-  );
-}
+
+*/
+
