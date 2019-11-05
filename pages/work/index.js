@@ -1,41 +1,11 @@
-import React, { useState } from 'react';
-import { Dialog } from '@material-ui/core';
-import { withStyles } from '@material-ui/core/styles';
+import React from 'react';
 
 import './work.css';
 import Nav from '../../components/nav';
 import PostCarousel from '../../components/post-carousel';
-import PostCard from '../../components/post-card';
-import Post from '../../components/post';
-
-import posts from '../../data/posts';
 import PostGrid from '../../components/post-grid';
 
-/*const PostDialog = withStyles({
-  paper: {
-    '&': {
-      borderRadius: 0,
-      overflow: 'visible',
-    },
-  },
-})(Dialog);*/
-
 export default function Work() {
-  //const [isDialogOpen, setDialogOpen] = useState(false);
-
-  /* BACKUP */
-  /*const renderPosts = () => {
-    return posts.map((x, i) => {
-      return (
-        <PostCard
-          key={i}
-          onClick={ () => setDialogOpen(true) }
-          {...x}
-        />
-      );
-    })
-  }*/
-
   return (<div>
     <Nav />
     <article className="Work">

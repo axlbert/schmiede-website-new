@@ -4,27 +4,13 @@ import PostCard from '../post-card';
 import PostDialog from '../post-dialog';
 import Post from '../post';
 
-import posts0 from '../../data/posts';
-
-/*function renderPosts() {
-  return posts0.map((x, i) => {
-    return (
-      <PostCard
-        key={i}
-        onClick={ () => {} }
-        {...x}
-      />
-    );
-  })
-}*/
-
-
-//const baseBackendUrl = 'http://schmiede.one/index.php/wp-json';
-const baseBackendUrl = 'http://localhost/wp-blog-api/index.php/wp-json';
+const baseBackendUrl = 'http://schmiede.one/index.php/wp-json';
+//const baseBackendUrl = 'http://localhost/wp-blog-api/index.php/wp-json';
 
 function fetchPostTag(rawPost) {
   const tagId = rawPost.tags[0];
   const url = `${baseBackendUrl}/wp/v2/tags/${tagId}`;
+  if (!tagId) return;
   return new Promise((resolve, reject) => {
     fetch(url)
       .then(res => res.json())
@@ -42,7 +28,8 @@ function fetchPostMedia(rawPost) {
     fetch(url)
       .then(res => res.json())
       .then(data => {
-        resolve(data.guid.rendered);
+        const imageSrc = data.guid ? data.guid.rendered : null;
+        resolve(imageSrc);
       })
       .catch(reject);
   });
@@ -180,27 +167,3 @@ export default function PostGrid() {
     </div>
   );
 }
-
-/*
-
-<PostDialog
-        maxWidth={'md'}
-        scroll="body"
-        open={isDialogOpen}
-        onClose={ () => setDialogOpen(false) }
-      >
-        <button
-          className="PostDialog-CloseButton"
-          onClick={ () => setDialogOpen(false) }
-        >
-          <img
-            className="PostDialog-CloseButtonImage"
-            src="/close-button.svg"
-            alt="Close"
-          />
-        </button>
-        { selectedPost && <Post /> }
-      </PostDialog>
-
-*/
-
