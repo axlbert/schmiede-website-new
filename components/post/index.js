@@ -15,7 +15,7 @@ export default function Post({
             alt="Previous"
           />
           <div className="Post-FooterLinkLabel Post-FooterLinkLabel_left">
-            <span className="Post-FooterLinkTitle">CNHI Konfigurator</span>
+            <span className="Post-FooterLinkTitle">{ previous.title }</span>
             <span className="Post-FooterLinkSubtitle">Previous</span>
           </div>
         </a>
@@ -30,7 +30,7 @@ export default function Post({
       return (
         <a className="Post-FooterLink" href="#">
           <div className="Post-FooterLinkLabel Post-FooterLinkLabel_right">
-            <span className="Post-FooterLinkTitle">Indoor Farming</span>
+            <span className="Post-FooterLinkTitle">{ next.title }</span>
             <span className="Post-FooterLinkSubtitle">Next</span>
           </div>
           <img
