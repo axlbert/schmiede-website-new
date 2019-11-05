@@ -41,6 +41,33 @@ function Thumbnails({ slides, activeIndex, onClick }) {
 export default function OfficeCarousel({ slides = officeSlides }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
+  const renderLabel = () => {
+    const activeSlide = slides[activeIndex];
+    const label = activeSlide.label;
+    const title = label.titleParts && 
+      label.titleParts.map((x, i) => {
+        if (x.type === 'title') {
+          return <div key={i}>
+            <span className="Carousel-Title OfficeCarousel-Title">
+              { x.content }
+            </span>
+          </div>;
+        } else {
+          return <div key={i}>
+            <span className="Carousel-Subtitle">{ x.content }</span>
+          </div>
+        }
+      });
+    return (
+      <div className="Carousel-Label OfficeCarousel-Label">
+        { title }
+        <div className="Carousel-Paragraph">
+          { label.paragraph }
+        </div>
+      </div>
+    );
+  }
+
   const renderSlides = () => {
     return slides.map((x, i) => {
       const imageClassName = `OfficeCarousel-Image ${
@@ -60,23 +87,7 @@ export default function OfficeCarousel({ slides = officeSlides }) {
   return (
     <div>
       <div className="OfficeCarousel-Layout">
-        <div className="Carousel-Label OfficeCarousel-Label">
-          <div>
-            <span className="Carousel-Subtitle">We work in a</span>
-          </div>
-          <div>
-            <span className="Carousel-Title OfficeCarousel-Title">
-              cool coworking place
-            </span>
-          </div>
-          <div>
-            <span className="Carousel-Subtitle">called super 7000.</span>
-          </div>
-          <div className="Carousel-Paragraph">
-            Our cozy -full of plants- office will blow your mind, 
-            be ready for kikker games and some unexpected gun fights.
-          </div>
-        </div>
+        { renderLabel() }
         <div className="OfficeCarousel-ImageWrapper">
           { renderSlides() }
         </div>
