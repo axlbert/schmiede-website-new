@@ -147,6 +147,21 @@ export default function PostGrid() {
     setNextPost(null);
   }
 
+  function shiftPost(currentPost) {
+    const i = posts.indexOf(currentPost);
+    setSelectedPost(posts[i]);
+    if (i > 0) {
+      setPreviousPost(posts[i - 1]);
+    } else {
+      setPreviousPost(null);
+    }
+    if (i < posts.length - 1) {
+      setNextPost(posts[i + 1]);
+    } else {
+      setNextPost(null);
+    }
+  }
+
   return (
     <div>
       { renderBody() }
@@ -157,6 +172,8 @@ export default function PostGrid() {
               {...selectedPost}
               previous={previousPost}
               next={nextPost}
+              onPreviousClick={ () => shiftPost(previousPost) }
+              onNextClick={ () => shiftPost(nextPost) }
             />
         }
       </PostDialog>

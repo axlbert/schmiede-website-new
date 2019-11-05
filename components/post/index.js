@@ -3,12 +3,13 @@ import React from 'react';
 import './post.css';
 
 export default function Post({
-  title, subtitle, imageSrc, content, previous, next,
+  title, subtitle, imageSrc, content,
+  previous, next, onPreviousClick, onNextClick,
 }) {
   function renderPreviousLink() {
     if (previous) {
       return (
-        <a className="Post-FooterLink" href="#">
+        <a className="Post-FooterLink" href="#" onClick={handlePreviousClick}>
           <img
             className="Post-FooterLinkArrow"
             src="/arrow-left.svg"
@@ -24,11 +25,15 @@ export default function Post({
       return <div></div>;
     }
   }
+  function handlePreviousClick(e) {
+    e.preventDefault();
+    onPreviousClick && onPreviousClick(e);
+  }
 
   function renderNextLink() {
     if (next) {
       return (
-        <a className="Post-FooterLink" href="#">
+        <a className="Post-FooterLink" href="#" onClick={handleNextClick}>
           <div className="Post-FooterLinkLabel Post-FooterLinkLabel_right">
             <span className="Post-FooterLinkTitle">{ next.title }</span>
             <span className="Post-FooterLinkSubtitle">Next</span>
@@ -43,6 +48,10 @@ export default function Post({
     } else {
       return <div></div>;
     }
+  }
+  function handleNextClick(e) {
+    e.preventDefault();
+    onNextClick && onNextClick(e);
   }
 
   return (
