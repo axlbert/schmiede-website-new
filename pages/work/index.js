@@ -17,24 +17,6 @@ export default function Work() {
       </header>
 
       <main className="Work-Main container">
-        <div className="Work-Select">
-          <select className="Banner-Button">
-            <option>All</option>
-            <option>Robotics</option>
-            <option>Development</option>
-            <option>Farming</option>
-          </select>
-        </div>
-
-        <div className="Work-Pills">
-          <div className="Pills">
-            <span className="Pills-Item">All</span>
-            <span className="Pills-Item">Robotics</span>
-            <span className="Pills-Item">Development</span>
-            <span className="Pills-Item Pills-Item_active">Farming</span>
-          </div>
-        </div>
-
         <section style={{ textAlign: 'center' }}>
           <PostGrid />
         </section>

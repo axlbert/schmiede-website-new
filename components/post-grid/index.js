@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import PostCard from '../post-card';
 import PostDialog from '../post-dialog';
 import Post from '../post';
+import PostFilters from '../post-filters';
 
 const baseBackendUrl = 'http://schmiede.one/index.php/wp-json';
 //const baseBackendUrl = 'http://localhost/wp-blog-api/index.php/wp-json';
@@ -151,6 +152,7 @@ export default function PostGrid() {
 
   return (
     <div>
+      <PostFilters />
       { renderBody() }
       <PostDialog open={isDialogOpen} onClose={handleDialogClose}>
         {
