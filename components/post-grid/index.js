@@ -72,7 +72,9 @@ export default function PostGrid() {
   const [isLoading, setLoading] = useState(true);
   const [posts, setPosts] = useState();
   const [isDialogOpen, setDialogOpen] = useState(false);
-  const [selectedPost, setSelectedPost] = useState();
+  const [selectedPost, setSelectedPost] = useState(null);
+  const [previousPost, setPreviousPost] = useState(null);
+  const [nextPost, setNextPost] = useState(null); 
 
   function initPosts(rawPosts) {
     const postPromises = rawPosts.map(x => {
@@ -90,14 +92,22 @@ export default function PostGrid() {
       return (
         <PostCard
           key={i}
-          onClick={ () => {
-            setSelectedPost(x);
-            setDialogOpen(true);
-          } }
+          onClick={ e => handleCardClick(e, x, i) }
           {...x}
         />
       );
     })
+  }
+
+  function handleCardClick(e, x, i) {
+    setSelectedPost(x);
+    if (i > 0) {
+      setPreviousPost(posts[i - 1]);
+    }
+    if (i < posts.length - 1) {
+      setNextPost(posts[i + 1]);
+    }
+    setDialogOpen(true);
   }
 
   useEffect(() => {
@@ -133,13 +143,22 @@ export default function PostGrid() {
   function handleDialogClose() {
     setDialogOpen(false);
     setSelectedPost(null);
+    setPreviousPost(null);
+    setNextPost(null);
   }
 
   return (
     <div>
       { renderBody() }
       <PostDialog open={isDialogOpen} onClose={handleDialogClose}>
-        { selectedPost && <Post {...selectedPost} /> }
+        {
+          selectedPost &&
+            <Post
+              {...selectedPost}
+              previous={previousPost}
+              next={nextPost}
+            />
+        }
       </PostDialog>
     </div>
   );
