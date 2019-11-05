@@ -1,5 +1,6 @@
 import React from 'react';
 
+import './pills.css';
 import PostTag from '../post-tag.enum';
 
 const pills = [

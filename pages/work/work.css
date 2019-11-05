@@ -70,25 +70,3 @@
   }
 }
 
-/**
- * PILLS
- */
-.Pills {
-  display: inline-block;
-  white-space: nowrap;
-  overflow-x: visible;
-}
-.Pills-Item {
-  display: inline-block;
-  margin-bottom: 1rem;
-  padding: .5rem;
-  color: #393f42;
-}
-.Pills-Item:not(:last-child) {
-  margin-right: 1.5rem;
-}
-.Pills-Item_active {
-  background-color: #df1720;
-  color: white;
-  font-weight: 600;
-}
