@@ -1,0 +1,24 @@
+.PostDialog-CloseButton {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  z-index: 1;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.PostDialog-CloseButtonImage {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .PostDialog-CloseButton {
+    top: 1.25rem;
+    right: 1.25rem;
+  }
+}
