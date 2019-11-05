@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Dialog } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
 
 import PostCard from '../post-card';
+
+import Post from '../post';
 
 import posts0 from '../../data/posts';
 
@@ -15,6 +19,15 @@ import posts0 from '../../data/posts';
     );
   })
 }*/
+
+const PostDialog = withStyles({
+  paper: {
+    '&': {
+      borderRadius: 0,
+      overflow: 'visible',
+    },
+  },
+})(Dialog);
 
 //const baseBackendUrl = 'http://schmiede.one/index.php/wp-json';
 const baseBackendUrl = 'http://localhost/wp-blog-api/index.php/wp-json';
@@ -67,6 +80,8 @@ export default function PostGrid() {
   const [isError, setError] = useState(false);
   const [isLoading, setLoading] = useState(true);
   const [posts, setPosts] = useState();
+  const [isDialogOpen, setDialogOpen] = useState(false);
+  const [selectedPost, setSelectedPost] = useState();
 
   function initPosts(rawPosts) {
     const postPromises = rawPosts.map(x => {
@@ -84,7 +99,10 @@ export default function PostGrid() {
       return (
         <PostCard
           key={i}
-          onClick={ () => {} }
+          onClick={ () => {
+            setSelectedPost(x);
+            setDialogOpen(true);
+          } }
           {...x}
         />
       );
@@ -93,6 +111,7 @@ export default function PostGrid() {
 
   useEffect(() => {
     const backendUrl = `${baseBackendUrl}/wp/v2/posts`;
+    // for cleaning up the effect
     const abortController = new AbortController();
 
     fetch(backendUrl, { signal: abortController.signal})
@@ -123,6 +142,25 @@ export default function PostGrid() {
   return (
     <div>
       { renderBody() }
+
+      <PostDialog
+        maxWidth={'md'}
+        scroll="body"
+        open={isDialogOpen}
+        onClose={ () => setDialogOpen(false) }
+      >
+        <button
+          className="PostDialog-CloseButton"
+          onClick={ () => setDialogOpen(false) }
+        >
+          <img
+            className="PostDialog-CloseButtonImage"
+            src="/close-button.svg"
+            alt="Close"
+          />
+        </button>
+        { selectedPost && <Post /> }
+      </PostDialog>
     </div>
   );
 }

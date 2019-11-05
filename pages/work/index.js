@@ -11,17 +11,17 @@ import Post from '../../components/post';
 import posts from '../../data/posts';
 import PostGrid from '../../components/post-grid';
 
-const PostDialog = withStyles({
+/*const PostDialog = withStyles({
   paper: {
     '&': {
       borderRadius: 0,
       overflow: 'visible',
     },
   },
-})(Dialog);
+})(Dialog);*/
 
 export default function Work() {
-  const [isDialogOpen, setDialogOpen] = useState(false);
+  //const [isDialogOpen, setDialogOpen] = useState(false);
 
   /* BACKUP */
   /*const renderPosts = () => {
@@ -100,25 +100,6 @@ export default function Work() {
           </a>
         </div>
       </footer>
-
-      <PostDialog
-        maxWidth={'md'}
-        scroll="body"
-        open={isDialogOpen}
-        onClose={ () => setDialogOpen(false) }
-      >
-        <button
-          className="PostDialog-CloseButton"
-          onClick={ () => setDialogOpen(false) }
-        >
-          <img
-            className="PostDialog-CloseButtonImage"
-            src="/close-button.svg"
-            alt="Close"
-          />
-        </button>
-        <Post />
-      </PostDialog>
     </article>
   </div>);
 }
