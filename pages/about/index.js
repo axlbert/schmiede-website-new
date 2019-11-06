@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 
 import './about.css';
@@ -19,6 +19,23 @@ function renderMembers() {
  * About page component.
  */
 export default function About() {
+  // height-100 fix for mobile browsers
+  const [windowInnerWidth, setInnerWidth] = useState(0);
+  function setRelativeVH() {
+    const newWidth = window.innerWidth;
+    if (newWidth !== windowInnerWidth) {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+      setInnerWidth(newWidth);
+    }
+  }
+  useEffect(() => {
+    setRelativeVH();
+    window.addEventListener('resize', setRelativeVH);
+    return () => window.removeEventListener('resize', setRelativeVH); 
+  });
+  // end height-100 fix
+
   return (
     <article className="About">
       <Head>
