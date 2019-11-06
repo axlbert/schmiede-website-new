@@ -166,3 +166,19 @@
     padding-top: 3rem;
   }
 }
+
+
+/* content */
+.Post-Content h1,
+.Post-Content h2,
+.Post-Content h3,
+.Post-Content h4 {
+  font-weight: 500;
+}
+.Post-Content h1 {
+  font-size: 2rem;
+}
+.Post-Content a {
+  color: #df1720;
+  text-decoration: underline;
+}

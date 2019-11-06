@@ -70,10 +70,13 @@ export default function Post({
           marginLeft: '0.2rem',
           marginBottom: '2rem',
         }}>
-          <span className="Post-Tag">{ subtitle }</span>
+          { subtitle && <span className="Post-Tag">{ subtitle }</span> }
         </div>
         
-        <section dangerouslySetInnerHTML={{ __html: content }}></section>
+        <section
+          className="Post-Content"
+          dangerouslySetInnerHTML={{ __html: content }}
+        ></section>
 
         <section className="Post-MoreSection">
           <div className="Post-MoreHeading">Want to know more?</div>
