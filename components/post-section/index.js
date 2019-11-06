@@ -1,23 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import posts0 from '../../data/posts';
 import PostCard from '../post-card';
 import PostDialog from '../post-dialog';
 import Post from '../post';
+import PostTag from '../post-tag.enum';
 
 /**
  * Post grid & dialog presentational component.
  * @param {*} param0 
  */
-function PostGrid({ posts }) {
+function PostGrid({ posts, filter }) {
   const [isDialogOpen, setDialogOpen] = useState(false);
+  const [filteredPosts, setFilteredPosts] = useState(posts);
 
+  useEffect(() => {
+    const filtered = posts.filter(x => {
+      return !filter ||
+        filter === PostTag.ALL ||
+        x.subtitle === filter;
+    });
+    setFilteredPosts(filtered);
+  }, [posts, filter]);
+  
   function handleCardClick(e, x, i) {
     setDialogOpen(true);
   }
 
   function renderPosts() {
-    return posts.map((x, i) => {
+    return filteredPosts.map((x, i) => {
       return <PostCard key={i} {...x} onClick={ e => handleCardClick(e, x, i) } />
     });
   }
@@ -28,7 +39,7 @@ function PostGrid({ posts }) {
         { renderPosts() }
       </div>
       <PostDialog open={isDialogOpen} onClose={ () => setDialogOpen(false) }>
-        <Post {...posts[0]} />
+        <Post {...filteredPosts[0]} />
       </PostDialog>
     </div>
   );
@@ -43,7 +54,7 @@ export default function PostSection() {
       <div>
         FILTERS
       </div>
-      <PostGrid posts={posts0} />
+      <PostGrid posts={posts0} filter={PostTag.ALL} />
     </section>
   );
 }
