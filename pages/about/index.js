@@ -36,6 +36,17 @@ export default function About() {
   });
   // end height-100 fix
 
+  function handleHeaderLinkClick(e) {
+    e.preventDefault();
+    const cultureSection = document.getElementById('culture');
+    const offset = cultureSection.offsetTop;
+    window.scroll({
+      top: offset,
+      left: 0,
+      behavior: 'smooth',
+    });
+  }
+
   return (
     <article className="About">
       <Head>
@@ -64,7 +75,11 @@ export default function About() {
 
             <div className="About-HeaderSpacer"></div>
 
-            <a className="About-HeaderLink" href="#">
+            <a
+              className="About-HeaderLink"
+              href="#culture"
+              onClick={handleHeaderLinkClick}
+            >
               <img
                 className="About-HeaderLinkImage"
                 src="/arrow-right-button.svg"
