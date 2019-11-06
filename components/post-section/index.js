@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import PostTag from '../post-tag.enum';
 import PostGrid from '../post-grid';
+import PostFilters from '../post-filters';
 
 const baseBackendUrl = 'http://schmiede.one/index.php/wp-json';
 //const baseBackendUrl = 'http://localhost/wp-blog-api/index.php/wp-json';
@@ -117,9 +118,7 @@ export default function PostSection() {
 
   return (
     <section>
-      <div>
-        FILTERS
-      </div>
+      <PostFilters filter={filter} onChange={setFilter} />
       { renderGrid() }
     </section>
   );
