@@ -2,17 +2,13 @@ import React from 'react';
 
 import './filters.css';
 import Pills from './pills';
+import FilterSelect from './FilterSelect';
 
 export default function PostFilters({ filter, onChange }) {
   return (
     <div>
       <div className="Filters-Select">
-        <select className="Banner-Button">
-          <option>All</option>
-          <option>Robotics</option>
-          <option>Development</option>
-          <option>Farming</option>
-        </select>
+        <FilterSelect filter={filter} onChange={onChange} />
       </div>
 
       <div className="Filters-Pills">
