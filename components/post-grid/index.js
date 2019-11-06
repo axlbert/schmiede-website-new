@@ -152,6 +152,8 @@ export default function PostGrid() {
     } else {
       setNextPost(null);
     }
+    const muiDialogContainer = document.querySelector('.MuiDialog-container');
+    muiDialogContainer.scroll(0, 0);
   }
 
   return (
