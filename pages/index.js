@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
@@ -10,6 +10,23 @@ import HomepageScreen from '../components/homepage/homepage-screen.enum';
  * Homepage component.
  */
 export default function Homepage() {
+  // height-100 fix for mobile browsers
+  const [windowInnerWidth, setInnerWidth] = useState(0);
+  function setRelativeVH() {
+    const newWidth = window.innerWidth;
+    if (newWidth !== windowInnerWidth) {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+      setInnerWidth(newWidth);
+    }
+  }
+  useEffect(() => {
+    setRelativeVH();
+    window.addEventListener('resize', setRelativeVH);
+    return () => window.removeEventListener('resize', setRelativeVH); 
+  });
+  // end height-100 fix
+
   const [mainScreen, setMainScreen] = useState(HomepageScreen.INITIAL);
 
   const handleLogoClick = e => {
