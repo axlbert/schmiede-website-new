@@ -13,10 +13,10 @@ export const usContents = {
   title: 'Want to go deeper?',
   subtitle: 'Choose whatever you want to know about us:',
   links: [
-    { label: 'culture', href: '/about' },
-    { label: 'team', href: '/about' },
-    { label: 'office', href: '/about' },
-    { label: 'join us', href: '/about' },
+    { label: 'culture', href: '/about#culture' },
+    { label: 'team', href: '/about#team' },
+    { label: 'office', href: '/about#office' },
+    { label: 'join us', href: '/about#join-us' },
   ],
 };
 

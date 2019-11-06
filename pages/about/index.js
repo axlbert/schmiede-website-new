@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 
 import './about.css';
 import Nav from '../../components/nav';
@@ -19,7 +20,12 @@ function renderMembers() {
  */
 export default function About() {
   return (
-    <div className="About">
+    <article className="About">
+      <Head>
+        <title>schmiede.one - About</title>
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
+
       <Nav />
       <header
         className="About-Header"
@@ -54,11 +60,12 @@ export default function About() {
         </div>
       </header>
 
-      <section className="container" style={{ marginTop: '4rem' }}>
+      <section id="culture" className="container" style={{ marginTop: '4rem' }}>
         <CultureCarousel />
       </section>
 
       <div
+        id="team"
         className="container"
         style={{
           marginTop: '3rem',
@@ -104,11 +111,12 @@ export default function About() {
       </div>
 
 
-      <div className="container my-5">
+      <div id="office" className="container my-5">
         <OfficeCarousel />
       </div>
 
       <footer
+        id="join-us"
         className="Banner"
         style={{
           paddingTop: '7rem',
@@ -148,6 +156,6 @@ export default function About() {
           </a>
         </div>
       </footer>
-    </div>
+    </article>
   );
 }

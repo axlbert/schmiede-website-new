@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 
 import './work.css';
 import Nav from '../../components/nav';
@@ -7,6 +8,11 @@ import PostSection from '../../components/post-section';
 
 export default function Work() {
   return (<div>
+    <Head>
+      <title>schmiede.one - Work</title>
+      <link rel='icon' href='/favicon.ico' />
+    </Head>
+
     <Nav />
     <article className="Work">
       <header className="Work-HeaderCarouselSmall">

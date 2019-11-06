@@ -20,7 +20,7 @@ export default function Homepage() {
   return (
     <div>
       <Head>
-        <title>Home</title>
+        <title>schmiede.one - Home</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
