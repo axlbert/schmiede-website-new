@@ -1,0 +1,7 @@
+.FilterSelect-Icon {
+  position: absolute;
+  right: .75rem;
+  color: white;
+  font-size: 1rem;
+  pointer-events: none;
+}
