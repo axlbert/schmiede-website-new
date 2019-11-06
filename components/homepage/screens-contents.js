@@ -24,8 +24,8 @@ export const projectsContents = {
   title: 'Want to go deeper?',
   subtitle: 'Choose between out projects\' subjects:',
   links: [
-    { label: 'robotics', href: '/work' },
-    { label: 'development', href: '/work' },
-    { label: 'farming', href: '/work' },
+    { label: 'robotics', href: '/work#robotics' },
+    { label: 'development', href: '/work#development' },
+    { label: 'farming', href: '/work#farming' },
   ],
 };
