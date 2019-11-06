@@ -4,6 +4,7 @@ import './work.css';
 import Nav from '../../components/nav';
 import PostCarousel from '../../components/post-carousel';
 import PostGrid from '../../components/post-grid';
+import PostSection from '../../components/post-section';
 
 export default function Work() {
   return (<div>
@@ -18,7 +19,7 @@ export default function Work() {
 
       <main className="Work-Main container">
         <section style={{ textAlign: 'center' }}>
-          <PostGrid />
+          <PostSection />
         </section>
       </main>
 
