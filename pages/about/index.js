@@ -50,6 +50,7 @@ export default function About() {
       >
         <div className="container">
           <div className="About-HeaderContent">
+            <div style={{ paddingTop: '5rem' }}></div>
             <div>
               <span className="Banner-Title">
                 We are a gang of creatives, developers, engeneers and managers 
@@ -81,7 +82,7 @@ export default function About() {
         <CultureCarousel />
       </section>
 
-      <div
+      <section
         id="team"
         className="container"
         style={{
@@ -92,9 +93,9 @@ export default function About() {
         <div className="Grid">
           { renderMembers() }
         </div>
-      </div>
+      </section>
 
-      <div
+      <section
         className="Banner"
         style={{
           marginTop: '3rem',
@@ -125,12 +126,12 @@ export default function About() {
             />
           </a>
         </div>
-      </div>
+      </section>
 
 
-      <div id="office" className="container my-5">
+      <section id="office" className="container my-5">
         <OfficeCarousel />
-      </div>
+      </section>
 
       <footer
         id="join-us"
