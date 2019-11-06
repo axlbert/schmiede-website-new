@@ -15,13 +15,6 @@ export default function Work() {
 
     <Nav />
     <article className="Work">
-      <header className="Work-HeaderCarouselSmall">
-        <PostCarousel />
-      </header>
-      <header className="Work-HeaderCarouselLarge container">
-        <PostCarousel />
-      </header>
-
       <main className="Work-Main container">
         <PostSection />
       </main>
@@ -59,3 +52,16 @@ export default function Work() {
     </article>
   </div>);
 }
+
+/*
+
+HEADER CAROUSEL BACKUP
+
+<header className="Work-HeaderCarouselSmall">
+  <PostCarousel />
+</header>
+<header className="Work-HeaderCarouselLarge container">
+  <PostCarousel />
+</header>
+
+*/
