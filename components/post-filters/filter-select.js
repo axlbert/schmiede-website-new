@@ -43,20 +43,25 @@ export default function FilterSelect({ filter, onChange }) {
     onChange && onChange(e.target.value);
   }
 
-  /*return (
-    <select
-      className="Banner-Button"
-      value={filter}
-      onChange={handleChange}
-    >
-      <option value={PostTag.ALL}>All</option>
-      <option value={PostTag.ROBOTICS}>Robotics</option>
-      <option value={PostTag.DEVELOPMENT}>Development</option>
-      <option value={PostTag.FARMING}>Farming</option>
-    </select>
-  );*/
-  
   return (
+    <div className="FilterSelect-Wrapper">
+      
+      <select
+        className="FilterSelect Banner-Button"
+        value={filter}
+        onChange={handleChange}
+      >
+        <option value={PostTag.ALL}>All</option>
+        <option value={PostTag.ROBOTICS}>Robotics</option>
+        <option value={PostTag.DEVELOPMENT}>Development</option>
+        <option value={PostTag.FARMING}>Farming</option>
+      </select>
+      <DropdownIcon />
+    </div>
+    
+  );
+
+  /*return (
     <StyledSelect
       value={filter}
       onChange={handleChange}
@@ -68,5 +73,5 @@ export default function FilterSelect({ filter, onChange }) {
       <MenuItem value={PostTag.DEVELOPMENT}>Development</MenuItem>
       <MenuItem value={PostTag.FARMING}>Farming</MenuItem>
     </StyledSelect>
-  );
+  );*/
 }
