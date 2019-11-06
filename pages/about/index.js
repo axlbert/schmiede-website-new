@@ -183,7 +183,8 @@ export default function About() {
           marginTop: '2rem',
         }}>
           <a
-            href="#"
+            href="https://angel.co/company/schmiede-one/jobs"
+            target="_blank"
             className="Banner-Button"
             style={{ marginRight: '1rem' }}
           >
