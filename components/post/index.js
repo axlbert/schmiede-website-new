@@ -77,14 +77,6 @@ export default function Post({
           className="Post-Content"
           dangerouslySetInnerHTML={{ __html: content }}
         ></section>
-
-        <section className="Post-MoreSection">
-          <div className="Post-MoreHeading">Want to know more?</div>
-          <div className="Post-MoreParagraph">
-            Go to <a href="#" className="Link">farmlab.one</a> and 
-            find out more about this project!
-          </div>
-        </section>
       </main>
 
       <footer className="Post-Footer">
@@ -94,3 +86,17 @@ export default function Post({
     </article>
   );
 }
+
+/*
+
+"MORE" SECTION BACKUP
+
+<section className="Post-MoreSection">
+  <div className="Post-MoreHeading">Want to know more?</div>
+  <div className="Post-MoreParagraph">
+    Go to <a href="#" className="Link">farmlab.one</a> and 
+    find out more about this project!
+  </div>
+</section>
+
+*/
