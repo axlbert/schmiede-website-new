@@ -68,11 +68,11 @@ function fetchPostData(rawPost) {
  * Post section component.
  * Fetches post data from backend.
  */
-export default function PostSection() {
+export default function PostSection({ filter }) {
   const [isError, setError] = useState(false);
   const [isLoading, setLoading] = useState(true);
   const [posts, setPosts] = useState();
-  const [filter, setFilter] = useState(PostTag.ALL);
+  const [_filter, setFilter] = useState(filter);
 
   /* feeding posts with data (image & tag) */
   function initPosts(rawPosts) {
@@ -85,6 +85,10 @@ export default function PostSection() {
         setLoading(false);
       });
   }
+
+  useEffect(() => {
+    setFilter(filter);
+  }, [filter]);
 
   /* fetching posts list from backend */
   useEffect(() => {
@@ -112,13 +116,13 @@ export default function PostSection() {
     } else if (isLoading) {
       return <div>Loading...</div>;
     } else if (posts) {
-      return <PostGrid posts={posts} filter={filter} />;
+      return <PostGrid posts={posts} filter={_filter} />;
     }
   };
 
   return (
     <section>
-      <PostFilters filter={filter} onChange={setFilter} />
+      <PostFilters filter={_filter} onChange={setFilter} />
       { renderGrid() }
     </section>
   );
