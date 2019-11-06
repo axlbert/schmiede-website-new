@@ -47,7 +47,10 @@ export default function Contact() {
             <div className="Contact-InfoBlock">
               <span className="Contact-Heading">Mail</span>
               <span className="Contact-Paragraph">
-                <a className="Contact-MailLink" href="#">
+                <a
+                  className="Contact-MailLink"
+                  href="mailto:hello@schmiede.one"
+                >
                   hello@schmiede.one
                 </a>
               </span>

@@ -137,7 +137,7 @@ export default function About() {
           </span>
         </div>
         <div style={{ marginTop: '2.5rem' }}>
-          <a href="#">
+          <a href="mailto:hello@schmiede.one">
             <img
               className="Banner-RoundImage"
               src="/mail.svg"
@@ -189,7 +189,7 @@ export default function About() {
           >
             Job Offers
           </a>
-          <a href="#">
+          <a href="mailto:hello@schmiede.one">
             <img
               className="Banner-RoundImage"
               src="/mail.svg"

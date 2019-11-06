@@ -63,7 +63,7 @@ export default function Work() {
           </span>
         </div>
         <div style={{ marginTop: '3rem' }}>
-          <a href="#">
+          <a href="mailto:hello@schmiede.one">
             <img
               className="Banner-RoundImage"
               src="/mail.svg"
