@@ -78,7 +78,11 @@ export default function About() {
         </div>
       </header>
 
-      <section id="culture" className="container" style={{ marginTop: '4rem' }}>
+      <section
+        id="culture"
+        className="container"
+        style={{ paddingTop: '4.5rem' }}
+      >
         <CultureCarousel />
       </section>
 
@@ -86,7 +90,7 @@ export default function About() {
         id="team"
         className="container"
         style={{
-          marginTop: '3rem',
+          paddingTop: '4.5rem',
           textAlign: 'center',
         }}
       >
@@ -129,7 +133,11 @@ export default function About() {
       </section>
 
 
-      <section id="office" className="container my-5">
+      <section
+        id="office"
+        className="container"
+        style={{ paddingTop: '4.5rem' }}
+      >
         <OfficeCarousel />
       </section>
 
