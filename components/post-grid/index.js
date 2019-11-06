@@ -91,13 +91,17 @@ export default function PostGrid() {
     })
   }
 
-  function handleCardClick(e, x, i) {
+  function handleCardClick(e, x, _i) {
+    const filteredPosts = posts.filter(x => {
+      return filter === PostTag.ALL || x.subtitle === filter;
+    });
+    const i = filteredPosts.indexOf(x);
     setSelectedPost(x);
     if (i > 0) {
-      setPreviousPost(posts[i - 1]);
+      setPreviousPost(filteredPosts[i - 1]);
     }
-    if (i < posts.length - 1) {
-      setNextPost(posts[i + 1]);
+    if (i < filteredPosts.length - 1) {
+      setNextPost(filteredPosts[i + 1]);
     }
     setDialogOpen(true);
   }
@@ -140,15 +144,18 @@ export default function PostGrid() {
   }
 
   function shiftPost(currentPost) {
-    const i = posts.indexOf(currentPost);
-    setSelectedPost(posts[i]);
+    const filteredPosts = posts.filter(x => {
+      return filter === PostTag.ALL || x.subtitle === filter;
+    });
+    const i = filteredPosts.indexOf(currentPost);
+    setSelectedPost(filteredPosts[i]);
     if (i > 0) {
-      setPreviousPost(posts[i - 1]);
+      setPreviousPost(filteredPosts[i - 1]);
     } else {
       setPreviousPost(null);
     }
-    if (i < posts.length - 1) {
-      setNextPost(posts[i + 1]);
+    if (i < filteredPosts.length - 1) {
+      setNextPost(filteredPosts[i + 1]);
     } else {
       setNextPost(null);
     }
