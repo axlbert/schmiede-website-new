@@ -50,7 +50,7 @@ export default function About() {
       >
         <div className="container">
           <div className="About-HeaderContent">
-            <div style={{ paddingTop: '5rem' }}></div>
+            <div style={{ paddingTop: '6rem' }}></div>
             <div>
               <span className="Banner-Title">
                 We are a gang of creatives, developers, engeneers and managers 
@@ -145,6 +145,7 @@ export default function About() {
         id="join-us"
         className="Banner"
         style={{
+          marginTop: '4.5rem',
           paddingTop: '7rem',
           paddingBottom: '4.5rem',
           backgroundImage: 'url("/about/footer.jpg")',
