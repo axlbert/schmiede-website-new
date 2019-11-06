@@ -2,7 +2,7 @@ import React from 'react';
 
 import './filters.css';
 import Pills from './pills';
-import FilterSelect from './FilterSelect';
+import FilterSelect from './filter-select';
 
 export default function PostFilters({ filter, onChange }) {
   return (
