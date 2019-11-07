@@ -24,16 +24,13 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  display: none;
   object-fit: cover;
   object-position: center;
-  /*opacity: 0;
-  transition: 500ms ease opacity;*/
+  opacity: 0;
+  transition: opacity 500ms ease;
 }
 .OfficeCarousel-Image_active {
-  display: block;
-  /*opacity: 1;*/
-  animation: fade 900ms ease;
+  opacity: 1;
 }
 @keyframes fade {
   0% {
@@ -92,6 +89,11 @@
   position: absolute;
   left: 0;
   right: 0;
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+.OfficeCarousel-Label_active {
+  opacity: 1 !important;
 }
 @media (min-width: 768px) {
   .OfficeCarousel-LabelWrapper {

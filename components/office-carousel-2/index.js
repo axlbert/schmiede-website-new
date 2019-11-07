@@ -1,44 +1,76 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './office-carousel.css';
 import Thumbnails from './thumbnails';
 
 import officeSlides from '../../data/office-slides';
 
-export default function OfficeCarousel() {
+/**
+ * Office carousel component.
+ * @param {*} param0 
+ */
+export default function OfficeCarousel({ slides = officeSlides }) {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  function renderSLideLabels() {
+    return slides.map((x, i) => {
+      const label = x.label;
+      const labelClassName = 'Carousel-Label OfficeCarousel-Label' +
+        (i === activeIndex ? ' OfficeCarousel-Label_active' : '');
+      return (
+        <div key={i} className={labelClassName}>
+          <div>
+            <span className="Carousel-Subtitle">{ label.subtitle1 }</span>
+          </div>
+          <div>
+            <span className="Carousel-Title OfficeCarousel-Title">
+              { label.title }
+            </span>
+          </div>
+          <div>
+            <span className="Carousel-Subtitle">{ label.subtitle2 }</span>
+          </div>
+          <div className="Carousel-Paragraph">
+            { label.paragraph }
+          </div>
+        </div>
+      );
+    });
+  }
+
+  function renderSlideImages() {
+    return slides.map((x, i) => {
+      const imageClassName = `OfficeCarousel-Image ${
+        (i === activeIndex ? 'OfficeCarousel-Image_active' : '')
+      }`;
+      return (
+        <img
+          key={i}
+          className={imageClassName}
+          src={x.imageSrc}
+          alt={x.alt}
+        />
+      );
+    });
+  }
+
   return (
     <div className="OfficeCarousel">
       <div className="OfficeCarousel-Layout">
         <div className="OfficeCarousel-LabelWrapper">
-          <div className="Carousel-Label OfficeCarousel-Label">
-            <div>
-              <span className="Carousel-Subtitle">We work in a</span>
-            </div>
-            <div>
-              <span className="Carousel-Title OfficeCarousel-Title">
-                cool coworking place
-              </span>
-            </div>
-            <div>
-              <span className="Carousel-Subtitle">called super 7000.</span>
-            </div>
-            <div className="Carousel-Paragraph">
-              Our cozy -full of plants- office will blow your mind, 
-              be ready for kikker games and some unexpected gun fights.
-            </div>
-          </div>
+          { renderSLideLabels() }
         </div>
-
         <div className="OfficeCarousel-ImageWrapper">
-          <img
-            className="OfficeCarousel-Image OfficeCarousel-Image_active"
-            src={officeSlides[0].imageSrc}
-            alt="Office Carousel Image"
-          />
+          { renderSlideImages() }
         </div>
       </div>
+      
       <div className="OfficeCarousel-ThumbnailsWrapper">
-        <Thumbnails slides={officeSlides} />
+        <Thumbnails
+          slides={slides}
+          activeIndex={activeIndex}
+          onClick={ (e, i) => setActiveIndex(i) }
+        />
       </div>
     </div>
   );
