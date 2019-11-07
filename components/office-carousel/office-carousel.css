@@ -1,14 +1,8 @@
 /**
  * OFFICE CAROUSEL
  */
- .OfficeCarousel-Label {
-  display: none;
-  margin-bottom: 1.5rem;
-}
-.OfficeCarousel-Label_active {
-  display: block;
-  animation: fade 900ms ease;
-}
+
+/* image */
 .OfficeCarousel-ImageWrapper {
   position: relative;
   display: block;
@@ -24,68 +18,57 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  display: none;
   object-fit: cover;
   object-position: center;
-  /*opacity: 0;
-  transition: 500ms ease opacity;*/
+  opacity: 0;
+  transition: opacity 500ms ease;
 }
 .OfficeCarousel-Image_active {
-  display: block;
-  /*opacity: 1;*/
-  animation: fade 900ms ease;
-}
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  opacity: 1;
 }
 
-.OfficeCarousel-Thumbnails {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+
+/* label */
+.OfficeCarousel-LabelWrapper {
+  position: relative;
+  height: 11.5rem;
+  margin-bottom: 1rem;
+}
+.OfficeCarousel-Label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+.OfficeCarousel-Label_active {
+  opacity: 1 !important;
+}
+.OfficeCarousel-Title {
+  white-space: nowrap;
+}
+
+
+/* thumbnails block */
+.OfficeCarousel-ThumbnailsWrapper {
   margin-top: 1rem;
 }
-.OfficeCarousel-Thumbnail {
-  position: relative;
-  display: block;
-  width: 100%;
-  padding-top: 67%;
-  background-color: #393f42;
-}
-.OfficeCarousel-ThumbnailImage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-.OfficeCarousel-ThumbnailOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: none;
-  background-color: rgba(223, 23, 32, .65);
-}
-.OfficeCarousel-ThumbnailOverlay_visible {
-  display: block !important;
-}
+
 
 @media (min-width: 768px) {
-  .OfficeCarousel-Label_active {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .OfficeCarousel-LabelWrapper {
+    height: auto;
     margin-bottom: 0;
+  }
+  .OfficeCarousel-Label {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
     padding-right: 2.5rem;
   }
   .OfficeCarousel-Title {
@@ -96,7 +79,7 @@
     grid-template-columns: 50% 50%;
     
   }
-  .OfficeCarousel-Thumbnails {
+  .OfficeCarousel-ThumbnailsWrapper {
     margin-top: 2rem;
   }
 }
@@ -104,7 +87,7 @@
   .OfficeCarousel-Layout {
     grid-template-columns: 40% 60%;
   }
-  .OfficeCarousel-Thumbnails {
+  .OfficeCarousel-ThumbnailsWrapper {
     margin-top: 2.5rem;
   }
 }

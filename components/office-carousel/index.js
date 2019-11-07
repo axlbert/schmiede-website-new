@@ -1,109 +1,105 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import './office-carousel.css';
+import Thumbnails from './thumbnails';
 
 import officeSlides from '../../data/office-slides';
 
 /**
- * Office carousel thumbnails component.
- */
-function Thumbnails({ slides, activeIndex, onClick }) {
-  const renderThumbnails = () => {
-    return slides.map((x, i) => {
-      const overlayClassName = 'OfficeCarousel-ThumbnailOverlay' +
-        (i === activeIndex && '\x20 OfficeCarousel-ThumbnailOverlay_visible');
-      return (
-        <div
-          className="OfficeCarousel-Thumbnail"
-          key={i}
-          onClick={ e => onClick && onClick(e, i) }
-        >
-          <img
-            className="OfficeCarousel-ThumbnailImage"
-            src={x.imageSrc}
-            alt={x.alt}
-          />
-          <div className={overlayClassName}></div>
-        </div>
-      );
-    });
-  }
-  return (
-    <div className="OfficeCarousel-Thumbnails">
-      { renderThumbnails() }
-    </div>
-  );
-}
-
-/**
- * Renders office carousel slide label title & subtitle part.
- */
-function renderLabelTitle(label) {
-  if (!label.titleParts) return;
-  return label.titleParts.map((x, i) => {
-    if (x.type === 'title') {
-      return <div key={i}>
-        <span className="Carousel-Title OfficeCarousel-Title">
-          { x.content }
-        </span>
-      </div>;
-    } else {
-      return <div key={i}>
-        <span className="Carousel-Subtitle">{ x.content }</span>
-      </div>
-    }
-  });
-}
-
-/**
  * Office carousel component.
+ * @param {*} param0 
  */
 export default function OfficeCarousel({ slides = officeSlides }) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const carouselRef = useRef(null);
 
-  /*const renderLabel = (slide, index) => {
-    //const activeSlide = slides[activeIndex];
-    const label = slide.label;
-    const title = label.titleParts && 
-      label.titleParts.map((x, i) => {
-        if (x.type === 'title') {
-          return <div key={i}>
-            <span className="Carousel-Title OfficeCarousel-Title">
-              { x.content }
-            </span>
-          </div>;
-        } else {
-          return <div key={i}>
-            <span className="Carousel-Subtitle">{ x.content }</span>
-          </div>
-        }
-      });
-    return (
-      <div key={index} className="Carousel-Label OfficeCarousel-Label">
-        { title }
-        <div className="Carousel-Paragraph">
-          { label.paragraph }
-        </div>
-      </div>
-    );
-  }*/
+  function prevSlide() {
+    if (activeIndex === 0) {
+      setActiveIndex(slides.length - 1);
+    } else {
+      setActiveIndex(i => i - 1);
+    }
+  }
+  function nextSlide() {
+    if (activeIndex === slides.length - 1) {
+      setActiveIndex(0);
+    } else {
+      setActiveIndex(i => i + 1);
+    }
+  }
 
-  const renderLabels = () => {
+  function handleSwipeLeft() {
+    nextSlide();
+  }
+  function handleSwipeRight() {
+    prevSlide();
+  }
+
+  // handling swipe events
+  useEffect(() => {
+    const currentRoot = carouselRef.current;
+    let startX = null;
+    let startY = null;
+    let endX = null;
+    let endY = null;
+    function startListener(e) {
+      const targetTouch = e.touches[0];
+      startX = targetTouch.clientX;
+      startY = targetTouch.clientY;
+    }
+    function moveListener(e) {
+      const targetTouch = e.touches[0];
+      endX = targetTouch.clientX;
+      endY = targetTouch.clientY;
+    }
+    function endListener() {
+      const diffX = endX - startX;
+      const diffY = endY - startY;
+      if (Math.abs(diffX) > Math.abs(diffY)) {
+        (diffX < 0) ? handleSwipeLeft() : handleSwipeRight();
+      }
+      startX = null;
+      startY = null;
+      endX = null;
+      endY = null;
+    }
+    currentRoot.addEventListener('touchstart', startListener);
+    currentRoot.addEventListener('touchmove', moveListener);
+    currentRoot.addEventListener('touchend', endListener);
+    return () => {
+      currentRoot.removeEventListener('touchstart', startListener);
+      currentRoot.removeEventListener('touchmove', moveListener);
+      currentRoot.removeEventListener('touchend', endListener);
+    };
+  });
+
+  function renderSLideLabels() {
     return slides.map((x, i) => {
+      const label = x.label;
       const labelClassName = 'Carousel-Label OfficeCarousel-Label' +
         (i === activeIndex ? ' OfficeCarousel-Label_active' : '');
       return (
         <div key={i} className={labelClassName}>
-          { renderLabelTitle(x.label) }
+          { label.subtitle1 && <div>
+            <span className="Carousel-Subtitle">{ label.subtitle1 }</span>
+          </div> }
+          <div>
+            <span className="Carousel-Title OfficeCarousel-Title">
+              { label.title }
+            </span>
+          </div>
+          { label.subtitle2 && <div>
+            <span className="Carousel-Subtitle">{ label.subtitle2 }</span>
+          </div> }
           <div className="Carousel-Paragraph">
-            { x.label.paragraph }
+            { label.paragraph }
           </div>
         </div>
       );
     });
   }
 
-  const renderSlideImages = () => {
+  function renderSlideImages() {
     return slides.map((x, i) => {
       const imageClassName = `OfficeCarousel-Image ${
         (i === activeIndex ? 'OfficeCarousel-Image_active' : '')
@@ -120,14 +116,17 @@ export default function OfficeCarousel({ slides = officeSlides }) {
   }
 
   return (
-    <div>
+    <div ref={carouselRef} className="OfficeCarousel">
       <div className="OfficeCarousel-Layout">
-        { renderLabels() }
+        <div className="OfficeCarousel-LabelWrapper">
+          { renderSLideLabels() }
+        </div>
         <div className="OfficeCarousel-ImageWrapper">
           { renderSlideImages() }
         </div>
       </div>
-      <div>
+      
+      <div className="OfficeCarousel-ThumbnailsWrapper">
         <Thumbnails
           slides={slides}
           activeIndex={activeIndex}
