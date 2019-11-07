@@ -31,17 +31,16 @@ export default function CultureCarousel() {
       <div className="Carousel-Label CultureCarousel-Label">
         <div>
           <span className="Carousel-Subtitle">
-            Initiative
+            Learn and grow
           </span>
         </div>
         <div>
           <span className="Carousel-Title CultureCarousel-Title">
-            is essential
+            with our team
           </span>
         </div>
         <div className="Carousel-Paragraph">
-          We don’t manage people, we expect 
-          people to manage themselves.
+          Our innovation lab offers new challenges every day
         </div>
       </div>
       <div className="CultureCarousel-ImageWrapper">

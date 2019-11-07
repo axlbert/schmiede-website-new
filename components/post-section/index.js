@@ -4,7 +4,7 @@ import PostTag from '../post-tag.enum';
 import PostGrid from '../post-grid';
 import PostFilters from '../post-filters';
 
-const baseBackendUrl = 'http://schmiede.one/index.php/wp-json';
+const baseBackendUrl = 'https://blog.schmiede.one/index.php/wp-json';
 //const baseBackendUrl = 'http://localhost/wp-blog-api/index.php/wp-json';
 
 /**
