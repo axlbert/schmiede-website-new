@@ -42,68 +42,6 @@
   }
 }
 
-/* Title & Subtitle */
-.Homepage-Title {
-  display: inline;
-  color: white;
-  font-size: 1.9rem;
-  font-weight: 500;
-}
-.Homepage-Subtitle {
-  display: inline;
-  padding: 0 .35rem .2rem;
-  background-color: #df1720;
-  color: white;
-  font-size: .9rem;
-  line-height: 1.6;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
-@media (min-width: 400px) {
-  .Homepage-Title {
-    font-size: 2.25rem;
-  }
-  .Homepage-Subtitle {
-    font-size: 1rem;
-  }
-}
-
-/* Menu */
-.Homepage-Menu {
-  display: block;
-  margin-top: 2rem;
-  padding: 0;
-  list-style: none;
-}
-.Homepage-MenuItem {
-  display: inline-block;
-  margin-right: .75rem;
-  margin-bottom: .75rem;
-}
-.Homepage-MenuLink {
-  padding: 0 .2em .1em;
-  background-color: #df1720;
-  color: white;
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 1.2;
-  text-transform: lowercase;
-  text-decoration: none;
-}
-@media (min-width: 768px) {
-  .Homepage-Menu {
-    margin-top: 3rem;
-  }
-  .Homepage-MenuLink {
-    font-size: 2.75rem;
-  }
-}
-@media (min-width: 992px) {
-  .Homepage-MenuLink {
-    font-size: 3.5rem;
-  }
-}
-
 
 /**
  * FOOTER
