@@ -1,0 +1,17 @@
+version: '3'
+services:
+  app:
+    build: .
+    expose:
+      - '5000'
+    environment:
+      NODE_ENV: production
+    restart: always
+  proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile-nginx
+    ports:
+      - '80:80'
+      - '443:443'
+    restart: always
