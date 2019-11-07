@@ -3,3 +3,5 @@ task_definition:
   services:
     app:
       mem_reservation: 800MB
+    proxy:
+      mem_reservation: 100MB

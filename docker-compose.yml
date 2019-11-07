@@ -3,9 +3,14 @@ version: '3'
 services:
   app:
     image: '$TAGGED_IMAGE'
-    ports:
-      - '80:5000'
-      - '443:5000'
+    expose:
+      - '5000'
     environment:
       NODE_ENV: production
+    restart: always
+  proxy:
+    image: '$TAGGED_IMAGE_PROXY'
+    ports:
+      - '80:80'
+      - '443:443'
     restart: always
