@@ -31,7 +31,7 @@
 /* label */
 .OfficeCarousel-LabelWrapper {
   position: relative;
-  height: 12.5rem;
+  height: 11.5rem;
   margin-bottom: 1rem;
 }
 .OfficeCarousel-Label {
@@ -48,6 +48,9 @@
 }
 .OfficeCarousel-Label_active {
   opacity: 1 !important;
+}
+.OfficeCarousel-Title {
+  white-space: nowrap;
 }
 
 

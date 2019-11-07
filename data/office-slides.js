@@ -14,10 +14,8 @@ const slide1 = {
 
 const slide2 = {
   label: {
-
-    subtitle1: 'Lorem ipsum',
-    title: 'dolor sit amet',
-    subtitle2: 'consectetur.',
+    subtitle1: 'We work in a',
+    title: 'cool coworking place!',
     paragraph: `
       Morbi non dui placerat, maximus dolor interdum, facilisis 
       massa. Phasellus accumsan, mauris ac faucibus accumsan.
@@ -29,9 +27,8 @@ const slide2 = {
 
 const slide3 = {
   label: {
-    subtitle1: 'Lorem ipsum dolor',
-    title: 'sit amet consectetur',
-    subtitle2: 'adipiscing elit.',
+    title: 'Our coworking place',
+    subtitle2: 'is called super 7000.',
     paragraph: `
       Sed dapibus, velit vel ullamcorper blandit, dui sapien 
       cursus diam, et tempor dolor leo vel magna.
@@ -43,9 +40,9 @@ const slide3 = {
 
 const slide4 = {
   label: {
-    subtitle1: 'Dolor sit amet',
-    title: 'consectetur',
-    subtitle2: 'adipiscing elit.',
+    subtitle1: 'Our coworking place',
+    title: 'is called super 7000',
+    subtitle2: 'and is pretty cool.',
     paragraph: `
       Integer id dolor felis. Donec ac feugiat ex. Donec eu lacinia 
       quam. Cras massa risus, malesuada ut diam
