@@ -27,8 +27,26 @@
   opacity: 1 !important;
 }
 
-.CultureCarousel-Label {
+.CultureCarousel-LabelWrapper {
+  position: relative;
+  height: 8rem;
   margin-bottom: 1.75rem;
+}
+.CultureCarousel-Label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /*margin-bottom: 1.75rem;*/
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+.CultureCarousel-Label_active {
+  opacity: 1 !important;
 }
 
 .CultureCarousel-Controls {
@@ -41,12 +59,13 @@
     display: grid;
     grid-template-columns: 75% 25%;
   }
-  .CultureCarousel-Label {
+  .CultureCarousel-LabelWrapper {
     position: absolute;
     top: 2rem;
     right: 0;
     z-index: 1;
     width: 17rem;
+    margin-bottom: 0;
   }
   .CultureCarousel-Title {
     display: block;
@@ -59,14 +78,14 @@
 }
 
 @media (min-width: 992px) {
-  .CultureCarousel-Label {
+  .CultureCarousel-LabelWrapper {
     top: 4rem;
     right: 3.5rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .CultureCarousel-Label {
+  .CultureCarousel-LabelWrapper {
     top: 5rem;
     right: 3rem;
     width: 21rem;

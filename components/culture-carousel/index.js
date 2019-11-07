@@ -26,23 +26,35 @@ export default function CultureCarousel() {
     });
   }
 
+  function renderLabels() {
+    return cultureSlides.map((x, i) => {
+      const label = x.label;
+      const labelClassName = 'Carousel-Label CultureCarousel-Label' +
+        (i === activeIndex ? ' CultureCarousel-Label_active' : '');
+      return (
+        <div key={i} className={labelClassName}>
+          <div>
+            <span className="Carousel-Subtitle">
+              { label.subtitle }
+            </span>
+          </div>
+          <div>
+            <span className="Carousel-Title CultureCarousel-Title">
+              { label.title }
+            </span>
+          </div>
+          <div className="Carousel-Paragraph">
+            { label.paragraph }
+          </div>
+        </div>
+      );
+    });
+  }
+
   return (
     <div className="CultureCarousel">
-      <div className="Carousel-Label CultureCarousel-Label">
-        <div>
-          <span className="Carousel-Subtitle">
-            Initiative
-          </span>
-        </div>
-        <div>
-          <span className="Carousel-Title CultureCarousel-Title">
-            is essential
-          </span>
-        </div>
-        <div className="Carousel-Paragraph">
-          We don’t manage people, we expect 
-          people to manage themselves.
-        </div>
+      <div className="CultureCarousel-LabelWrapper">
+        { renderLabels() }
       </div>
       <div className="CultureCarousel-ImageWrapper">
         { renderSlides() }
