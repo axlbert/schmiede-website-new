@@ -1,0 +1,10 @@
+version: '3'
+# ecs-params file is required to upload to AWS
+services:
+  app:
+    image: '$TAGGED_IMAGE'
+    ports:
+      - '80:5000'
+    environment:
+      NODE_ENV: production
+    restart: always
