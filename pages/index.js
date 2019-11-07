@@ -49,20 +49,19 @@ export default class Homepage extends Component {
     logPageView()
   }
 
-  setMainScreen() {
+  setMainScreen(_screen) {
     this.setState({
-      mainScreen : HomepageScreen.INITIAL
-    })
+      mainScreen: _screen
+    });
   }
-  render() {
-   
 
+  render() {
     const handleLogoClick = e => {
-      e.preventDefault();setMainScreen(HomepageScreen.INITIAL);};
+      e.preventDefault();
+      this.setMainScreen(HomepageScreen.INITIAL);
+    };
 
     return (
-
-      
       <div>
         <Head>
           <title>Schmiede.one Innovation Lab</title>

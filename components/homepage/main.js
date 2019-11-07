@@ -13,11 +13,11 @@ import {
  * Homepage main (tag) component.
  */
 export default function Main({ screen, onScreenChange }) {
-  const [homepageState, setHomepageState] = useState(screen);
+  //const [homepageState, setHomepageState] = useState(screen);
   const [contents, setContents] = useState(initialContents);
   const router = useRouter();
 
-  useEffect(() => {
+  /*useEffect(() => {
     switch (homepageState) {
       case HomepageScreen.US: {
         setContents(usContents);
@@ -30,10 +30,21 @@ export default function Main({ screen, onScreenChange }) {
       default: setContents(initialContents);
     }
     onScreenChange(homepageState);
-  }, [homepageState]);
+  }, [homepageState]);*/
 
   useEffect(() => {
-    setHomepageState(screen);
+    //setHomepageState(screen);
+    switch (screen) {
+      case HomepageScreen.US: {
+        setContents(usContents);
+        break;
+      }
+      case HomepageScreen.PROJECTS: {
+        setContents(projectsContents);
+        break;
+      }
+      default: setContents(initialContents);
+    }
   }, [screen]);
 
   /*function updateHomepageState(_screen) {
@@ -51,7 +62,7 @@ export default function Main({ screen, onScreenChange }) {
     const handleClick = e => {
       e.preventDefault();
       if (x.screen) {
-        setHomepageState(x.screen);
+        onScreenChange(x.screen);
       } else {
         router.push(x.href);
       }
