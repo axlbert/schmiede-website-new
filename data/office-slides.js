@@ -1,10 +1,5 @@
 const slide1 = {
   label: {
-    titleParts: [
-      { type: 'subtitle', content: 'We work in a' },
-      { type: 'title', content: 'cool coworking place' },
-      { type: 'subtitle', content: 'called super 7000.' },
-    ],
     subtitle1: 'We work in a',
     title: 'cool coworking place',
     subtitle2: 'called super 7000.',
@@ -19,11 +14,7 @@ const slide1 = {
 
 const slide2 = {
   label: {
-    titleParts: [
-      { type: 'subtitle', content: 'Lorem ipsum' },
-      { type: 'title', content: 'dolor sit amet' },
-      { type: 'subtitle', content: 'consectetur.' },
-    ],
+
     subtitle1: 'Lorem ipsum',
     title: 'dolor sit amet',
     subtitle2: 'consectetur.',
@@ -38,11 +29,6 @@ const slide2 = {
 
 const slide3 = {
   label: {
-    titleParts: [
-      { type: 'subtitle', content: 'Lorem ipsum dolor' },
-      { type: 'title', content: 'sit amet consectetur' },
-      { type: 'subtitle', content: 'adipiscing elit.' },
-    ],
     subtitle1: 'Lorem ipsum dolor',
     title: 'sit amet consectetur',
     subtitle2: 'adipiscing elit.',
@@ -57,11 +43,6 @@ const slide3 = {
 
 const slide4 = {
   label: {
-    titleParts: [
-      { type: 'subtitle', content: 'Dolor sit amet' },
-      { type: 'title', content: 'consectetur' },
-      { type: 'subtitle', content: 'adipiscing elit.' },
-    ],
     subtitle1: 'Dolor sit amet',
     title: 'consectetur',
     subtitle2: 'adipiscing elit.',
@@ -76,14 +57,9 @@ const slide4 = {
 
 const slide5 = {
   label: {
-    titleParts: [
-      { type: 'subtitle', content: 'Dolor sit amet' },
-      { type: 'title', content: 'consectetur' },
-      { type: 'subtitle', content: 'adipiscing elit.' },
-    ],
-    subtitle1: 'Dolor sit amet',
-    title: 'consectetur',
-    subtitle2: 'adipiscing elit.',
+    subtitle1: 'Proin imperdiet',
+    title: 'cursus quam',
+    subtitle2: 'in porta.',
     paragraph: `
       Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
       posuere cubilia Curae; Curabitur eleifend volutpat augue.
