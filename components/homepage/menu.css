@@ -1,18 +1,9 @@
 .MainMenu {
   opacity: 0;
-  transition: opacity 700ms ease;
-  /*animation: fade 600ms ease;*/
+  transition: opacity 100ms ease;
 }
 .MainMenu_fade {
   opacity: 1;
-}
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 /* Title & Subtitle */

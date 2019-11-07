@@ -13,50 +13,35 @@ import {
  * Homepage main (tag) component.
  */
 export default function Main({ screen, onScreenChange }) {
-  //const [homepageState, setHomepageState] = useState(screen);
   const [contents, setContents] = useState(initialContents);
+  const [transitionEnabled, setTransitionEnabled] = useState(false);
   const router = useRouter();
 
-  /*useEffect(() => {
-    switch (homepageState) {
-      case HomepageScreen.US: {
-        setContents(usContents);
-        break;
-      }
-      case HomepageScreen.PROJECTS: {
-        setContents(projectsContents);
-        break;
-      }
-      default: setContents(initialContents);
-    }
-    onScreenChange(homepageState);
-  }, [homepageState]);*/
-
   useEffect(() => {
-    //setHomepageState(screen);
+    let _contents;
+    const menuElement = document.querySelector('.MainMenu');
+    transitionEnabled && menuElement.classList.remove('MainMenu_fade');
     switch (screen) {
       case HomepageScreen.US: {
-        setContents(usContents);
+        _contents = usContents;
         break;
       }
       case HomepageScreen.PROJECTS: {
-        setContents(projectsContents);
+        _contents = projectsContents;
         break;
       }
-      default: setContents(initialContents);
+      default: {
+        _contents = initialContents;
+      };
     }
-  }, [screen]);
-
-  /*function updateHomepageState(_screen) {
-    const menuElement = document.querySelector('.MainMenu');
-    menuElement.classList.remove('MainMenu_fade');
     setTimeout(() => {
-      setHomepageState(state => {
-        menuElement.classList.add('MainMenu_fade');
-        return _screen;
+      setContents(prevState => {
+        transitionEnabled && menuElement.classList.add('MainMenu_fade');
+        setTransitionEnabled(true);
+        return _contents;
       });
-    }, 700);
-  }*/
+    }, 100);
+  }, [screen]);
 
   const renderLinks = () => contents.links.map((x, i) => {
     const handleClick = e => {
@@ -79,7 +64,7 @@ export default function Main({ screen, onScreenChange }) {
   });
 
   return (
-    <div>
+    <div className="MainMenu MainMenu_fade">
       <div style={{ marginBottom: '0.5rem' }}>
         <span className="Homepage-Title">{ contents.title }</span>
       </div>
