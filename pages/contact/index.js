@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 
 import './contact.css';
 import Nav from '../../components/nav';
@@ -6,6 +7,11 @@ import Nav from '../../components/nav';
 export default function Contact() {
   return (
     <div>
+      <Head>
+        <title>schmiede.one - Contact</title>
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
+
       <Nav />
       <article className="Contact">
         <header className="Contact-HeaderSmall">
@@ -41,7 +47,10 @@ export default function Contact() {
             <div className="Contact-InfoBlock">
               <span className="Contact-Heading">Mail</span>
               <span className="Contact-Paragraph">
-                <a className="Contact-MailLink" href="#">
+                <a
+                  className="Contact-MailLink"
+                  href="mailto:hello@schmiede.one"
+                >
                   hello@schmiede.one
                 </a>
               </span>

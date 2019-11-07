@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
+import './menu.css';
 import HomepageScreen from './homepage-screen.enum';
 import {
   initialContents,
@@ -34,6 +35,17 @@ export default function Main({ screen, onScreenChange }) {
   useEffect(() => {
     setHomepageState(screen);
   }, [screen]);
+
+  /*function updateHomepageState(_screen) {
+    const menuElement = document.querySelector('.MainMenu');
+    menuElement.classList.remove('MainMenu_fade');
+    setTimeout(() => {
+      setHomepageState(state => {
+        menuElement.classList.add('MainMenu_fade');
+        return _screen;
+      });
+    }, 700);
+  }*/
 
   const renderLinks = () => contents.links.map((x, i) => {
     const handleClick = e => {

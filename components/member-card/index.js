@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import './member-card.css';
 import DotControls from '../dot-controls';
@@ -67,14 +67,75 @@ export default function MemberCard({
   name, role, imageSrc, personal, professional,
 }) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const cardRef = useRef(null);
 
   const nextOverlay = e => {
     e.preventDefault();
     setActiveIndex(i => (i === 2) ? 0 : (i + 1));
   };
 
+  function prevSlide() {
+    if (activeIndex === 0) {
+      setActiveIndex(2);
+    } else {
+      setActiveIndex(i => i - 1);
+    }
+  }
+  function nextSlide() {
+    if (activeIndex === 2) {
+      setActiveIndex(0);
+    } else {
+      setActiveIndex(i => i + 1);
+    }
+  }
+
+  function handleSwipeLeft() {
+    nextSlide();
+  }
+  function handleSwipeRight() {
+    prevSlide();
+  }
+
+  // handling swipe events
+  useEffect(() => {
+    const currentRoot = cardRef.current;
+    let startX = null;
+    let startY = null;
+    let endX = null;
+    let endY = null;
+    function startListener(e) {
+      const targetTouch = e.touches[0];
+      startX = targetTouch.clientX;
+      startY = targetTouch.clientY;
+    }
+    function moveListener(e) {
+      const targetTouch = e.touches[0];
+      endX = targetTouch.clientX;
+      endY = targetTouch.clientY;
+    }
+    function endListener() {
+      const diffX = endX - startX;
+      const diffY = endY - startY;
+      if (Math.abs(diffX) > Math.abs(diffY)) {
+        (diffX < 0) ? handleSwipeLeft() : handleSwipeRight();
+      }
+      startX = null;
+      startY = null;
+      endX = null;
+      endY = null;
+    }
+    currentRoot.addEventListener('touchstart', startListener);
+    currentRoot.addEventListener('touchmove', moveListener);
+    currentRoot.addEventListener('touchend', endListener);
+    return () => {
+      currentRoot.removeEventListener('touchstart', startListener);
+      currentRoot.removeEventListener('touchmove', moveListener);
+      currentRoot.removeEventListener('touchend', endListener);
+    };
+  });
+
   return (
-    <div className="Card">
+    <div ref={cardRef} className="Card">
       <div
         className="Card-ImageWrapper MemberCard-ImageWrapper"
         style={{ cursor: 'pointer' }}

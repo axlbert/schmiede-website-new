@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Head from 'next/head';
 
 import './about.css';
 import Nav from '../../components/nav';
@@ -18,8 +19,41 @@ function renderMembers() {
  * About page component.
  */
 export default function About() {
+  // height-100 fix for mobile browsers
+  const [windowInnerWidth, setInnerWidth] = useState(0);
+  function setRelativeVH() {
+    const newWidth = window.innerWidth;
+    if (newWidth !== windowInnerWidth) {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+      setInnerWidth(newWidth);
+    }
+  }
+  useEffect(() => {
+    setRelativeVH();
+    window.addEventListener('resize', setRelativeVH);
+    return () => window.removeEventListener('resize', setRelativeVH); 
+  });
+  // end height-100 fix
+
+  function handleHeaderLinkClick(e) {
+    e.preventDefault();
+    const cultureSection = document.getElementById('culture');
+    const offset = cultureSection.offsetTop;
+    window.scroll({
+      top: offset,
+      left: 0,
+      behavior: 'smooth',
+    });
+  }
+
   return (
-    <div className="About">
+    <article className="About">
+      <Head>
+        <title>schmiede.one - About</title>
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
+
       <Nav />
       <header
         className="About-Header"
@@ -27,6 +61,7 @@ export default function About() {
       >
         <div className="container">
           <div className="About-HeaderContent">
+            <div style={{ paddingTop: '6rem' }}></div>
             <div>
               <span className="Banner-Title">
                 We are a gang of creatives, developers, engeneers and managers 
@@ -40,7 +75,11 @@ export default function About() {
 
             <div className="About-HeaderSpacer"></div>
 
-            <a className="About-HeaderLink" href="#">
+            <a
+              className="About-HeaderLink"
+              href="#culture"
+              onClick={handleHeaderLinkClick}
+            >
               <img
                 className="About-HeaderLinkImage"
                 src="/arrow-right-button.svg"
@@ -54,23 +93,28 @@ export default function About() {
         </div>
       </header>
 
-      <section className="container" style={{ marginTop: '4rem' }}>
+      <section
+        id="culture"
+        className="container"
+        style={{ paddingTop: '4.5rem' }}
+      >
         <CultureCarousel />
       </section>
 
-      <div
+      <section
+        id="team"
         className="container"
         style={{
-          marginTop: '3rem',
+          paddingTop: '4.5rem',
           textAlign: 'center',
         }}
       >
         <div className="Grid">
           { renderMembers() }
         </div>
-      </div>
+      </section>
 
-      <div
+      <section
         className="Banner"
         style={{
           marginTop: '3rem',
@@ -93,7 +137,7 @@ export default function About() {
           </span>
         </div>
         <div style={{ marginTop: '2.5rem' }}>
-          <a href="#">
+          <a href="mailto:hello@schmiede.one">
             <img
               className="Banner-RoundImage"
               src="/mail.svg"
@@ -101,16 +145,22 @@ export default function About() {
             />
           </a>
         </div>
-      </div>
+      </section>
 
 
-      <div className="container my-5">
+      <section
+        id="office"
+        className="container"
+        style={{ paddingTop: '4.5rem' }}
+      >
         <OfficeCarousel />
-      </div>
+      </section>
 
       <footer
+        id="join-us"
         className="Banner"
         style={{
+          marginTop: '4.5rem',
           paddingTop: '7rem',
           paddingBottom: '4.5rem',
           backgroundImage: 'url("/about/footer.jpg")',
@@ -133,13 +183,14 @@ export default function About() {
           marginTop: '2rem',
         }}>
           <a
-            href="#"
+            href="https://angel.co/company/schmiede-one/jobs"
+            target="_blank"
             className="Banner-Button"
             style={{ marginRight: '1rem' }}
           >
             Job Offers
           </a>
-          <a href="#">
+          <a href="mailto:hello@schmiede.one">
             <img
               className="Banner-RoundImage"
               src="/mail.svg"
@@ -148,6 +199,6 @@ export default function About() {
           </a>
         </div>
       </footer>
-    </div>
+    </article>
   );
 }
