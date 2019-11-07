@@ -19,17 +19,17 @@ export default function OfficeCarousel({ slides = officeSlides }) {
         (i === activeIndex ? ' OfficeCarousel-Label_active' : '');
       return (
         <div key={i} className={labelClassName}>
-          <div>
+          { label.subtitle1 && <div>
             <span className="Carousel-Subtitle">{ label.subtitle1 }</span>
-          </div>
+          </div> }
           <div>
             <span className="Carousel-Title OfficeCarousel-Title">
               { label.title }
             </span>
           </div>
-          <div>
+          { label.subtitle2 && <div>
             <span className="Carousel-Subtitle">{ label.subtitle2 }</span>
-          </div>
+          </div> }
           <div className="Carousel-Paragraph">
             { label.paragraph }
           </div>
