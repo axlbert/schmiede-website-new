@@ -37,7 +37,7 @@ export default function OfficeCarousel() {
           />
         </div>
       </div>
-      <div>
+      <div className="OfficeCarousel-ThumbnailsWrapper">
         <Thumbnails slides={officeSlides} />
       </div>
     </div>

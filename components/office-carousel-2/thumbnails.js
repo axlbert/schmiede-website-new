@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './thumbnails.css';
+
 /**
  * Office carousel thumbnails component.
  */
