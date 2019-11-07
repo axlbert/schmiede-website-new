@@ -5,7 +5,7 @@ import './about.css';
 import Nav from '../../components/nav';
 import CultureCarousel from '../../components/culture-carousel';
 import MemberCard from '../../components/member-card';
-import OfficeCarousel from '../../components/office-carousel';
+import OfficeCarousel from '../../components/office-carousel-2';
 
 import members from '../../data/members';
 
