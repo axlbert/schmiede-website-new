@@ -5,7 +5,8 @@ import './about.css';
 import Nav from '../../components/nav';
 import CultureCarousel from '../../components/culture-carousel';
 import MemberCard from '../../components/member-card';
-import OfficeCarousel from '../../components/office-carousel-2';
+//import OfficeCarousel from '../../components/office-carousel';
+import OfficeCarousel2 from '../../components/office-carousel-2';
 
 import members from '../../data/members';
 
@@ -153,7 +154,14 @@ export default function About() {
         className="container"
         style={{ paddingTop: '4.5rem' }}
       >
-        <OfficeCarousel />
+        
+      </section>
+
+      <section
+        className="container"
+        style={{ paddingTop: '4.5rem' }}
+      >
+        <OfficeCarousel2 />
       </section>
 
       <footer
