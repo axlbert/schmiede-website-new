@@ -80,7 +80,6 @@ export default function MemberCard({
     } else {
       setActiveIndex(i => i - 1);
     }
-    console.log('prev');
   }
   function nextSlide() {
     if (activeIndex === 2) {
@@ -88,7 +87,6 @@ export default function MemberCard({
     } else {
       setActiveIndex(i => i + 1);
     }
-    console.log('next');
   }
 
   function handleSwipeLeft() {
