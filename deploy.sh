@@ -10,7 +10,6 @@ VERSION=$(cat package.json \
 
 echo "Deploying version $VERSION"
 
-image="app"
 tag="schmiede-website"
 aws_tag="schmiede-website"
 tagged_image=436054152060.dkr.ecr.eu-central-1.amazonaws.com/${aws_tag}:${VERSION}
