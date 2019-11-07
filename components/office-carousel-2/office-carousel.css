@@ -1,14 +1,8 @@
 /**
  * OFFICE CAROUSEL
  */
-/*.OfficeCarousel-Label {
-  display: none;
-  margin-bottom: 1.5rem;
-}*/
-.OfficeCarousel-Label_active {
-  display: block;
-  animation: fade 900ms ease;
-}
+
+/* image */
 .OfficeCarousel-ImageWrapper {
   position: relative;
   display: block;
@@ -32,25 +26,38 @@
 .OfficeCarousel-Image_active {
   opacity: 1;
 }
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+
+
+/* label */
+.OfficeCarousel-LabelWrapper {
+  position: relative;
+  height: 12.5rem;
+}
+.OfficeCarousel-Label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+.OfficeCarousel-Label_active {
+  opacity: 1 !important;
 }
 
+
+/* thumbnails block */
 .OfficeCarousel-ThumbnailsWrapper {
   margin-top: 1rem;
 }
 
+
 @media (min-width: 768px) {
-  .OfficeCarousel-Label_active {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 0;
+  .OfficeCarousel-LabelWrapper {
+    height: auto;
+  }
+  .OfficeCarousel-Label {
+    top: 50%;
+    transform: translateY(-50%);
     padding-right: 2.5rem;
   }
   .OfficeCarousel-Title {
@@ -74,34 +81,7 @@
   }
 }
 @media (min-width: 1200px) {
-  /*.OfficeCarousel-Label {
-    padding-right: 3.5rem;
-  }*/
-}
-
-
-
-.OfficeCarousel-LabelWrapper {
-  position: relative;
-  height: 12.5rem;
-}
-.OfficeCarousel-Label {
-  position: absolute;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  transition: opacity 500ms ease;
-}
-.OfficeCarousel-Label_active {
-  opacity: 1 !important;
-}
-@media (min-width: 768px) {
-  .OfficeCarousel-LabelWrapper {
-    height: auto;
-  }
   .OfficeCarousel-Label {
-    top: 50%;
-    transform: translateY(-50%);
-    padding-right: 2.5rem;
+    padding-right: 3.5rem;
   }
 }
