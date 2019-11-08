@@ -93,7 +93,7 @@ const andy = {
   },
   professional: {
     sinceYear: 2017,
-    quote: `lets code`,
+    quote: `Programming is the art of conveying your thoughts eloquently to a machine.`,
     description: `
     As a software developer, Schmiede.ONE gives me the opportunity and freedom to explore a wide variety of possibilities in terms of software technologies as well as their application in the noble field of agriculture.
     `,
@@ -153,7 +153,7 @@ const omri = {
     location: 'from Bonn',
     quote: `Technically speaking...`,
     favorites: new Map([
-      ['Book', ''],
+      ['Book', 'Utopia for Realists'],
       ['Color', ''],
       ['Food', 'Spciy stuff'],
       ['Vacation Spot', 'Israel'],
