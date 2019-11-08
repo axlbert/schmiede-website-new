@@ -150,7 +150,7 @@ const omri = {
   role: 'Data',
   imageSrc: '/about/member-6.jpg',
   personal: {
-    location: 'from Bonn',
+    location: 'from Israel',
     quote: `Technically speaking...`,
     favorites: new Map([
       ['Book', 'Utopia for Realists'],
@@ -197,7 +197,7 @@ const pavi = {
   role: 'Software Engineering',
   imageSrc: '/about/member-9.jpg',
   personal: {
-    location: 'Düsseldorf',
+    location: 'from Dortmund',
     quote: `Morning!`,
     favorites: new Map([
       ['Book', 'Java Script for Experts'],
