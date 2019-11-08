@@ -79,7 +79,7 @@ const rahul = {
 
 const andy = {
   name: 'Andy',
-  role: 'Coding',
+  role: 'Software Engineering',
   imageSrc: '/about/member-8.jpg',
   personal: {
     location: 'from New Delhi',
@@ -125,7 +125,7 @@ const alex = {
 
 const jakub = {
   name: 'Jakub',
-  role: 'Coding',
+  role: 'Software Engineering',
   imageSrc: '/about/member-5.jpg',
   personal: {
     location: 'from Lodz',
@@ -194,7 +194,7 @@ const niklas = {
 
 const pavi = {
   name: 'Pavi',
-  role: 'Coding',
+  role: 'Software Engineering',
   imageSrc: '/about/member-9.jpg',
   personal: {
     location: 'Düsseldorf',
@@ -216,7 +216,7 @@ const pavi = {
 };
 const theo= {
   name: 'Theo',
-  role: 'Coding',
+  role: 'Software Engineering',
   imageSrc: '/about/member-11.jpg',
   personal: {
     location: 'from Ruhrpott',
