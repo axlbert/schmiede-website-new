@@ -5,7 +5,7 @@ import PostGrid from '../post-grid';
 import PostFilters from '../post-filters';
 
 const baseBackendUrl = 'https://blog.schmiede.one/index.php/wp-json';
-//const baseBackendUrl = 'http://localhost/wp-blog-api/index.php/wp-json';
+
 
 /**
  * Fetches tag of a post from corresponding backend endpoint.
@@ -92,7 +92,7 @@ export default function PostSection({ filter }) {
 
   /* fetching posts list from backend */
   useEffect(() => {
-    const backendUrl = `${baseBackendUrl}/wp/v2/posts`;
+    const backendUrl = `${baseBackendUrl}/wp/v2/posts?per_page=99`;
     // for cleaning up the effect
     const abortController = new AbortController();
 

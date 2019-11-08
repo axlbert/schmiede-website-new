@@ -64,13 +64,12 @@ export default function About() {
             <div style={{ paddingTop: '6rem' }}></div>
             <div>
               <span className="Banner-Title">
-                We are a gang of creatives, developers, engeneers and managers 
-                from around the world working in Düsseldorf, Germany. 
+                We are a an international team of developers, designers and inventors redesigning
+                the future of heavy metal and food!
               </span>
             </div>
             <div className="Banner-Subtitle About-HeaderSubtitle">
-              We are an innovation lab from GRIMME group. We give our 
-              best everyday to make a difference in the AgTech world.
+              Based in Düsseldorf, Germany
             </div>
 
             <div className="About-HeaderSpacer"></div>
@@ -86,7 +85,7 @@ export default function About() {
                 alt="More"
               />
               <span className="About-HeaderLinkLabel">
-                Keep going! Find out more about us!
+                Scroll down to learn more!
               </span>
             </a>
           </div>

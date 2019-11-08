@@ -10,7 +10,7 @@ export const initialContents = {
 };
 
 export const usContents = {
-  title: 'What aspect about schmiede.one are you most interested in?',
+  title: 'What are you most interested in?',
   subtitle: 'Pick a category',
   links: [
     { label: 'Culture', href: '/about#culture' },
@@ -21,7 +21,7 @@ export const usContents = {
 };
 
 export const projectsContents = {
-  title: 'Which domain of our work are you curious about?',
+  title: 'Which area of our work are you curious about?',
   subtitle: 'Choose a subject',
   links: [
     { label: 'robotics', href: '/work#robotics' },
