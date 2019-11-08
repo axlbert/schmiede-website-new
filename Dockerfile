@@ -11,7 +11,7 @@ COPY . /usr/src/app
 
 RUN npm install
 RUN rm -rf .next && npm run build
-RUN rm -rf out && npm run export
+RUN rm -rf out && npm run export-next
 
 
 FROM nginx:perl
