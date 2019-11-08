@@ -1,29 +1,29 @@
 FROM node:buster AS build
 
-# LABEL maintainer="andy@schmiede.one"
-
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 COPY package.json /usr/src/app
 
-RUN npm install
-
-COPY . /usr/src/app
 ENV NODE_ENV production
 
+COPY . /usr/src/app
+
+RUN npm install
 RUN rm -rf .next && npm run build
+RUN rm -rf out && npm run export
 
-FROM node:buster
 
-COPY --from=build /usr/src/app/node_modules /usr/src/app/node_modules
-COPY --from=build /usr/src/app/.next /usr/src/app/.next
-COPY --from=build /usr/src/app/package.json /usr/src/app/package.json
-COPY --from=build /usr/src/app/public /usr/src/app/public
-# COPY --from=build /usr/src/app/index.js /usr/src/app/index.js
-# COPY --from=build /usr/src/app/client/index.js /usr/src/app/client/index.js
+FROM nginx:perl
+LABEL maintainer="andy@schmiede.one"
 
-WORKDIR /usr/src/app
-EXPOSE 5000
-ENV PORT 5000
-CMD ["npm", "run", "start"]
+COPY --from=build /usr/src/app/out /var/www
+
+RUN rm /etc/nginx/nginx.conf
+RUN rm /etc/nginx/mime.types
+
+COPY nginx.conf /etc/nginx/
+COPY mime.types /etc/nginx/
+COPY ./ssl /ssl
+
+ENTRYPOINT ["nginx","-g","daemon off;"]
