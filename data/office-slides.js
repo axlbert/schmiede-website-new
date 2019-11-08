@@ -6,8 +6,8 @@ const slide1 = {
       { type: 'subtitle', content: 'called super 7000.' },
     ],
     paragraph: `
-      Our cozy -full of plants- office will blow your mind, 
-      be ready for kikker games and some unexpected gun fights.
+      At Super7000, we have our own cozy floor with various offices
+      and a good blend between social places and quite zones for focused work and reflection.
     `,
   },
   imageSrc: '/about/office/office-1.jpg',
