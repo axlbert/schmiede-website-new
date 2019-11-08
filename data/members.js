@@ -128,8 +128,8 @@ const jakub = {
   role: 'Software Engineering',
   imageSrc: '/about/member-5.jpg',
   personal: {
-    location: 'from Lodz',
-    quote: `I am pushing to master`,
+    location: 'from Łódź',
+    quote: `Can you do my pull request?`,
     favorites: new Map([
       ['Book', 'Narrenturm'],
       ['Color', '(0,0,0)" || "(51, 162, 255)'],
@@ -141,6 +141,7 @@ const jakub = {
     sinceYear: 2017,
     quote: `Peligrosso!`,
     description: `
+    Creativity is not only a great gift, but also a great responsibility... a responsibility for making great things! Make sure you don't waste that talent if you have it. As a frontend developer at Schmiede.one I support my collegues by bringing their creativity and my own to life in the form of great products. In the past I have assisted both the Davids (startups) and the Goliaths (large corporates) - I have deep respects for both.
     `,
   },
 };
@@ -174,7 +175,7 @@ const niklas = {
   imageSrc: '/about/member-10.jpg',
   personal: {
     location: 'from Ruhrpott',
-    quote: `It´s not about the shoes, It's about knowing where you going. Not forgetting where you started. It's about having the courage to fail`,
+    quote: `It´s not about the shoes, It's about knowing where you are going. Not forgetting where you started. It's about having the courage to fail`,
     favorites: new Map([
       ['Book', 'Lean Startup'],
       ['Color', 'Blue'],
