@@ -12,13 +12,13 @@ const georg = {
     favorites: new Map([
       ['Book', 'MacBook'],
       ['Color', 'Midnight Silver Metallic'],
-      ['Food', 'Café rs. Dolittle'],
+      ['Food', 'Café Mrs. Dolittle'],
       ['Vacation Spot', 'Almeria, Spain'],
     ]),
   },
   professional: {
     sinceYear: 2018,
-    quote: `0.999999999999999…`,
+    quote: `1=0.999999999999999…`,
     description: `
     To do things right you need the right tools!
     My passion is to develop the required equipment, to make farming more efficient and it’s output even better. My mechanical engineering degree, with the focus on product development in combination with my enthusiasm for tech, makes me constantly thinking about new innovative products.
