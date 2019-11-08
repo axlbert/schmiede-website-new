@@ -14,9 +14,13 @@ VERSION=$(cat package.json |
 
 echo "Deploying version $VERSION"
 
+rm -rf .next
+rm -rf out
+
 npm run build
 npm run export-next
 
 echo "${USER_AND_HOST}"
 
+ssh -i ${PEM_FILE} ${USER_AND_HOST} "rm -rf /home/ec2-user/content/ && mkdir /home/ec2-user/content"
 scp -i ${PEM_FILE} -r ./out/* ${USER_AND_HOST}:/home/ec2-user/content
