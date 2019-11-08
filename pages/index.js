@@ -94,11 +94,11 @@ export default class Homepage extends Component {
               <a className="Homepage-MoreLink">
                 <span>
                   <span style={{ whiteSpace: 'nowrap' }}>
-                    Don’t know yet? You can browse
+                  Click here
                   </span>
                   {' '}
                   <span style={{ whiteSpace: 'nowrap' }}>
-                    around our website at any time.
+                    to simply browse the website
                   </span>
                 </span>
                 <img

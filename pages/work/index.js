@@ -53,8 +53,8 @@ export default function Work() {
       >
         <div>
           <span className="Banner-Title">
-            Do you have a cool idea<br />
-            to share with us?
+            We are always looking for<br />
+            opportunities to grow.
           </span>
         </div>
         <div style={{ marginTop: '0.5rem' }}>
