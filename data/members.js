@@ -45,7 +45,7 @@ const anna = {
     sinceYear: 2018,
     quote: `Innovation and sustainability should go hand in hand`,
     description: `
-      2: Coming from the fashion industry, I am working at Schmiede.one 
+      Coming from the fashion industry, I am working at Schmiede.one 
       on things that display my true passions which are: food, 
       agriculture, and innovative business models.
       My project range is, from our test field to pure software projects 
