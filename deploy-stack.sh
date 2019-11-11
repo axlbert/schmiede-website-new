@@ -5,12 +5,12 @@ source .env
 set +a
 
 # Version key/value should be on his own line
-VERSION=$(cat package.json \
-  | grep version \
-  | head -1 \
-  | awk -F: '{ print $2 }' \
-  | sed 's/[",]//g' \
-  | tr -d '[[:space:]]')
+VERSION=$(cat package.json |
+  grep version |
+  head -1 |
+  awk -F: '{ print $2 }' |
+  sed 's/[",]//g' |
+  tr -d '[[:space:]]')
 
 echo "Deploying version $VERSION"
 
@@ -27,6 +27,9 @@ docker tag ${tag}:latest ${tagged_image}
 
 echo "Pushing to AWS..."
 docker push ${tagged_image}
+
+echo "Copying content to host..."
+bash ./deploy.sh
 
 # cluster config needs to created beforehand
 # guide: https://github.com/aws/amazon-ecs-cli/blob/master/README.md#configuring-the-cli
