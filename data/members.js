@@ -199,19 +199,19 @@ const pavi = {
   imageSrc: '/about/member-9.jpg',
   personal: {
     location: 'from Dortmund',
-    quote: `Morning!`,
+    quote: `Ohayo Gozaimasu!`,
     favorites: new Map([
-      ['Book', 'Java Script for Experts'],
-      ['Color', ''],
-      ['Food', 'Essen an sich'],
-      ['Vacation Spot', 'Sri Lanka'],
+      ['Book', 'The God Delusion'],
+      ['Color', '#224'],
+      ['Food', 'Anything tasty'],
+      ['Vacation Spot', 'Sandy beaches'],
     ]),
   },
   professional: {
-    sinceYear: 2018,
+    sinceYear: 2019,
     quote: `lets debug`,
     description: `
-      
+    OutOfBoundsException:5:1: This company has a lot of facets to be completely covered in a small text. Contact the administrator to get an in-depth insight into the company.
     `,
   },
 };
