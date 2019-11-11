@@ -28,9 +28,10 @@ docker push ${tagged_image}
 # guide: https://github.com/aws/amazon-ecs-cli/blob/master/README.md#configuring-the-cli
 
 CLUSTER_NAME=schmiede-website
+HOST_VOLUME_PATH=/home/ec2-user/content
 
 echo "Stopping currently running service..."
-ecs-cli compose service --cluster-config ${CLUSTER_NAME} stop
+HOST_VOLUME_PATH=${HOST_VOLUME_PATH} ecs-cli compose service --cluster-config ${CLUSTER_NAME} stop
 
 echo "Creating and starting service..."
-TAGGED_IMAGE=${tagged_image} ecs-cli compose service --cluster-config ${CLUSTER_NAME} up
+TAGGED_IMAGE=${tagged_image} HOST_VOLUME_PATH=${HOST_VOLUME_PATH} ecs-cli compose service --cluster-config ${CLUSTER_NAME} up

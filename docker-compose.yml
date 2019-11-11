@@ -7,5 +7,5 @@ services:
       - '80:80'
       - '443:443'
     volumes:
-      - ./content:/var/www/
+      - $HOST_VOLUME_PATH:/var/www/
     restart: always
