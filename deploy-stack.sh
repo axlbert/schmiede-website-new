@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+set -a # automatically export all variables
+source .env
+set +a
+
 # Version key/value should be on his own line
 VERSION=$(cat package.json \
   | grep version \
@@ -28,7 +32,6 @@ docker push ${tagged_image}
 # guide: https://github.com/aws/amazon-ecs-cli/blob/master/README.md#configuring-the-cli
 
 CLUSTER_NAME=schmiede-website
-HOST_VOLUME_PATH=/home/ec2-user/content
 
 echo "Stopping currently running service..."
 HOST_VOLUME_PATH=${HOST_VOLUME_PATH} ecs-cli compose service --cluster-config ${CLUSTER_NAME} stop
