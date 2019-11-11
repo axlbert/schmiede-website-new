@@ -1,11 +1,12 @@
 {
   "name": "schmiede-website-new",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start -p $PORT"
+    "start": "next start -p $PORT",
+    "export-next": "next export"
   },
   "dependencies": {
     "@material-ui/core": "^4.5.2",

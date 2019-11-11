@@ -12,13 +12,13 @@ const georg = {
     favorites: new Map([
       ['Book', 'MacBook'],
       ['Color', 'Midnight Silver Metallic'],
-      ['Food', 'Café rs. Dolittle'],
+      ['Food', 'Café Mrs. Dolittle'],
       ['Vacation Spot', 'Almeria, Spain'],
     ]),
   },
   professional: {
     sinceYear: 2018,
-    quote: `0.999999999999999…`,
+    quote: `1=0.999999999999999…`,
     description: `
     To do things right you need the right tools!
     My passion is to develop the required equipment, to make farming more efficient and it’s output even better. My mechanical engineering degree, with the focus on product development in combination with my enthusiasm for tech, makes me constantly thinking about new innovative products.
@@ -79,7 +79,7 @@ const rahul = {
 
 const andy = {
   name: 'Andy',
-  role: 'Coding',
+  role: 'Software Engineering',
   imageSrc: '/about/member-8.jpg',
   personal: {
     location: 'from New Delhi',
@@ -125,11 +125,11 @@ const alex = {
 
 const jakub = {
   name: 'Jakub',
-  role: 'Coding',
+  role: 'Software Engineering',
   imageSrc: '/about/member-5.jpg',
   personal: {
-    location: 'from Lodz',
-    quote: `I am pushing to master`,
+    location: 'from Łódź',
+    quote: `Can you do my pull request?`,
     favorites: new Map([
       ['Book', 'Narrenturm'],
       ['Color', '(0,0,0)" || "(51, 162, 255)'],
@@ -141,6 +141,7 @@ const jakub = {
     sinceYear: 2017,
     quote: `Peligrosso!`,
     description: `
+    Creativity is not only a great gift, but also a great responsibility... a responsibility for making great things! Make sure you don't waste that talent if you have it. As a frontend developer at Schmiede.one I support my collegues by bringing their creativity and my own to life in the form of great products. In the past I have assisted both the Davids (startups) and the Goliaths (large corporates) - I have deep respects for both.
     `,
   },
 };
@@ -150,12 +151,12 @@ const omri = {
   role: 'Data',
   imageSrc: '/about/member-6.jpg',
   personal: {
-    location: 'from Bonn',
+    location: 'from Israel',
     quote: `Technically speaking...`,
     favorites: new Map([
       ['Book', 'Utopia for Realists'],
       ['Color', ''],
-      ['Food', 'Spciy stuff'],
+      ['Food', 'Spicy stuff'],
       ['Vacation Spot', 'Israel'],
     ]),
   },
@@ -174,7 +175,7 @@ const niklas = {
   imageSrc: '/about/member-10.jpg',
   personal: {
     location: 'from Ruhrpott',
-    quote: `It´s not about the shoes, It's about knowing where you going. Not forgetting where you started. It's about having the courage to fail`,
+    quote: `It´s not about the shoes, It's about knowing where you are going. Not forgetting where you started. It's about having the courage to fail`,
     favorites: new Map([
       ['Book', 'Lean Startup'],
       ['Color', 'Blue'],
@@ -194,29 +195,29 @@ const niklas = {
 
 const pavi = {
   name: 'Pavi',
-  role: 'Coding',
+  role: 'Software Engineering',
   imageSrc: '/about/member-9.jpg',
   personal: {
-    location: 'Düsseldorf',
-    quote: `Morning!`,
+    location: 'from Dortmund',
+    quote: `Ohayo Gozaimasu!`,
     favorites: new Map([
-      ['Book', 'Java Script for Experts'],
-      ['Color', ''],
-      ['Food', 'Essen an sich'],
-      ['Vacation Spot', 'Sri Lanka'],
+      ['Book', 'The God Delusion'],
+      ['Color', '#224'],
+      ['Food', 'Anything tasty'],
+      ['Vacation Spot', 'Sandy beaches'],
     ]),
   },
   professional: {
-    sinceYear: 2018,
-    quote: `lets debug`,
+    sinceYear: 2019,
+    quote: `Lets debug!`,
     description: `
-      
+    OutOfBoundsException:5:1: This company has a lot of facets to be completely covered in a small text. Contact the administrator to get an in-depth insight into the company.
     `,
   },
 };
 const theo= {
   name: 'Theo',
-  role: 'Coding',
+  role: 'Software Engineering',
   imageSrc: '/about/member-11.jpg',
   personal: {
     location: 'from Ruhrpott',

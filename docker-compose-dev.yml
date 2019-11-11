@@ -2,10 +2,10 @@ version: '3'
 # ecs-params file is required to upload to AWS
 services:
   app:
-    image: '$TAGGED_IMAGE'
+    build: .
     ports:
       - '80:80'
       - '443:443'
     volumes:
-      - $HOST_VOLUME_PATH:/var/www/
+      - ./out:/var/www/
     restart: always
