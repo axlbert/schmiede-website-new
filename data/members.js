@@ -156,7 +156,7 @@ const omri = {
     favorites: new Map([
       ['Book', 'Utopia for Realists'],
       ['Color', ''],
-      ['Food', 'Spciy stuff'],
+      ['Food', 'Spicy stuff'],
       ['Vacation Spot', 'Israel'],
     ]),
   },
@@ -209,7 +209,7 @@ const pavi = {
   },
   professional: {
     sinceYear: 2019,
-    quote: `lets debug`,
+    quote: `Lets debug!`,
     description: `
     OutOfBoundsException:5:1: This company has a lot of facets to be completely covered in a small text. Contact the administrator to get an in-depth insight into the company.
     `,
