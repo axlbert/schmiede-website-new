@@ -22,5 +22,5 @@ npm run export-next
 
 echo "${USER_AND_HOST}"
 
-ssh -i ${PEM_FILE} ${USER_AND_HOST} "rm -rf ${HOST_VOLUME_PATH}/ && mkdir ${HOST_VOLUME_PATH}"
+ssh -i ${PEM_FILE} ${USER_AND_HOST} "rm -rf ${HOST_VOLUME_PATH}/*"
 scp -i ${PEM_FILE} -r ./out/* ${USER_AND_HOST}:${HOST_VOLUME_PATH}
