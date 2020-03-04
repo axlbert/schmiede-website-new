@@ -20,8 +20,8 @@ export default function Imprint(props) {
           <section>
             <p>Scheibenstraße 49</p>
             <p>40479 Düsseldorf</p>
-            <p>Telefon 0151 112 075 39</p>
-            <p>E-Mail: hello@schmiede.one</p>
+            <p>Telefon: <a target="_blank" href="tel:+4921197634926">+49 211 97 63 49 26</a></p>
+            <p>E-Mail: <a target="_blank" href="mailto:hello@schmiede.one">hello@schmiede.one</a></p>
             <p>Internet: https://schmiede.one</p>
             <h3>Umsatzsteuer-Identifikationsnummer:</h3>
             <p>68/209/05274</p>
