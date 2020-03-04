@@ -8,6 +8,7 @@ import MemberCard from '../../components/member-card';
 import OfficeCarousel from '../../components/office-carousel';
 
 import members from '../../data/members';
+import Link from 'next/link';
 
 function renderMembers() {
   return members.map((x, i) => {
@@ -196,6 +197,10 @@ export default function About() {
               alt="Email"
             />
           </a>
+        </div>
+        <div className="Footer-Links">
+          <Link href="/imprint"><a className="Footer-Link">imprint</a></Link>
+          <Link href="/privacy-policy"><a className="Footer-Link">privacy policy</a></Link>
         </div>
       </footer>
     </article>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
+import Link from 'next/link'
 
 import './work.css';
 import Nav from '../../components/nav';
@@ -70,6 +71,10 @@ export default function Work() {
               alt="Email"
             />
           </a>
+        </div>
+        <div className="Footer-Links">
+          <Link href="/imprint"><a className="Footer-Link">imprint</a></Link>
+          <Link href="/privacy-policy"><a className="Footer-Link">privacy policy</a></Link>
         </div>
       </footer>
     </article>

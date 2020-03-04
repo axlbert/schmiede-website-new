@@ -64,3 +64,10 @@
     font-size: 1.1rem;
   }
 }
+.Footer-Links {
+  margin: 8px;
+}
+.Footer-Link {
+  color: white;
+  margin: 8px;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 import './contact.css';
 import Nav from '../../components/nav';
@@ -93,6 +94,10 @@ export default function Contact() {
                 alt="LinkedIn"
               />
             </a>
+          </section>
+          <section className="Contact-Links">
+            <Link href="/imprint"><a className="Contact-Link">imprint</a></Link>
+            <Link href="/privacy-policy"><a className="Contact-Link">privacy policy</a></Link>
           </section>
         </main>
       </article>

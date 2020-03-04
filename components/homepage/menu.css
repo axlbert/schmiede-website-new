@@ -76,3 +76,8 @@
     font-size: 3.5rem;
   }
 }
+.Homepage-Link {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+}
