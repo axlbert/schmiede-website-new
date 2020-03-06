@@ -66,8 +66,8 @@ export default function Contact() {
               <span className="Contact-Paragraph">
                 Schmiede.ONE GmbH &amp; Co. KG
               </span>
-              <span className="Contact-Paragraph">Rather Straße 25</span>
-              <span className="Contact-Paragraph">40476, Düsseldorf</span>
+              <span className="Contact-Paragraph">Scheibenstraße 49</span>
+              <span className="Contact-Paragraph">40479, Düsseldorf</span>
               <span className="Contact-Paragraph">Germany</span>
             </div>
           </section>
