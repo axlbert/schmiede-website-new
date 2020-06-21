@@ -148,3 +148,36 @@
     height: 1.5rem;
   }
 }
+
+
+/**
+ * Links
+ */
+.Contact-Links {
+  clear: both;
+  margin-top: 2rem;
+  padding-left: .5rem;
+}
+.Contact-Link {
+  display: inline-block;
+  margin-right: 1.5rem;
+  color: #df1720;
+}
+@media (min-width: 576px) {
+  .Contact-Links {
+    padding-top: 3rem;
+  }
+}
+@media (min-width: 768px) {
+  .Contact-Links {
+    padding-left: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .Contact-Links {
+    clear: none;
+    float: left;
+    width: 50%;
+    padding-top: 0;
+  }
+}

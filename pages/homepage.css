@@ -41,7 +41,12 @@
     padding-top: 40vh;
   }
 }
-
+.cookieConsent, .cookieConsent a {
+  color: #ddd;
+}
+.cookieConsent a:hover, .cookieConsent a:focus, .cookieConsent a:active {
+  color: #fff;
+}
 
 /**
  * FOOTER
@@ -59,6 +64,8 @@
   margin-left: 1rem;
 }
 .Homepage-MoreLinkWrapper {
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 1.5rem;
 }
 @media (min-width: 768px) {

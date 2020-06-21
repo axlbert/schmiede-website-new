@@ -8,6 +8,7 @@ import {
   usContents,
   projectsContents,
 } from './screens-contents';
+import Link from 'next/link';
 
 /**
  * Homepage main (tag) component.
