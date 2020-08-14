@@ -1,82 +1,88 @@
 const slide1 = {
   label: {
     titleParts: [
-      { type: 'subtitle', content: 'We work in a' },
-      { type: 'title', content: 'cool coworking place' },
-      { type: 'subtitle', content: 'called super 7000.' },
+      { type: "subtitle", content: "We work in a" },
+      { type: "title", content: "light, spacious and green" },
+      { type: "subtitle", content: "office." },
     ],
     paragraph: `
-      At Super7000, we have our own cozy floor with various offices
-      and a good blend between social places and quite zones for focused work and reflection.
+      We work in the center of Düsseldorf, 100 meters away from the Rhine.
+      We have our own garden and enjoy barbecues with the team as well as sitting and coding on the terrace.
     `,
   },
-  imageSrc: '/about/office/office-1.jpg',
-  alt: 'Office Image 1',
+  imageSrc: "/about/office/office-1.jpg",
+  alt: "Office Image 1",
 };
 
 const slide2 = {
   label: {
     titleParts: [
-      { type: 'subtitle', content: 'Lorem ipsum' },
-      { type: 'title', content: 'dolor sit amet' },
-      { type: 'subtitle', content: 'consectetur.' },
+      { type: "subtitle", content: "We employ" },
+      { type: "title", content: "the latest technologies" },
+      { type: "subtitle", content: "in our daily business." },
     ],
     paragraph: `
-      Morbi non dui placerat, maximus dolor interdum, facilisis massa. 
-      Phasellus accumsan, mauris ac faucibus accumsan.
+      We keep ourselves up to date about the newest technologies and work methodologies
+      that can help us excel in our work.
     `,
   },
-  imageSrc: '/about/office/office-2.jpg',
-  alt: 'Office Image 2',
+  imageSrc: "/about/office/office-2.jpg",
+  alt: "Office Image 2",
 };
 
 const slide3 = {
   label: {
     titleParts: [
-      { type: 'title', content: 'Lorem ipsum dolor' },
-      { type: 'subtitle', content: 'sit amet consectetur' },
-      { type: 'title', content: 'adipiscing elit.' },
+      { type: "title", content: "Employee satisfaction" },
+      { type: "subtitle", content: "is of utmost importance" },
     ],
     paragraph: `
-      Sed dapibus, velit vel ullamcorper blandit, dui sapien 
-      cursus diam, et tempor dolor leo vel magna.
+      Work hard, play hard is the name of the game. A kicker table 
+      and a dedicated table tennis room in the office helps us blow off steam
+      when needed.
     `,
   },
-  imageSrc: '/about/office/office-3.jpg',
-  alt: 'Office Image 3',
+  imageSrc: "/about/office/office-3.jpg",
+  alt: "Office Image 3",
 };
 
 const slide4 = {
   label: {
     titleParts: [
-      { type: 'subtitle', content: 'Lorem ipsum' },
-      { type: 'title', content: 'dolor sit amet' },
-      { type: 'subtitle', content: 'consectetur' },
-      { type: 'title', content: 'adipiscing elit.' },
+      { type: "title", content: "Sustainability" },
+      { type: "subtitle", content: "means more for us" },
     ],
     paragraph: `
-      Integer id dolor felis. Donec ac feugiat ex. Donec eu lacinia 
-      quam. Cras massa risus, malesuada ut diam
+    As part of Grimme group, we help mechanizing and feeding the world
+    through enabling farmers to become more efficient and successful
     `,
   },
-  imageSrc: '/about/office/office-4.jpg',
-  alt: 'Office Image 4',
+  imageSrc: "/about/office/office-4.jpg",
+  alt: "Office Image 4",
 };
 
 const slide5 = {
   label: {
     paragraph: `
-      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
-      posuere cubilia Curae; Curabitur eleifend volutpat augue.
-      Proin at elementum elit. Cras in venenatis est. 
-      Vivamus ut efficitur urna, non feugiat est.
+      At Schmiede.ONE, our team of highly skilled professionals dedicates time and
+      effort to create innovative quality products in the field of agriculture, ranging from
+      user friendly and highly scalable web and mobile applications, data science driven smart
+      algorithms, to heavy machinery driven by artificial intelligence.
     `,
   },
-  imageSrc: '/about/office/office-5.jpg',
-  alt: 'Office Image 5',
+  imageSrc: "/about/office/office-5.jpg",
+  alt: "Office Image 5",
 };
 
 const officeSlides = [
-  slide1, slide2, slide3, slide4, slide5, slide1, slide2, slide3, slide4,
+  slide1,
+  slide2,
+  slide3,
+  slide4,
+  slide5,
+  slide1,
+  slide2,
+  slide3,
+  slide4,
 ];
 export default officeSlides;
