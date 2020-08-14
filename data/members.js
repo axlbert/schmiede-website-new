@@ -2,70 +2,62 @@
  * TEAM MEMBERS DATA.
  */
 
-const georg = {
-  name: 'Georg',
-  role: 'Mechanical',
-  imageSrc: '/about/member-1.jpg',
+const batch = {
+  name: "Batch",
+  role: "Software Engineering",
+  imageSrc: "/about/member-2.jpg",
   personal: {
-    location: 'from Hannover',
-    quote: `Who is coming to Dolittle?`,
+    location: "from London",
+    quote: `No man ever steps in the same river twice, for it's not the same river and he's not the same man.`,
     favorites: new Map([
-      ['Book', 'MacBook'],
-      ['Color', 'Midnight Silver Metallic'],
-      ['Food', 'Café Mrs. Dolittle'],
-      ['Vacation Spot', 'Almeria, Spain'],
+      ["Book", "Illusions: The Adventures of a Reluctant Messiah"],
+      ["Color", "Cerulean"],
+      ["Food", "Burritos"],
+      ["Vacation Spot", "Swakopmund or Méribel"],
     ]),
   },
   professional: {
-    sinceYear: 2018,
-    quote: `1=0.999999999999999…`,
+    sinceYear: 2020,
+    quote: `Experience is the name everyone gives to their mistakes.`,
     description: `
-    To do things right you need the right tools!
-    My passion is to develop the required equipment, to make farming more efficient and it’s output even better. My mechanical engineering degree, with the focus on product development in combination with my enthusiasm for tech, makes me constantly thinking about new innovative products.
-    So let’s come together, roll up our sleeves and create our tools!
+    Mechanical Engineer learning to be a Software Engineer and having fun while doing it.
     `,
   },
 };
 
-const anna = {
-  name: 'Anna',
-  role: 'Projects',
-  imageSrc: '/about/member-2.jpg',
+const verena = {
+  name: "Verena",
+  role: "Projects",
+  imageSrc: "/about/member-1.jpg",
   personal: {
-    location: 'from Düsseldorf',
-    quote: `Lets grow food`,
+    location: "from Neuss",
+    quote: `Where's the sustainability?`,
     favorites: new Map([
-      ['Book', 'Die Verwandlung'],
-      ['Color', 'Orange'],
-      ['Food', 'Vegan Mandu'],
-      ['Vacation Spot', 'Oostkapelle, Niederlande'],
+      ["Book", ""],
+      ["Color", "Vermilion"],
+      ["Food", "Cherry Tomatoes"],
+      ["Vacation Spot", "Oostkapelle, Niederlande"],
     ]),
   },
   professional: {
-    sinceYear: 2018,
+    sinceYear: 2020,
     quote: `Innovation and sustainability should go hand in hand`,
-    description: `
-      Coming from the fashion industry, I am working at Schmiede.one 
-      on things that display my true passions which are: food, 
-      agriculture, and innovative business models.
-      My project range is, from our test field to pure software projects 
-      to Indoor farming, which makes working at Schmiede.one very diverse.
-    `,
+    description: ``,
   },
 };
 
 const rahul = {
-  name: 'Rahul',
-  role: 'Robotics',
-  imageSrc: '/about/member-3.jpg',
+  name: "Rahul",
+  role: "Robotics",
+  imageSrc: "/about/member-3.jpg",
   personal: {
-    location: 'from Hyderabad',
+    location: "from Hyderabad",
     quote: `There is always a way `,
     favorites: new Map([
-      ['Book', 'undecided'],
-      ['Color', 'white '],
-      ['Food', 'Biryani'],
-      ['Vacation Spot', 'Beach or Mountains'],
+      ["Book", "undecided"],
+      ["Color", "white "],
+      ["Food", "Biryani"],
+      ["Vacation Spot", "Beach or Mountains"],
     ]),
   },
   professional: {
@@ -78,17 +70,17 @@ const rahul = {
 };
 
 const andy = {
-  name: 'Andy',
-  role: 'Software Engineering',
-  imageSrc: '/about/member-8.jpg',
+  name: "Ainuddin",
+  role: "Software Engineering",
+  imageSrc: "/about/member-8.jpg",
   personal: {
-    location: 'from New Delhi',
+    location: "from New Delhi",
     quote: `We have two lives, and the second begins when we realize we only have one.`,
     favorites: new Map([
-      ['Book', '12 Rules For Life'],
-      ['Color', 'Black'],
-      ['Food', 'Boti Kabab'],
-      ['Vacation Spot', 'Rome,Italy'],
+      ["Book", "12 Rules For Life"],
+      ["Color", "Black"],
+      ["Food", "Boti Kabab"],
+      ["Vacation Spot", "Kerala, India"],
     ]),
   },
   professional: {
@@ -101,17 +93,17 @@ const andy = {
 };
 
 const alex = {
-  name: 'Alex',
-  role: 'Operations',
-  imageSrc: '/about/member-4.jpg',
+  name: "Alex",
+  role: "Operations",
+  imageSrc: "/about/member-4.jpg",
   personal: {
-    location: 'from the baltic sea',
+    location: "from the baltic sea",
     quote: `Be water!`,
     favorites: new Map([
-      ['Book', 'From 0 to 1'],
-      ['Color', 'RAL3001'],
-      ['Food', 'Schnitzel'],
-      ['Vacation Spot', 'Megapark'],
+      ["Book", "From 0 to 1"],
+      ["Color", "RAL3001"],
+      ["Food", "Schnitzel"],
+      ["Vacation Spot", "Megapark"],
     ]),
   },
   professional: {
@@ -124,17 +116,17 @@ const alex = {
 };
 
 const jakub = {
-  name: 'Jakub',
-  role: 'Software Engineering',
-  imageSrc: '/about/member-5.jpg',
+  name: "Jakub",
+  role: "Software Engineering",
+  imageSrc: "/about/member-5.jpg",
   personal: {
-    location: 'from Łódź',
+    location: "from Łódź",
     quote: `Can you do my pull request?`,
     favorites: new Map([
-      ['Book', 'Narrenturm'],
-      ['Color', '(0,0,0)" || "(51, 162, 255)'],
-      ['Food', 'Italian'],
-      ['Vacation Spot', 'Not Thailand'],
+      ["Book", "Narrenturm"],
+      ["Color", '(0,0,0)" || "(51, 162, 255)'],
+      ["Food", "Italian"],
+      ["Vacation Spot", "Not Thailand"],
     ]),
   },
   professional: {
@@ -147,17 +139,17 @@ const jakub = {
 };
 
 const omri = {
-  name: 'Omri',
-  role: 'Data',
-  imageSrc: '/about/member-6.jpg',
+  name: "Omri",
+  role: "Data",
+  imageSrc: "/about/member-6.jpg",
   personal: {
-    location: 'from Israel',
+    location: "from Israel",
     quote: `Technically speaking...`,
     favorites: new Map([
-      ['Book', 'Utopia for Realists'],
-      ['Color', ''],
-      ['Food', 'Spicy stuff'],
-      ['Vacation Spot', 'Israel'],
+      ["Book", "Utopia for Realists"],
+      ["Color", ""],
+      ["Food", "Spicy stuff"],
+      ["Vacation Spot", "Israel"],
     ]),
   },
   professional: {
@@ -170,17 +162,17 @@ const omri = {
 };
 
 const niklas = {
-  name: 'Niklas',
-  role: 'Projects',
-  imageSrc: '/about/member-10.jpg',
+  name: "Niklas",
+  role: "Projects",
+  imageSrc: "/about/member-10.jpg",
   personal: {
-    location: 'from Ruhrpott',
+    location: "from Ruhrpott",
     quote: `It´s not about the shoes, It's about knowing where you are going. Not forgetting where you started. It's about having the courage to fail`,
     favorites: new Map([
-      ['Book', 'Lean Startup'],
-      ['Color', 'Blue'],
-      ['Food', 'Salmon'],
-      ['Vacation Spot', 'Norway'],
+      ["Book", "Lean Startup"],
+      ["Color", "Blue"],
+      ["Food", "Salmon"],
+      ["Vacation Spot", "Norway"],
     ]),
   },
   professional: {
@@ -194,17 +186,17 @@ const niklas = {
 };
 
 const pavi = {
-  name: 'Pavi',
-  role: 'Software Engineering',
-  imageSrc: '/about/member-9.jpg',
+  name: "Pavi",
+  role: "Software Engineering",
+  imageSrc: "/about/member-9.jpg",
   personal: {
-    location: 'from Dortmund',
+    location: "from Dortmund",
     quote: `Ohayo Gozaimasu!`,
     favorites: new Map([
-      ['Book', 'The God Delusion'],
-      ['Color', '#224'],
-      ['Food', 'Anything tasty'],
-      ['Vacation Spot', 'Sandy beaches'],
+      ["Book", "The God Delusion"],
+      ["Color", "#224"],
+      ["Food", "Anything tasty"],
+      ["Vacation Spot", "Sandy beaches"],
     ]),
   },
   professional: {
@@ -215,50 +207,89 @@ const pavi = {
     `,
   },
 };
-const theo= {
-  name: 'Theo',
-  role: 'Software Engineering',
-  imageSrc: '/about/member-11.jpg',
+const mukku = {
+  name: "Mukarram",
+  role: "Software Engineering",
+  imageSrc: "/about/member-11.jpg",
   personal: {
-    location: 'from Ruhrpott',
-    quote: `Football is a game of angles and inches.`,
+    location: "from Nainital",
+    quote: `You are personally more responsible for becoming more ethical than the society you grew up in.`,
     favorites: new Map([
-      ['Book', ''],
-      ['Color', ''],
-      ['Food', ''],
-      ['Vacation Spot', ''],
+      ["Book", "I hate reading books. The hate is real."],
+      ["Color", "Black"],
+      ["Food", "Chhole Bhatoore"],
+      ["Vacation Spot", "Gokarna"],
     ]),
   },
   professional: {
     sinceYear: 2019,
-    quote: ``,
+    quote: `Sustainable Business, Software Excellence and Social Justice, they all are supposed to come along together.`,
     description: `
-      
+      Ruby Dev ❤️
     `,
   },
 };
 const chiara = {
-  name: 'Chiara',
-  role: 'Design',
-  imageSrc: '/about/member-12.jpg',
+  name: "Chiara",
+  role: "Design",
+  imageSrc: "/about/member-12.jpg",
   personal: {
-    location: 'from Lima, Peru',
+    location: "from Lima, Peru",
     quote: `Be the energy you want to attract`,
     favorites: new Map([
-      ['Book', 'Big Magic'],
-      ['Color', 'Dark Blue'],
-      ['Food', 'Trio Marino'],
-      ['Vacation Spot', 'Beach'],
+      ["Book", "Big Magic"],
+      ["Color", "Dark Blue"],
+      ["Food", "Trio Marino"],
+      ["Vacation Spot", "Beach"],
     ]),
   },
   professional: {
     sinceYear: 2019,
     quote: `Sometimes you win. Sometimes you learn`,
     description: `
-    This is a place where you can get to know about a wide variety of subjects as robotics, farming and design. My experience here included weeding the field one day, having the chance to get out of routine is always fun.
+    This is a place where you can get to know about a wide variety of
+    subjects as robotics, farming and design. My experience here included
+    weeding the field one day, having the chance to get out of routine is always fun.
+    `,
+  },
+};
+const theuns = {
+  name: "Theuns",
+  role: "Robotics",
+  imageSrc: "/about/member-7.jpg",
+  personal: {
+    location: "from Stellenbosch, South Africa",
+    quote: `Dare to act without asking for recommendations first. It is likely to open up your mind.`,
+    favorites: new Map([
+      ["Book", "Raymond E. Feist - The Magician"],
+      ["Color", "Blue"],
+      ["Food", "Any good curry"],
+      ["Vacation Spot", "Barcelona"],
+    ]),
+  },
+  professional: {
+    sinceYear: 2020,
+    quote: `See everything as a potential tool for solving problems, even other problems.`,
+    description: `
+    I am a specialist generalist, making it my business to understand how unrelated
+    systems fit together. I do this because I believe that we will only solve the big
+    problems in the world if we break down the barriers we have created in it.
     `,
   },
 };
 
-const members = [georg, anna, rahul,andy,alex, jakub, omri, pavi, niklas, chiara, theo];
+const members = [
+  mukku,
+  verena,
+  andy,
+  theuns,
+  omri,
+  batch,
+  alex,
+  rahul,
+  jakub,
+  niklas,
+  chiara,
+  pavi,
+];
 export default members;
