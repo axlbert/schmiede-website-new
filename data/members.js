@@ -27,16 +27,16 @@ const batch = {
 
 const verena = {
   name: "Verena",
-  role: "Projects",
+  role: "Design | Project management",
   imageSrc: "/about/member-1.jpg",
   personal: {
     location: "from Büttgen",
     quote: `Are we getting food?`,
     favorites: new Map([
       ["Book", ""],
-      ["Color", "Mega Kack"],
-      ["Food", "Cherry Tomatoes"],
-      ["Vacation Spot", "Oostkapelle, Niederlande"],
+      ["Color", "Confetti"],
+      ["Food", "Homemade"],
+      ["Vacation Spot", "Not the spot, but the people"],
     ]),
   },
   professional: {
@@ -286,10 +286,10 @@ const members = [
   omri,
   batch,
   alex,
-  rahul,
-  jakub,
   niklas,
-  chiara,
   pavi,
+  jakub,
+  rahul,
+  chiara,
 ];
 export default members;
