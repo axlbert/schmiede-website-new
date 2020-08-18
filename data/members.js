@@ -30,11 +30,11 @@ const verena = {
   role: "Projects",
   imageSrc: "/about/member-1.jpg",
   personal: {
-    location: "from Neuss",
-    quote: `Where's the sustainability?`,
+    location: "from Büttgen",
+    quote: `Are we getting food?`,
     favorites: new Map([
       ["Book", ""],
-      ["Color", "Vermilion"],
+      ["Color", "Mega Kack"],
       ["Food", "Cherry Tomatoes"],
       ["Vacation Spot", "Oostkapelle, Niederlande"],
     ]),
