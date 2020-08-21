@@ -31,9 +31,9 @@ const verena = {
   imageSrc: "/about/member-1.jpg",
   personal: {
     location: "from Büttgen",
-    quote: `Are we getting food?`,
+    quote: `Get out there and engage with others.`,
     favorites: new Map([
-      ["Book", ""],
+      ["Book", "The swarm"],
       ["Color", "Confetti"],
       ["Food", "Homemade"],
       ["Vacation Spot", "Not the spot, but the people"],
@@ -41,7 +41,7 @@ const verena = {
   },
   professional: {
     sinceYear: 2020,
-    quote: `Innovation and sustainability should go hand in hand`,
+    quote: `Approaching complex problems holistically and deep diving into wicked problems is my passion. Bringing different stakeholders together; I strongly believe that empathy, motivation and team spirit are core elements to a successful project.`,
     description: ``,
   },
 };
@@ -280,16 +280,16 @@ const theuns = {
 
 const members = [
   mukku,
-  verena,
+  alex,
   andy,
   theuns,
-  omri,
-  batch,
-  alex,
-  niklas,
   pavi,
-  jakub,
+  batch,
+  verena,
+  niklas,
   rahul,
+  jakub,
+  omri,
   chiara,
 ];
 export default members;
