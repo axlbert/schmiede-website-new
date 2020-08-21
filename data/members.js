@@ -31,7 +31,7 @@ const verena = {
   imageSrc: "/about/member-1.jpg",
   personal: {
     location: "from Büttgen",
-    quote: `Get out there and engage with others.`,
+    quote: `Is it though?`,
     favorites: new Map([
       ["Book", "The swarm"],
       ["Color", "Confetti"],
@@ -41,8 +41,8 @@ const verena = {
   },
   professional: {
     sinceYear: 2020,
-    quote: `Approaching complex problems holistically and deep diving into wicked problems is my passion. Bringing different stakeholders together; I strongly believe that empathy, motivation and team spirit are core elements to a successful project.`,
-    description: ``,
+    quote: `Question the status quo!`,
+    description: `I believe in getting out there to explore and engage with others.`,
   },
 };
 
