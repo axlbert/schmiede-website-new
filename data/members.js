@@ -213,7 +213,7 @@ const mukku = {
   imageSrc: "/about/member-11.jpg",
   personal: {
     location: "from Nainital",
-    quote: `You are personally more responsible for becoming more ethical than the society you grew up in.`,
+    quote: `You are personally responsible for becoming more ethical than the society you grew up in.`,
     favorites: new Map([
       ["Book", "I hate reading books. The hate is real."],
       ["Color", "Black"],

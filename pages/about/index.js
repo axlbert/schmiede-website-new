@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import Head from 'next/head';
+import React, { useState, useEffect } from "react";
+import Head from "next/head";
 
-import './about.css';
-import Nav from '../../components/nav';
-import CultureCarousel from '../../components/culture-carousel';
-import MemberCard from '../../components/member-card';
-import OfficeCarousel from '../../components/office-carousel';
+import "./about.css";
+import Nav from "../../components/nav";
+import CultureCarousel from "../../components/culture-carousel";
+import MemberCard from "../../components/member-card";
+import OfficeCarousel from "../../components/office-carousel";
 
-import members from '../../data/members';
-import Link from 'next/link';
+import members from "../../data/members";
+import Link from "next/link";
 
 function renderMembers() {
   return members.map((x, i) => {
@@ -26,25 +26,25 @@ export default function About() {
     const newWidth = window.innerWidth;
     if (newWidth !== windowInnerWidth) {
       let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
       setInnerWidth(newWidth);
     }
   }
   useEffect(() => {
     setRelativeVH();
-    window.addEventListener('resize', setRelativeVH);
-    return () => window.removeEventListener('resize', setRelativeVH); 
+    window.addEventListener("resize", setRelativeVH);
+    return () => window.removeEventListener("resize", setRelativeVH);
   });
   // end height-100 fix
 
   function handleHeaderLinkClick(e) {
     e.preventDefault();
-    const cultureSection = document.getElementById('culture');
+    const cultureSection = document.getElementById("culture");
     const offset = cultureSection.offsetTop;
     window.scroll({
       top: offset,
       left: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   }
 
@@ -52,7 +52,7 @@ export default function About() {
     <article className="About">
       <Head>
         <title>schmiede.one - About</title>
-        <link rel='icon' href='/favicon.ico' />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Nav />
@@ -62,11 +62,11 @@ export default function About() {
       >
         <div className="container">
           <div className="About-HeaderContent">
-            <div style={{ paddingTop: '6rem' }}></div>
+            <div style={{ paddingTop: "6rem" }}></div>
             <div>
               <span className="Banner-Title">
-                We are a an international team of developers, designers and inventors redesigning
-                the future of heavy metal and food!
+                We are an international team of developers, designers and
+                inventors redesigning the future of heavy metal and food!
               </span>
             </div>
             <div className="Banner-Subtitle About-HeaderSubtitle">
@@ -96,7 +96,7 @@ export default function About() {
       <section
         id="culture"
         className="container"
-        style={{ paddingTop: '4.5rem' }}
+        style={{ paddingTop: "4.5rem" }}
       >
         <CultureCarousel />
       </section>
@@ -105,53 +105,49 @@ export default function About() {
         id="team"
         className="container"
         style={{
-          paddingTop: '4.5rem',
-          textAlign: 'center',
+          paddingTop: "4.5rem",
+          textAlign: "center",
         }}
       >
-        <div className="Grid">
-          { renderMembers() }
-        </div>
+        <div className="Grid">{renderMembers()}</div>
       </section>
 
       <section
         className="Banner"
         style={{
-          marginTop: '3rem',
-          paddingTop: '7rem',
-          paddingBottom: '4rem',
+          marginTop: "3rem",
+          paddingTop: "7rem",
+          paddingBottom: "4rem",
           backgroundImage: 'url("/about/banner.jpg")',
         }}
       >
         <div>
           <span className="Banner-Title">
-            Do you want to be part<br />
+            Do you want to be part
+            <br />
             of this cool team?
           </span>
         </div>
-        <div style={{ marginTop: '0.5rem' }}>
+        <div style={{ marginTop: "0.5rem" }}>
           <span className="Banner-Subtitle">
-            Send us an email with your cv and<br />
-            tell us why you would be a great fit.<br />
+            Send us an email with your cv and
+            <br />
+            tell us why you would be a great fit.
+            <br />
             We would love to hear from you!
           </span>
         </div>
-        <div style={{ marginTop: '2.5rem' }}>
+        <div style={{ marginTop: "2.5rem" }}>
           <a href="mailto:hello@schmiede.one">
-            <img
-              className="Banner-RoundImage"
-              src="/mail.svg"
-              alt="Email"
-            />
+            <img className="Banner-RoundImage" src="/mail.svg" alt="Email" />
           </a>
         </div>
       </section>
 
-
       <section
         id="office"
         className="container"
-        style={{ paddingTop: '4.5rem' }}
+        style={{ paddingTop: "4.5rem" }}
       >
         <OfficeCarousel />
       </section>
@@ -160,47 +156,51 @@ export default function About() {
         id="join-us"
         className="Banner"
         style={{
-          marginTop: '4.5rem',
-          paddingTop: '7rem',
-          paddingBottom: '4.5rem',
+          marginTop: "4.5rem",
+          paddingTop: "7rem",
+          paddingBottom: "4.5rem",
           backgroundImage: 'url("/about/footer.jpg")',
         }}
       >
         <div>
           <span className="Banner-Title">
-            Find out if we have a job<br />
+            Find out if we have a job
+            <br />
             opportunity for you!
           </span>
         </div>
-        <div style={{ marginTop: '0.5rem' }}>
+        <div style={{ marginTop: "0.5rem" }}>
           <span className="Banner-Subtitle">
-            If we don’t and you think you can<br />
+            If we don’t and you think you can
+            <br />
             be a good fit, just send as an email!
           </span>
         </div>
-        <div style={{
-          display: 'inline-flex',
-          marginTop: '2rem',
-        }}>
+        <div
+          style={{
+            display: "inline-flex",
+            marginTop: "2rem",
+          }}
+        >
           <a
             href="https://angel.co/company/schmiede-one/jobs"
             target="_blank"
             className="Banner-Button"
-            style={{ marginRight: '1rem' }}
+            style={{ marginRight: "1rem" }}
           >
             Job Offers
           </a>
           <a href="mailto:hello@schmiede.one">
-            <img
-              className="Banner-RoundImage"
-              src="/mail.svg"
-              alt="Email"
-            />
+            <img className="Banner-RoundImage" src="/mail.svg" alt="Email" />
           </a>
         </div>
         <div className="Footer-Links">
-          <Link href="/imprint"><a className="Footer-Link">imprint</a></Link>
-          <Link href="/privacy-policy"><a className="Footer-Link">privacy policy</a></Link>
+          <Link href="/imprint">
+            <a className="Footer-Link">imprint</a>
+          </Link>
+          <Link href="/privacy-policy">
+            <a className="Footer-Link">privacy policy</a>
+          </Link>
         </div>
       </footer>
     </article>
