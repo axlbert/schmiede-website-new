@@ -1,16 +1,15 @@
-import React from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
-
-import './contact.css';
-import Nav from '../../components/nav';
+import Head from "next/head";
+import Link from "next/link";
+import React from "react";
+import Nav from "../../components/nav";
+import "./contact.css";
 
 export default function Contact() {
   return (
     <div>
       <Head>
-        <title>schmiede.one - Contact</title>
-        <link rel='icon' href='/favicon.ico' />
+        <title>Schmiede.one - Contact</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Nav />
@@ -35,9 +34,7 @@ export default function Contact() {
         <main className="container">
           <section className="Contact-TitleSection">
             <div>
-              <span className="Contact-Title">
-                We are here for you
-              </span>
+              <span className="Contact-Title">We are here for you</span>
             </div>
             <span className="Contact-Subtitle">
               Drop us a line, call us, or even visit us.
@@ -56,15 +53,13 @@ export default function Contact() {
                 </a>
               </span>
               <span className="Contact-Heading">Phone</span>
-              <span className="Contact-Paragraph">
-                +49 (0) 211 97 63 49 26
-              </span>
+              <span className="Contact-Paragraph">+49 (0) 211 97 63 49 26</span>
             </div>
 
             <div className="Contact-InfoBlock">
               <span className="Contact-Heading">Office</span>
               <span className="Contact-Paragraph">
-                Schmiede.ONE GmbH &amp; Co. KG
+                Schmiede.one GmbH &amp; Co. KG
               </span>
               <span className="Contact-Paragraph">Scheibenstraße 49</span>
               <span className="Contact-Paragraph">40479, Düsseldorf</span>
@@ -96,8 +91,12 @@ export default function Contact() {
             </a>
           </section>
           <section className="Contact-Links">
-            <Link href="/imprint"><a className="Contact-Link">imprint</a></Link>
-            <Link href="/privacy-policy"><a className="Contact-Link">privacy policy</a></Link>
+            <Link href="/imprint">
+              <a className="Contact-Link">imprint</a>
+            </Link>
+            <Link href="/privacy-policy">
+              <a className="Contact-Link">privacy policy</a>
+            </Link>
           </section>
         </main>
       </article>

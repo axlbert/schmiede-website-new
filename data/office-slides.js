@@ -64,7 +64,7 @@ const slide4 = {
 const slide5 = {
   label: {
     paragraph: `
-      At Schmiede.ONE, our team of highly skilled professionals dedicates time and
+      At Schmiede.one, our team of highly skilled professionals dedicates time and
       effort to create innovative quality products in the field of agriculture, ranging from
       user friendly and highly scalable web and mobile applications, data science driven smart
       algorithms, to heavy machinery driven by artificial intelligence.

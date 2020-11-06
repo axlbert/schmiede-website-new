@@ -1,14 +1,12 @@
-import React, { useState, useEffect } from "react";
 import Head from "next/head";
-
-import "./about.css";
-import Nav from "../../components/nav";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
 import CultureCarousel from "../../components/culture-carousel";
 import MemberCard from "../../components/member-card";
+import Nav from "../../components/nav";
 import OfficeCarousel from "../../components/office-carousel";
-
 import members from "../../data/members";
-import Link from "next/link";
+import "./about.css";
 
 function renderMembers() {
   return members.map((x, i) => {
@@ -51,7 +49,7 @@ export default function About() {
   return (
     <article className="About">
       <Head>
-        <title>schmiede.one - About</title>
+        <title>Schmiede.one - About</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -1,14 +1,13 @@
-import React from "react";
 import Head from "next/head";
+import React from "react";
 import Nav from "../../components/nav/index";
-
 import "./privacy-policy.css";
 
 export default function PrivacyPolicy(props) {
   return (
     <div>
       <Head>
-        <title>schmiede.one - Datenschutzerklärung</title>
+        <title>Schmiede.one - Datenschutzerklärung</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -78,9 +77,7 @@ export default function PrivacyPolicy(props) {
               unserer berechtigten Interessen Art. 6 Abs. 1 lit. f. DSGVO ist.
             </li>
           </ul>
-          <h2>
-            2. Sicherheitsmaßnahmen
-          </h2>
+          <h2>2. Sicherheitsmaßnahmen</h2>
           <ul className="PrivacyPolicy-list">
             <li className="PrivacyPolicy-item">
               2.1. Wir treffen organisatorische, vertragliche und technische
@@ -97,9 +94,7 @@ export default function PrivacyPolicy(props) {
               unserem Server.
             </li>
           </ul>
-          <h2>
-            3. Weitergabe von Daten an Dritte und Drittanbieter
-          </h2>
+          <h2>3. Weitergabe von Daten an Dritte und Drittanbieter</h2>
           <ul className="PrivacyPolicy-list">
             <li className="PrivacyPolicy-item">
               3.1. Eine Weitergabe von Daten an Dritte erfolgt nur im Rahmen der
@@ -143,9 +138,7 @@ export default function PrivacyPolicy(props) {
               gesetzliche Erlaubnis vorliegt.
             </li>
           </ul>
-          <h2>
-            4. Erbringung vertraglicher Leistungen
-          </h2>
+          <h2>4. Erbringung vertraglicher Leistungen</h2>
           <ul className="PrivacyPolicy-list">
             <li className="PrivacyPolicy-item">
               4.1. Wir verarbeiten Bestandsdaten (z.B., Namen und Adressen sowie
@@ -164,9 +157,7 @@ export default function PrivacyPolicy(props) {
               Leistungen einzublenden.
             </li>
           </ul>
-          <h2>
-            5. Kontaktaufnahme
-          </h2>
+          <h2>5. Kontaktaufnahme</h2>
           <ul className="PrivacyPolicy-list">
             <li className="PrivacyPolicy-item">
               5.1. Bei der Kontaktaufnahme mit uns (per Kontaktformular oder
@@ -180,9 +171,7 @@ export default function PrivacyPolicy(props) {
               vergleichbarer Anfragenorganisation gespeichert werden.
             </li>
           </ul>
-          <h2>
-            6. Kommentare und Beiträge
-          </h2>
+          <h2>6. Kommentare und Beiträge</h2>
           <ul className="PrivacyPolicy-list">
             <li className="PrivacyPolicy-item">
               6.1. Wenn Nutzer Kommentare oder sonstige Beiträge hinterlassen,
@@ -199,9 +188,7 @@ export default function PrivacyPolicy(props) {
               interessiert.
             </li>
           </ul>
-          <h2>
-            7. Erhebung von Zugriffsdaten und Logfiles
-          </h2>
+          <h2>7. Erhebung von Zugriffsdaten und Logfiles</h2>
           <ul className="PrivacyPolicy-list">
             <li className="PrivacyPolicy-item">
               7.1. Wir erheben auf Grundlage unserer berechtigten Interessen im
@@ -222,9 +209,7 @@ export default function PrivacyPolicy(props) {
               Löschung ausgenommen.
             </li>
           </ul>
-          <h2>
-            8. Cookies &amp; Reichweitenmessung
-          </h2>
+          <h2>8. Cookies &amp; Reichweitenmessung</h2>
           <ul className="PrivacyPolicy-list">
             <li className="PrivacyPolicy-item">
               8.1. Cookies sind Informationen, die von unserem Webserver oder
@@ -270,9 +255,7 @@ export default function PrivacyPolicy(props) {
               widersprechen.
             </li>
           </ul>
-          <h2>
-            9. Google Analytics
-          </h2>
+          <h2>9. Google Analytics</h2>
           <ul className="PrivacyPolicy-list">
             <li className="PrivacyPolicy-item">
               9.1. Wir setzen auf Grundlage unserer berechtigten Interessen
@@ -359,9 +342,7 @@ export default function PrivacyPolicy(props) {
               https://tools.google.com/dlpage/gaoptout?hl=de.
             </li>
           </ul>
-          <h2>
-            10. Google-Re/Marketing-Services
-          </h2>
+          <h2>10. Google-Re/Marketing-Services</h2>
           <ul className="PrivacyPolicy-list">
             <li className="PrivacyPolicy-item">
               10.1. Wir nutzen auf Grundlage unserer berechtigten Interessen
@@ -484,9 +465,7 @@ export default function PrivacyPolicy(props) {
               nutzen: http://www.google.com/ads/preferences.
             </li>
           </ul>
-          <h2>
-            11. Facebook Social Plugins
-          </h2>
+          <h2>11. Facebook Social Plugins</h2>
           <ul className="PrivacyPolicy-list">
             <li className="PrivacyPolicy-item">
               11.1. Wir nutzen auf Grundlage unserer berechtigten Interessen
@@ -665,9 +644,7 @@ export default function PrivacyPolicy(props) {
               widersprechen.
             </li>
           </ul>
-          <h2>
-            13. Einbindung von Diensten und Inhalten Dritter
-          </h2>
+          <h2>13. Einbindung von Diensten und Inhalten Dritter</h2>
           <ul className="PrivacyPolicy-list">
             <li className="PrivacyPolicy-item">
               13.1. Wir setzen innerhalb unseres Onlineangebotes auf Grundlage
@@ -721,9 +698,7 @@ export default function PrivacyPolicy(props) {
               Dritt-Anbieter jQuery Foundation, https://jquery.org.
             </li>
           </ul>
-          <h2>
-            14. Rechte der Nutzer
-          </h2>
+          <h2>14. Rechte der Nutzer</h2>
           <ul className="PrivacyPolicy-list">
             <li className="PrivacyPolicy-item">
               14.1. Nutzer haben das Recht, auf Antrag unentgeltlich Auskunft zu
@@ -743,9 +718,7 @@ export default function PrivacyPolicy(props) {
               Auswirkung für die Zukunft, widerrufen.
             </li>
           </ul>
-          <h2>
-            15. Löschung von Daten
-          </h2>
+          <h2>15. Löschung von Daten</h2>
           <ul className="PrivacyPolicy-list">
             <li className="PrivacyPolicy-item">
               15.1. Die bei uns gespeicherten Daten werden gelöscht, sobald sie
@@ -767,9 +740,7 @@ export default function PrivacyPolicy(props) {
               und Geschäftsbriefe, Für Besteuerung relevante Unterlagen, etc.).
             </li>
           </ul>
-          <h2>
-            16. Widerspruchsrecht
-          </h2>
+          <h2>16. Widerspruchsrecht</h2>
           <ul className="PrivacyPolicy-list">
             <li className="PrivacyPolicy-item">
               16.1. Nutzer können der künftigen Verarbeitung ihrer
@@ -778,9 +749,7 @@ export default function PrivacyPolicy(props) {
               die Verarbeitung für Zwecke der Direktwerbung erfolgen.
             </li>
           </ul>
-          <h2>
-            17. Ansprechpartner
-          </h2>
+          <h2>17. Ansprechpartner</h2>
           <ul className="PrivacyPolicy-list">
             <li className="PrivacyPolicy-item">
               17.1. Wegen eventueller weiterer Auskünfte und Erläuterungen oder
@@ -794,7 +763,9 @@ export default function PrivacyPolicy(props) {
             </li>
             <li className="PrivacyPolicy-item">Datenschutzbeauftragter:</li>
             <li className="PrivacyPolicy-item">Name: Alex Langer</li>
-            <li className="PrivacyPolicy-item">Straße Nr.: Scheibenstraße 49</li>
+            <li className="PrivacyPolicy-item">
+              Straße Nr.: Scheibenstraße 49
+            </li>
             <li className="PrivacyPolicy-item">
               PLZ, Ort, Land: 40479 Düsseldorf
             </li>
@@ -802,9 +773,7 @@ export default function PrivacyPolicy(props) {
               E-Mail adresse: hello@schmiede.one
             </li>
           </ul>
-          <h2>
-            18. Hinweis zu verantwortlichen Stelle
-          </h2>
+          <h2>18. Hinweis zu verantwortlichen Stelle</h2>
           <ul className="PrivacyPolicy-list">
             <li className="PrivacyPolicy-item">
               18.1. Die verantwortliche Stelle für die Datenverarbeitung auf
@@ -816,9 +785,7 @@ export default function PrivacyPolicy(props) {
               entscheidet.
             </li>
           </ul>
-          <h2>
-            19. Änderungen der Datenschutzerklärung
-          </h2>
+          <h2>19. Änderungen der Datenschutzerklärung</h2>
           <ul className="PrivacyPolicy-list">
             <li className="PrivacyPolicy-item">
               19.1. Wir behalten uns vor, die Datenschutzerklärung zu ändern, um

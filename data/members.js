@@ -5,7 +5,7 @@
 const batch = {
   name: "Batch",
   role: "Software Engineering",
-  imageSrc: "/about/member-2.jpg",
+  imageSrc: "/about/team-batch.jpg",
   personal: {
     location: "from London",
     quote: `No man ever steps in the same river twice, for it's not the same river and he's not the same man.`,
@@ -28,10 +28,10 @@ const batch = {
 const verena = {
   name: "Verena",
   role: "Design | Project management",
-  imageSrc: "/about/member-1.jpg",
+  imageSrc: "/about/team-verena.jpg",
   personal: {
     location: "from Büttgen",
-    quote: `Is it though?`,
+    quote: `Make it pop!`,
     favorites: new Map([
       ["Book", "The swarm"],
       ["Color", "Confetti"],
@@ -42,14 +42,14 @@ const verena = {
   professional: {
     sinceYear: 2020,
     quote: `Question the status quo!`,
-    description: `I believe in getting out there to explore and engage with others.`,
+    description: `With a a background in industrial design and a specialisation in eco-innovative design, I’m always eager to tackle new challenges and have gained work experience in a variety of design fields.`,
   },
 };
 
 const rahul = {
   name: "Rahul",
   role: "Robotics",
-  imageSrc: "/about/member-3.jpg",
+  imageSrc: "/about/team-rahul.jpg",
   personal: {
     location: "from Hyderabad",
     quote: `There is always a way `,
@@ -72,7 +72,7 @@ const rahul = {
 const andy = {
   name: "Ainuddin",
   role: "Software Engineering",
-  imageSrc: "/about/member-8.jpg",
+  imageSrc: "/about/team-andy.jpg",
   personal: {
     location: "from New Delhi",
     quote: `We have two lives, and the second begins when we realize we only have one.`,
@@ -87,7 +87,7 @@ const andy = {
     sinceYear: 2017,
     quote: `Programming is the art of conveying your thoughts eloquently to a machine.`,
     description: `
-    As a software developer, Schmiede.ONE gives me the opportunity and freedom to explore a wide variety of possibilities in terms of software technologies as well as their application in the noble field of agriculture.
+    As a software developer, Schmiede.one gives me the opportunity and freedom to explore a wide variety of possibilities in terms of software technologies as well as their application in the noble field of agriculture.
     `,
   },
 };
@@ -95,7 +95,7 @@ const andy = {
 const alex = {
   name: "Alex",
   role: "Operations",
-  imageSrc: "/about/member-4.jpg",
+  imageSrc: "/about/team-alex.jpg",
   personal: {
     location: "from the baltic sea",
     quote: `Be water!`,
@@ -110,7 +110,7 @@ const alex = {
     sinceYear: 2017,
     quote: `When can we push to Prod?`,
     description: `
-    Working at schmiede.one gives you a wide array of opportunities to grow and develop your skillset. All we require is an execution-driven mindset, a structured approach and humor.
+    Working at Schmiede.one gives you a wide array of opportunities to grow and develop your skillset. All we require is an execution-driven mindset, a structured approach and humor.
     `,
   },
 };
@@ -118,7 +118,7 @@ const alex = {
 const jakub = {
   name: "Jakub",
   role: "Software Engineering",
-  imageSrc: "/about/member-5.jpg",
+  imageSrc: "/about/team-jakub.jpg",
   personal: {
     location: "from Łódź",
     quote: `Can you do my pull request?`,
@@ -141,7 +141,7 @@ const jakub = {
 const omri = {
   name: "Omri",
   role: "Data",
-  imageSrc: "/about/member-6.jpg",
+  imageSrc: "/about/team-omri.jpg",
   personal: {
     location: "from Israel",
     quote: `Technically speaking...`,
@@ -164,9 +164,9 @@ const omri = {
 const niklas = {
   name: "Niklas",
   role: "Projects",
-  imageSrc: "/about/member-10.jpg",
+  imageSrc: "/about/team-niklas.jpg",
   personal: {
-    location: "from Ruhrpott",
+    location: "from Braunschweig",
     quote: `It´s not about the shoes, It's about knowing where you are going. Not forgetting where you started. It's about having the courage to fail`,
     favorites: new Map([
       ["Book", "Lean Startup"],
@@ -188,9 +188,9 @@ const niklas = {
 const pavi = {
   name: "Pavi",
   role: "Software Engineering",
-  imageSrc: "/about/member-9.jpg",
+  imageSrc: "/about/team-pavi.jpg",
   personal: {
-    location: "from Dortmund",
+    location: "from Ruhrpott",
     quote: `Ohayo Gozaimasu!`,
     favorites: new Map([
       ["Book", "The God Delusion"],
@@ -207,10 +207,11 @@ const pavi = {
     `,
   },
 };
+
 const mukku = {
   name: "Mukarram",
   role: "Software Engineering",
-  imageSrc: "/about/member-11.jpg",
+  imageSrc: "/about/team-mukku.jpg",
   personal: {
     location: "from Nainital",
     quote: `You are personally responsible for becoming more ethical than the society you grew up in.`,
@@ -229,10 +230,11 @@ const mukku = {
     `,
   },
 };
+
 const chiara = {
   name: "Chiara",
   role: "Design",
-  imageSrc: "/about/member-12.jpg",
+  imageSrc: "/about/team-chiara.jpg",
   personal: {
     location: "from Lima, Peru",
     quote: `Be the energy you want to attract`,
@@ -253,10 +255,11 @@ const chiara = {
     `,
   },
 };
+
 const theuns = {
   name: "Theuns",
   role: "Robotics",
-  imageSrc: "/about/member-7.jpg",
+  imageSrc: "/about/team-theuns.jpg",
   personal: {
     location: "from Stellenbosch, South Africa",
     quote: `Dare to act without asking for recommendations first. It is likely to open up your mind.`,
@@ -278,18 +281,91 @@ const theuns = {
   },
 };
 
+const nathalie = {
+  name: "Nathalie",
+  role: "Software Engineering",
+  imageSrc: "/about/team-nathalie.jpg",
+  personal: {
+    location: "from Lebanon",
+    quote: `Grow with the flow`,
+    favorites: new Map([
+      ["Book", "Anna Karenina"],
+      ["Color", "FFC0CB"],
+      ["Food", "Knefe"],
+      ["Vacation Spot", "Beirut"],
+    ]),
+  },
+  professional: {
+    sinceYear: 2020,
+    quote: `Experience is the name everyone gives to their mistakes.`,
+    description: `
+    Coder girl
+    `,
+  },
+};
+
+const ivona = {
+  name: "Ivona",
+  role: "Venture Development Internship",
+  imageSrc: "/about/team-ivona.jpg",
+  personal: {
+    location: "from Osijek, Croatia",
+    quote: `Hold the vision, trust the process.`,
+    favorites: new Map([
+      ["Book", "Anna Karenina"],
+      ["Color", "Red"],
+      ["Food", "Italian"],
+      ["Vacation Spot", "Italy"],
+    ]),
+  },
+  professional: {
+    sinceYear: 2020,
+    quote: `Is there something to eat?`,
+    description: `
+    schmiede.ONE does not require a routine and 10+ years of previous work experience from me, but rather gives me a unique opportunity to learn and grow both profesionally and personally. I work in venture development along with agile project management and so far it has only proven me that this was probably the most right decision and working environment I have ever come found myself in. Looking forward to see how are we going to help shape the future of AI and farming.
+    `,
+  },
+};
+
+const novian = {
+  name: "Novian",
+  role: "Robotics Internship ",
+  imageSrc: "/about/team-novian.jpg",
+  personal: {
+    location: "from Depok, Indonesia ",
+    quote: ` When we reach our lowest point, we are open to the greatest change.`,
+    favorites: new Map([
+      ["Book", "6000 Leagues Under The Se"],
+      ["Color", "Blue"],
+      ["Food", "Fried Rice, Indomie"],
+      ["Vacation Spot", "Nature"],
+    ]),
+  },
+  professional: {
+    sinceYear: 2020,
+    quote: `Learn new things everyday!`,
+    description: `
+    As a robotics enthusiast, I am fascinated about robotics industry. Having an opportunity to work at schmiede.ONE give me an access to learn deeper about how automatons are applied in real life in a sustainable business model.
+    `,
+  },
+};
+
 const members = [
-  mukku,
+  nathalie,
   alex,
   andy,
   theuns,
   pavi,
-  batch,
   verena,
+  ivona,
   niklas,
   rahul,
+  novian,
+  mukku,
+  batch,
   jakub,
-  omri,
   chiara,
+  omri,
 ];
+
 export default members;
