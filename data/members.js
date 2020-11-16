@@ -138,29 +138,6 @@ const jakub = {
   },
 };
 
-const omri = {
-  name: "Omri",
-  role: "Data",
-  imageSrc: "/about/team-omri.jpg",
-  personal: {
-    location: "from Israel",
-    quote: `Technically speaking...`,
-    favorites: new Map([
-      ["Book", "Utopia for Realists"],
-      ["Color", ""],
-      ["Food", "Spicy stuff"],
-      ["Vacation Spot", "Israel"],
-    ]),
-  },
-  professional: {
-    sinceYear: 2017,
-    quote: `Czesc!`,
-    description: `
-      
-    `,
-  },
-};
-
 const niklas = {
   name: "Niklas",
   role: "Projects",
@@ -227,31 +204,6 @@ const mukku = {
     quote: `Sustainable Business, Software Excellence and Social Justice, they all are supposed to come along together.`,
     description: `
       Ruby Dev ❤️
-    `,
-  },
-};
-
-const chiara = {
-  name: "Chiara",
-  role: "Design",
-  imageSrc: "/about/team-chiara.jpg",
-  personal: {
-    location: "from Lima, Peru",
-    quote: `Be the energy you want to attract`,
-    favorites: new Map([
-      ["Book", "Big Magic"],
-      ["Color", "Dark Blue"],
-      ["Food", "Trio Marino"],
-      ["Vacation Spot", "Beach"],
-    ]),
-  },
-  professional: {
-    sinceYear: 2019,
-    quote: `Sometimes you win. Sometimes you learn`,
-    description: `
-    This is a place where you can get to know about a wide variety of
-    subjects as robotics, farming and design. My experience here included
-    weeding the field one day, having the chance to get out of routine is always fun.
     `,
   },
 };
@@ -364,8 +316,6 @@ const members = [
   mukku,
   batch,
   jakub,
-  chiara,
-  omri,
 ];
 
 export default members;
