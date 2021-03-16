@@ -256,29 +256,6 @@ const nathalie = {
   },
 };
 
-const ivona = {
-  name: "Ivona",
-  role: "Venture Development Internship",
-  imageSrc: "/about/team-ivona.jpg",
-  personal: {
-    location: "from Osijek, Croatia",
-    quote: `Hold the vision, trust the process.`,
-    favorites: new Map([
-      ["Book", "Anna Karenina"],
-      ["Color", "Red"],
-      ["Food", "Italian"],
-      ["Vacation Spot", "Italy"],
-    ]),
-  },
-  professional: {
-    sinceYear: 2020,
-    quote: `Is there something to eat?`,
-    description: `
-    schmiede.ONE does not require a routine and 10+ years of previous work experience from me, but rather gives me a unique opportunity to learn and grow both profesionally and personally. I work in venture development along with agile project management and so far it has only proven me that this was probably the most right decision and working environment I have ever come found myself in. Looking forward to see how are we going to help shape the future of AI and farming.
-    `,
-  },
-};
-
 const novian = {
   name: "Novian",
   role: "Robotics Internship ",
@@ -309,7 +286,6 @@ const members = [
   theuns,
   pavi,
   verena,
-  ivona,
   niklas,
   rahul,
   novian,
