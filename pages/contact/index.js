@@ -53,7 +53,7 @@ export default function Contact() {
                 </a>
               </span>
               <span className="Contact-Heading">Phone</span>
-              <span className="Contact-Paragraph">+49 (0) 211 97 63 49 26</span>
+              <span className="Contact-Paragraph">+49 (0) 211 97 63 49 53</span>
             </div>
 
             <div className="Contact-InfoBlock">
