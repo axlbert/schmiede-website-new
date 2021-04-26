@@ -21,8 +21,8 @@ export default function Imprint(props) {
             <p>40479 Düsseldorf</p>
             <p>
               Telefon:{" "}
-              <a target="_blank" href="tel:+4921197634926">
-                +49 211 97 63 49 26
+              <a target="_blank" href="tel:+4921197634953">
+                +49 (0) 211 97 63 49 53
               </a>
             </p>
             <p>
