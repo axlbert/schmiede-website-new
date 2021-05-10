@@ -18,8 +18,9 @@ tag="schmiede-website"
 aws_tag="schmiede-website"
 tagged_image=436054152060.dkr.ecr.eu-central-1.amazonaws.com/${aws_tag}:${VERSION}
 
-login="$(aws ecr get-login --no-include-email --region eu-central-1)"
-$login
+aws ecr get-login-password --region eu-central-1 | docker login \
+  --username AWS \
+  --password-stdin 436054152060.dkr.ecr.eu-central-1.amazonaws.com
 
 echo "Building docker..."
 docker build -f Dockerfile -t ${tag} .
