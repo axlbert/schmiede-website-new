@@ -77,7 +77,7 @@ const andy = {
     location: "from New Delhi",
     quote: `We have two lives, and the second begins when we realize we only have one.`,
     favorites: new Map([
-      ["Book", "12 Rules For Life"],
+      ["Book", "The Subtle Art of Not Giving a F*ck"],
       ["Color", "Black"],
       ["Food", "Boti Kabab"],
       ["Vacation Spot", "Kerala, India"],
@@ -279,6 +279,29 @@ const novian = {
   },
 };
 
+const alexW = {
+  name: "Alex",
+  role: "Projects",
+  imageSrc: "/about/team-alexW.jpg",
+  personal: {
+    location: "Süddeutschland",
+    quote: "Time does not change us. It just unfolds us.",
+    favorites: new Map([
+      ["Book", "the neverending story"],
+      ["Color", "lush green"],
+      ["Food", "goulash"],
+      ["Vacation Spot", "remote mountain ranges"],
+    ]),
+  },
+  professional: {
+    sinceYear: 2021,
+    quote:
+      "If you criticize what you're doing too early you'll never write the first line.",
+    description:
+      "Connector. Mediator. Explorer. I apply my background in mechanical engineering and embedded systems to lead projects with a focus on robotics.",
+  },
+};
+
 const members = [
   nathalie,
   alex,
@@ -291,6 +314,7 @@ const members = [
   novian,
   mukku,
   batch,
+  alexW,
   jakub,
 ];
 
