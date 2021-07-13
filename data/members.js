@@ -256,29 +256,6 @@ const nathalie = {
   },
 };
 
-const novian = {
-  name: "Novian",
-  role: "Robotics Internship ",
-  imageSrc: "/about/team-novian.jpg",
-  personal: {
-    location: "from Depok, Indonesia ",
-    quote: ` When we reach our lowest point, we are open to the greatest change.`,
-    favorites: new Map([
-      ["Book", "6000 Leagues Under The Se"],
-      ["Color", "Blue"],
-      ["Food", "Fried Rice, Indomie"],
-      ["Vacation Spot", "Nature"],
-    ]),
-  },
-  professional: {
-    sinceYear: 2020,
-    quote: `Learn new things everyday!`,
-    description: `
-    As a robotics enthusiast, I am fascinated about robotics industry. Having an opportunity to work at schmiede.ONE give me an access to learn deeper about how automatons are applied in real life in a sustainable business model.
-    `,
-  },
-};
-
 const alexW = {
   name: "Alex",
   role: "Projects",
@@ -302,6 +279,29 @@ const alexW = {
   },
 };
 
+const fran = {
+  name: "Fran",
+  role: "Software Development and Testing Internship",
+  imageSrc: "/about/team-fran.jpg",
+  personal: {
+    location: "from Florianópolis, Brazil",
+    quote: "Good decisions are made out of love, not fear",
+    favorites: new Map([
+      ["Book", "Becoming"],
+      ["Color", "Black"],
+      ["Food", "Sushi"],
+      ["Vacation Spot", "Manaus"],
+    ]),
+  },
+  professional: {
+    sinceYear: 2021,
+    quote:
+      "Embrace your vulnerabilities. Make sure you are surrounded by supportive people. And don't be afraid to learn new things and make mistakes. Life is a series of building, testing, changing and iterating.",
+    description:
+      "A former chemistry teacher bitten by the coding bug, turning into a web developer and grateful for all the learning experiences with the Schmiede.ONE team.",
+  },
+};
+
 const members = [
   nathalie,
   alex,
@@ -311,10 +311,10 @@ const members = [
   verena,
   niklas,
   rahul,
-  novian,
   mukku,
   batch,
   alexW,
+  fran,
   jakub,
 ];
 
