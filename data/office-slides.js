@@ -1,13 +1,14 @@
 const slide1 = {
   label: {
     titleParts: [
-      { type: "subtitle", content: "We work in a" },
-      { type: "title", content: "light, spacious and green" },
-      { type: "subtitle", content: "office." },
+      { type: "subtitle", content: "We’re here to" },
+      { type: "title", content: "build, learn and have fun" },
+      { type: "subtitle", content: "along the way" },
     ],
     paragraph: `
-      We work in the center of Düsseldorf, 100 meters away from the Rhine.
-      We have our own garden and enjoy barbecues with the team as well as sitting and coding on the terrace.
+      We believe in constant learning and betterment of the team.
+      Our regular team events as well as presentations and demos keep the
+      members in sync and keep the team growing.
     `,
   },
   imageSrc: "/about/office/office-1.jpg",
@@ -19,7 +20,7 @@ const slide2 = {
     titleParts: [
       { type: "subtitle", content: "We employ" },
       { type: "title", content: "the latest technologies" },
-      { type: "subtitle", content: "in our daily business." },
+      { type: "subtitle", content: "in our daily business" },
     ],
     paragraph: `
       We keep ourselves up to date about the newest technologies and work methodologies
@@ -33,8 +34,9 @@ const slide2 = {
 const slide3 = {
   label: {
     titleParts: [
-      { type: "title", content: "Employee satisfaction" },
-      { type: "subtitle", content: "is of utmost importance" },
+      { type: "subtitle", content: "Work or play," },
+      { type: "subtitle", content: "our office is" },
+      { type: "title", content: "a fun place to be" },
     ],
     paragraph: `
       Work hard, play hard is the name of the game. A kicker table 
@@ -49,8 +51,8 @@ const slide3 = {
 const slide4 = {
   label: {
     titleParts: [
-      { type: "title", content: "Sustainability" },
-      { type: "subtitle", content: "means more for us" },
+      { type: "subtitle", content: "Projects with an" },
+      { type: "title", content: "environmental impact" },
     ],
     paragraph: `
     As part of Grimme group, we help mechanizing and feeding the world
@@ -74,15 +76,5 @@ const slide5 = {
   alt: "Office Image 5",
 };
 
-const officeSlides = [
-  slide1,
-  slide2,
-  slide3,
-  slide4,
-  slide5,
-  slide1,
-  slide2,
-  slide3,
-  slide4,
-];
+const officeSlides = [slide1, slide2, slide3, slide4, slide5];
 export default officeSlides;

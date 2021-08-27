@@ -31,7 +31,7 @@ const verena = {
   imageSrc: "/about/team-verena.jpg",
   personal: {
     location: "from Büttgen",
-    quote: `Make it pop!`,
+    quote: "Question the status quo!",
     favorites: new Map([
       ["Book", "The swarm"],
       ["Color", "Confetti"],
@@ -41,8 +41,8 @@ const verena = {
   },
   professional: {
     sinceYear: 2020,
-    quote: `Question the status quo!`,
-    description: `With a a background in industrial design and a specialisation in eco-innovative design, I’m always eager to tackle new challenges and have gained work experience in a variety of design fields.`,
+    quote: "I am a hybrid chameleon with octopus arms.",
+    description: `With a background in industrial design and a specialisation in eco-innovative design, I’m always eager to tackle new challenges and have gained work experience in a variety of design fields.`,
   },
 };
 
@@ -95,7 +95,7 @@ const andy = {
 const alex = {
   name: "Alex",
   role: "Operations",
-  imageSrc: "/about/team-alex.jpg",
+  imageSrc: "/about/team-alex.png",
   personal: {
     location: "from the baltic sea",
     quote: `Be water!`,
@@ -302,6 +302,75 @@ const fran = {
   },
 };
 
+const abishek = {
+  name: "Abishek",
+  role: "Robotics Intern",
+  imageSrc: "/about/team-abishek.png",
+  personal: {
+    location: "from Kerala, India",
+    quote:
+      " Just don't give up trying to do what you really want to do. Where there is love and inspiration, I don't think you can go wrong.",
+    favorites: new Map([
+      ["Book", "Kafka on the shore by Haruki Murakami"],
+      ["Color", "Violet"],
+      ["Food", "Paneer Tikka"],
+      ["Vacation Spot", "Maldives"],
+    ]),
+  },
+  professional: {
+    sinceYear: 2021,
+    quote:
+      "Regardless of whats happening around you, believe in yourself, that's mostly the best way out.",
+    description:
+      " Avid fitness enthusiast, getting my hands on whatever that interests me, craving for knowledge in the field of AI and robotics. Glad to have joined schmiede.one, helping me a lot with the learning process ",
+  },
+};
+
+const sharad = {
+  name: "Sharad",
+  role: "Robotics Intern",
+  imageSrc: "/about/team-sharad.png",
+  personal: {
+    location: "from Sagar,India",
+    quote: "Wise men say, only fools rush in",
+    favorites: new Map([
+      ["Book", "Fountainhead - Ayn Rand"],
+      ["Color", "Black"],
+      ["Food", "Pani Puri"],
+      ["Vacation Spot", "Italy"],
+    ]),
+  },
+  professional: {
+    sinceYear: 2021,
+    quote:
+      "Everything in life is an experiment. So we might as well do an awful lot of them and iterate, whilst having loads of fun",
+    description:
+      "A engineers who explored different sub domains - hardware, software and their intersection for a while. Currently learning to be a better Robotics Software Engineer",
+  },
+};
+
+const iga = {
+  name: "Iga",
+  role: "Design Intern",
+  imageSrc: "/about/team-iga.jpg",
+  personal: {
+    location: "Opole",
+    quote:
+      "You can't stay in your corner of the Forest waiting for others to come to you. You have to go to them sometimes",
+    favorites: new Map([
+      ["Book", "The book thief"],
+      ["Color", "Yellow #FFF200"],
+      ["Food", "Pierogi"],
+      ["Vacation Spot", "Cracow"],
+    ]),
+  },
+  professional: {
+    sinceYear: 2021,
+    quote: "If a User is having a problem, it's our problem.",
+    description: "UX/UI Designer and Usability Engineer",
+  },
+};
+
 const members = [
   nathalie,
   alex,
@@ -315,6 +384,9 @@ const members = [
   batch,
   alexW,
   fran,
+  sharad,
+  iga,
+  abishek,
   jakub,
 ];
 
