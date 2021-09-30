@@ -371,6 +371,27 @@ const iga = {
   },
 };
 
+const fanta = {
+  name: "Fanta",
+  role: "Office sweetheart",
+  imageSrc: "team-fanta.png",
+  personal: {
+    location: "Poland",
+    quote: "Pet and feed me and I am happy!",
+    favorites: new Map([
+      ["Book", "How to be a good girl?"],
+      ["Color", "Fanta orange"],
+      ["Food", "Apples"],
+      ["Vacation Spot", "Any spot where my owners are for vacation"],
+    ]),
+  },
+  professional: {
+    sinceYear: 2021,
+    quote: "Who wants to pet me?",
+    description: "When I'm here, I make everyone smile and they make me smile.",
+  },
+};
+
 const members = [
   nathalie,
   alex,
@@ -388,6 +409,7 @@ const members = [
   iga,
   abishek,
   jakub,
+  fanta,
 ];
 
 export default members;
