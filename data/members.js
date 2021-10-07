@@ -281,7 +281,7 @@ const alexW = {
 
 const fran = {
   name: "Fran",
-  role: "Software Development and Testing Internship",
+  role: "Software Engineering",
   imageSrc: "/about/team-fran.jpg",
   personal: {
     location: "from Florianópolis, Brazil",
@@ -373,7 +373,7 @@ const iga = {
 
 const fanta = {
   name: "Fanta",
-  role: "Office sweetheart",
+  role: "Office Sweetheart",
   imageSrc: "team-fanta.png",
   personal: {
     location: "Poland",
@@ -389,6 +389,28 @@ const fanta = {
     sinceYear: 2021,
     quote: "Who wants to pet me?",
     description: "When I'm here, I make everyone smile and they make me smile.",
+  },
+};
+
+const eric = {
+  name: "Eric",
+  role: "Robotics Intern",
+  imageSrc: "team-eric.png",
+  personal: {
+    location: "Barcelona",
+    quote: "Intelligence without ambition is a bird without wings",
+    favorites: new Map([
+      ["Book", "The Alchemist"],
+      ["Color", "Red"],
+      ["Food", "Thai Food"],
+      ["Vacation Spot", "Bali"],
+    ]),
+  },
+  professional: {
+    sinceYear: 2021,
+    quote: "How bad do you want it",
+    description:
+      "Aerospace Engineer trying to make a way into robotics and artificial intelligence. Just enjoying the ride.",
   },
 };
 
@@ -408,6 +430,7 @@ const members = [
   sharad,
   iga,
   abishek,
+  eric,
   jakub,
   fanta,
 ];
